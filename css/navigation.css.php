@@ -444,13 +444,14 @@ li.fast_filter.db_fast_filter {
 }
 .pma_quick_warp .drop_button {
     padding: .2em .5em;
-    border: 1px solid #ddd;
-    background: #f2f2f2;
+    border: 1px solid <?php echo $GLOBALS['cfg']['DropdownBorder']; ?>;
+    background: <?php echo $GLOBALS['cfg']['DropdownBackground']; ?>;
+    color: <?php echo $GLOBALS['cfg']['DropdownText']; ?>;
     cursor: pointer;
-}
+}/*
 .pma_quick_warp .drop_list:hover .drop_button {
     background: #fff;
-}
+}*/
 .pma_quick_warp .drop_list ul {
     position: absolute;
     margin: 0;
@@ -458,8 +459,9 @@ li.fast_filter.db_fast_filter {
     overflow: hidden;
     overflow-y: auto;
     list-style: none;
-    background: #fff;
-    border: 1px solid #ddd;
+    background: <?php echo $GLOBALS['cfg']['DropdownBackground']; ?>;
+    color: <?php echo $GLOBALS['cfg']['DropdownText']; ?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['DropdownBorder']; ?>;
     top: 100%;
     <?php echo $left; ?>: 3px;
     <?php echo $right; ?>: 0;
@@ -476,8 +478,9 @@ li.fast_filter.db_fast_filter {
 .pma_quick_warp .drop_list li img {
     vertical-align: sub;
 }
-.pma_quick_warp .drop_list li:hover {
-    background: #f2f2f2;
+.pma_quick_warp .drop_list li:hover, .pma_quick_warp .drop_list li:hover a {
+    background: <?php echo $GLOBALS['cfg']['DropdownBackgroundHover']; ?>;
+    color: <?php echo $GLOBALS['cfg']['DropdownText']; ?> !important;
 }
 .pma_quick_warp .drop_list a {
     display: block;

@@ -1,7 +1,7 @@
 <?php
 
 // unplanned execution path
-if (! defined('PMA_MINIMUM_COMMON') && ! defined('TESTSUITE')) {
+if (! defined('PMA_MINIMUM_COMMON') && ! defined('TESTSUITE')){
     exit();
 }
 ?>
@@ -12,8 +12,7 @@ if (! defined('PMA_MINIMUM_COMMON') && ! defined('TESTSUITE')) {
     ---------------------------------------------------------------------------
 */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
-{
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
     margin: 0;
     padding: 0;
     border: 0;
@@ -22,56 +21,49 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /* HTML5 display-role reset for older browsers */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
-{
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
     display: block;
 }
 
-ol, ul
-{
+ol, ul{
     list-style: none;
 }
 
-blockquote, q
-{
+blockquote, q{
     quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after
-{
+blockquote:before, blockquote:after, q:before, q:after{
     content: '';
     content: none;
 }
 
-table
-{
+table{
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-*:focus /* disable Chrome's and Safari's idiot input outline effect */
-{
+*:focus /* disable Chrome's and Safari's idiot input outline effect */{
     outline: none;
 }
 
-#li_select_fontsize
-{
+#li_select_fontsize{
     display: none;
 }
 
 /* general tags */
-html {
+html{
     font-size: 100%;
 }
 
 input,
 select,
-textarea {
+textarea{
     font-size: 1em;
 }
 
-body {
-<?php if (! empty($GLOBALS['cfg']['FontFamily'])) { ?>
+body{
+<?php if (! empty($GLOBALS['cfg']['FontFamily'])){ ?>
     font-family: <?php echo $GLOBALS['cfg']['FontFamily']; ?>;
 <?php } ?>
     padding: 0;
@@ -84,13 +76,11 @@ body {
 
 /* Override style formats by html tags */
 
-font[color=red], span[style="color: #FF0000"]
-{
+font[color=red], span[style="color: #FF0000"]{
     color: <?php echo $GLOBALS['cfg']['BrowseWarningColor']; ?> !important;
 }
 
-strong
-{
+strong{
     font-weight: normal;
 }
 
@@ -100,7 +90,7 @@ strong
     ---------------------------------------------------------------------------
 */
 
-@font-face {
+@font-face{
     font-family: 'IcoMoon';
     src: local('☺');
     src: url('./themes/dark-metro/fonts/IcoMoon.eot');
@@ -112,7 +102,7 @@ strong
     font-style: normal;
 }
 
-@font-face {
+@font-face{
     font-family: 'FontAwesome';
     src: local('☺');
     src: url('./themes/dark-metro/fonts/fontawesome-webfont.eot');
@@ -122,7 +112,7 @@ strong
     font-style: normal;
 }
 
-@font-face {
+@font-face{
     font-family: 'Open Sans';
     src: local('☺'), local('Open Sans'), local('OpenSans');
     src: url('./themes/dark-metro/fonts/opensans-regular-webfont.eot');
@@ -133,7 +123,7 @@ strong
     font-style: normal;
 }
 
-@font-face {
+@font-face{
     font-family: 'Open Sans Light';
     src: local('☺'), local('Open Sans Light'), local('OpenSans-Light');
     src: url('./themes/dark-metro/fonts/opensans-light-webfont.eot');
@@ -144,7 +134,7 @@ strong
     font-style: normal;
 }
 
-@font-face {
+@font-face{
     font-family: 'Open Sans Bold';
     src: local('☺'), local('Open Sans Bold'), local('OpenSans-Bold');
     src: url('./themes/dark-metro/fonts/opensans-bold-webfont.eot');
@@ -155,7 +145,7 @@ strong
     font-style: normal;
 }
 
-@font-face {
+@font-face{
     font-family: 'Open Sans Extrabold';
     src: local('☺'), local('Open Sans Extrabold'), local('OpenSans-Extrabold');
     src: url('./themes/dark-metro/fonts/opensans-extrabold-webfont.eot');
@@ -172,12 +162,12 @@ strong
     ---------------------------------------------------------------------------
 */
 
-body#loginform {
+body#loginform{
     margin: 0;
     background-color: <?php echo $GLOBALS['cfg']['LoginBackground']; ?>;
 }
 
-body#loginform #page_content {
+body#loginform #page_content{
     background-color: <?php echo $GLOBALS['cfg']['LoginBackground']; ?>;
     margin: 0 !important;
     padding: 20px;
@@ -185,16 +175,14 @@ body#loginform #page_content {
     height: 220px;
 }
 
-body#loginform div.container
-{
+body#loginform div.container{
     text-align: <?php echo $left; ?>;
     width: 48em;
     margin-left: auto;
     margin-right: auto;
 }
 
-body#loginform div.container:before
-{
+body#loginform div.container:before{
     font-family: 'FontAwesome';
     font-size: 220px;
     color: <?php echo $GLOBALS['cfg']['LoginText']; ?>;
@@ -209,8 +197,7 @@ body#loginform div.container:before
     line-height: 1;
 }
 
-body#loginform h1
-{
+body#loginform h1{
     display: inline-block;
     text-align: left;
     color: <?php echo $GLOBALS['cfg']['LoginText']; ?>;
@@ -220,23 +207,19 @@ body#loginform h1
     line-height: 2;
 }
 
-body#loginform a.logo
-{
+body#loginform a.logo{
     display: none;
 }
 
-body#loginform fieldset legend
-{
+body#loginform fieldset legend{
     display: none;
 }
 
-body#loginform .item
-{
+body#loginform .item{
     margin-bottom: 10px;
 }
 
-body#loginform input.textfield
-{
+body#loginform input.textfield{
     width: 100%;
     border: 1px solid <?php echo $GLOBALS['cfg']['InputBorderHover']; ?>;
     background: <?php echo $GLOBALS['cfg']['InputBackground']; ?>;
@@ -248,8 +231,7 @@ body#loginform input.textfield
 }
 
 body#loginform input.textfield:hover,
-body#loginform input.textfield:focus
-{
+body#loginform input.textfield:focus{
     background-color: <?php echo $GLOBALS['cfg']['InputBackgroundHover']; ?>;
     color: <?php echo $GLOBALS['cfg']['InputText']; ?>;
     box-sizing: border-box;
@@ -258,16 +240,14 @@ body#loginform input.textfield:focus
     margin: 0;
 }
 
-body#loginform input[type=submit]
-{
+body#loginform input[type=submit]{
     background-color: transparent;
     border: none;
     padding: 7px;
     margin: 0;
 }
 
-body#loginform select
-{
+body#loginform select{
     margin: 0 !important;
     border: 1px solid <?php echo $GLOBALS['cfg']['InputBorder']; ?>;
     background: <?php echo $GLOBALS['cfg']['InputBackground']; ?>;
@@ -277,18 +257,15 @@ body#loginform select
     min-width: 100%;
 }
 
-body#loginform select:hover
-{
+body#loginform select:hover{
     border: 1px solid <?php echo $GLOBALS['cfg']['InputBorderHover']; ?>;
 }
 
-body#loginform br
-{
+body#loginform br{
     display: none;
 }
 
-body#loginform fieldset
-{
+body#loginform fieldset{
     border: none;
     color: <?php echo $GLOBALS['cfg']['InputText']; ?>;
     padding: 0;
@@ -297,55 +274,50 @@ body#loginform fieldset
     background: none;
 }
 
-body#loginform fieldset:first-child
-{
+body#loginform fieldset:first-child{
     margin-bottom: 0;
     border-bottom: none;
     margin: 0;
 }
 
-body#loginform fieldset.tblFooters
-{
+body#loginform fieldset.tblFooters{
     border: none;
     margin: 0;
     clear: none;
 }
 
-body#loginform .error
-{
+body#loginform .error{
     float: left;
     width: 48em;
     margin-top: -280px;
 }
 
-form.login label
-{
+form.login label{
     display: none
 }
 
-.turnOffSelect {
+.turnOffSelect{
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
   user-select: none;
 }
 
-#page_content  {
+#page_content {
     margin: 20px !important;
 }
 
-<?php if (! empty($GLOBALS['cfg']['FontFamilyFixed'])) { ?>
+<?php if (! empty($GLOBALS['cfg']['FontFamilyFixed'])){ ?>
 textarea,
 tt,
 pre,
-code {
+code{
     font-family: <?php echo $GLOBALS['cfg']['FontFamilyFixed']; ?> !important;
 }
 <?php } ?>
 
 
-h1
-{
+h1{
     font-family: <?php echo $GLOBALS['cfg']['FontFamilyLight']; ?>;
     font-weight: normal;
     font-size: 3em;
@@ -355,8 +327,7 @@ h1
     line-height: 1;
 }
 
-h2
-{
+h2{
     font-size: 3.6em;
     font-weight: normal;
     color: <?php echo $GLOBALS['cfg']['MainHeaderColor']; ?>;
@@ -382,13 +353,31 @@ img.ic_s_reload,
 img.ic_b_sqlhelp,
 img.ic_s_loggoff,
 img.ic_b_home,
-img.ic_window-new, img.ic_b_table_add, img.ic_b_index_add, img.ic_b_column_add,
+img.ic_window-new, img.ic_b_table_add, img.ic_b_index_add, img.ic_b_column_add, img.ic_b_insrow, img.ic_bd_insrow,
 img.ic_s_collapseall,
 img.ic_s_link,
 img.ic_s_unlink,
 img.ic_b_props,
 img.ic_pause,
-img.ic_b_index {
+img.ic_b_index, img.ic_s_asci, img.ic_bd_browse, img.ic_b_browse,
+img.ic_s_passwd,
+img.ic_b_sql,
+img.ic_s_rights,
+img.ic_s_status,
+img.ic_b_export,
+img.ic_b_import,
+img.ic_s_replication,
+img.ic_b_more,
+img.ic_s_vars,
+img.ic_b_engine,
+img[alt="Plugins"],
+img.ic_b_no_favorite,
+img.ic_bd_select, img.ic_b_select, img.ic_b_search,
+img.ic_b_empty, img.ic_bd_empty,
+img.ic_b_drop, img.ic_bd_drop,
+img.ic_b_print,
+img.ic_b_tblanalyse,
+img.ic_b_events{
     background: transparent !important;
     display: inline-block;
     padding-right: 3px;
@@ -397,54 +386,108 @@ img.ic_b_index {
 }
 
 /* Set icons */
-img.ic_b_help, img.ic_b_docs { /* Info */
+img.ic_b_help, img.ic_b_docs{ /* Info */
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////VHQRUAAAAMnRSTlMAAQIDBQYHCQwNExkaHR8gKistLjAxTFFfaG1wg4WOlZeYpai5uszOz9HT2dre4O31+aEh3o4AAACDSURBVBhXVY9HDsIAAMMMFChlz7Ipey///3EcyqpvsZRIASCabO6HpJcjJT/X1XCk12qad2oXVNsAC9VBsaz6CKHhPwlMVUukFQ04Z0Wdp/od1RaXrKinGz8R0FRt5iFcq0tgqQYAM31UgMJex3EcxyftfL+oeqvxJpps78ek/3mb5QXcZxu4vsCgTwAAAABJRU5ErkJggg==') !important;
 }
-img.ic_s_cog, img.ic_b_tblops { /* Cog */
+img.ic_s_cog, img.ic_b_tblops{ /* Cog */
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAk1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////ROyVeAAAAMHRSTlMAAQIDBAUHCQ4PEBEYGicoLzdOW19ia4iPkpWrrbK6vsDBw8rR1drc3ujr7e/1+f0xTfl+AAAAhklEQVQYGU3BBxKCMABFwR9jQMXee4mK2N/9T2cyjOiuSkdeqqRTKyAxk6aipOC8Arzn1lAw4GeoaM7XRpFbQtExLQ/7uqQrQU9SRnC3IkolGSKnnKArKSN4Wqm2gEvbNA/gE0UzvrZGQZ+fkQJ3Il8DfsejpchNrd6QmnGmiudl9K/mrEofFOYXIAj9skcAAAAASUVORK5CYII=') !important; 
 }
-img.ic_s_db, img.ic_b_newdb { /* DB */
+img.ic_s_db, img.ic_b_newdb{ /* DB */
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAA0UlEQVQoz6XPsS4EYRRA4Tt2JzYSYTVUREFES6JSKvVU+wAiW2hUW0gkPIReRoSW3jNsI7KFSJQbhUym+BS/IcJUTnVv7inuiQizCr+pHGtFRISRJg6TUDYKgyRsNyhP5pKQa9sycOdZ6c2jwoFVmTwJlRMbutqyiAiZSfN2FE6TcNb4w2YkLOp7UH0dxq7tma7PV/WoJZeb+NxW6sxX3Ni1ZEbHlK51PUMcJWHZy58f3OvUmZk1fbdG3o0NXdi3EFFnlg2Zl3Xm+X8zv/mZmfgAUSFIcADHPOgAAAAASUVORK5CYII=') !important;
 }
-img.ic_b_group { /* DB-group */
+img.ic_b_group{ /* DB-group */
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAz0lEQVQoU73KsSpFAQDH4X/d2yGykYEBo81AxyZJSWcx2DiZ0Z1P7jvY3ZQ6L2BQyuYxGKQ72CWDDJ/B5QWU3/QbvuTPOdJqXZox6UKr1ST2tFpXFuJNobDmUGlfoXCn69m4wrLTeE0Si2qljSRxrWuYJGb1/gV8ajRatdKtRuNF11BfY6AXP9XK3+8ajq4XHJhxr1Z6Mmd7BI5Nu/kGY4k9tVI/SUZgKrGpFx/OrXt2YNW7TWfoeDRQenASSyqVHWM6tlQqK4l5lcquify5Lwrw6xNkG2FzAAAAAElFTkSuQmCC') !important;
 }
-img.ic_s_reload { /* Reload */
+img.ic_s_reload{ /* Reload */
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAA0klEQVQYGaXBsStEcRwA8O9LbzghA1HK4KLc8GS/v8D5DxSLxcZfoJS6wWIw6f4C/4EsVpsMSiaTMhl0Xbo++nn38o7R5xM/ZOatWTETf8kdGai86MgirGpHYsmb3+50DPUiwpyB5ELTpIamS5VeyDxINqLGiVIvbEq2okbLUKkXTvEkixrXKofxfxYVCoXCVIzRUmiET5W9qNGSLIdKN2rknvEYESpn8hix4F6yHhGSvqTv3I4DN0q7kejrmnBs3Id2lEzHN7P23Xr36sq2PEa+AFzp+c67tguQAAAAAElFTkSuQmCC') !important;
 }
-img.ic_b_sqlhelp { /* Doc */
+img.ic_b_sqlhelp{ /* Doc */
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAS1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////+DmQsHAAAAGHRSTlMAAgMFBggJCxASJigxNEpLTHm5uszT3uhw/dMAAAAAVElEQVQYV33MSQ6AMAhAUdQ6DxXH3v+kgiVQY9K/Ii8AQJBgK+FNIexRDEQUENGnMLZUEeE+uJOmKcKs7wUsgaXi6gz8TlbHNZmNL1wpDASutzqABzVTD4elmJh0AAAAAElFTkSuQmCC') !important;
 }
-img.ic_s_loggoff { /* Sign-out */
+img.ic_s_loggoff{ /* Sign-out */
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAY1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+aRQ2gAAAAIHRSTlMAAQUGDQ4PEBESEzk6SkxQUVKgo77H1dfZ5ujp6+3v8ZjbIt8AAABoSURBVBhXhY5HDoAwDAQNIfTeO/v/V1JsEAIk5hLtxHGW6EVSA4iIQp9zVmillEFULmxaLZMlJm8/oS6B0RFRQRhsFrjorYdA/j3RnXnQvMMwNyr55d7DPZrmZ9PZ45u02R7HRIHkX1aSbQumaYekKgAAAABJRU5ErkJggg==') !important;
 }
-img.ic_b_home { /* Home */
+img.ic_b_home{ /* Home */
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAh1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9qkf8RAAAALHRSTlMAAgQGCA0SFB4fICcoKistNERKVnR+f46PoKKqq7e5xcjP09re5Ovt8fP7/eIYXwAAAABsSURBVBhXjY03FoIAAMUCKihWxF5B7OT+53NQcPOZ6SfLh3+JOgTjwdenPiexNj4zTd00IVjfh4v56FGH9rFMdrrtlbYA4ss+OakW3cM5AvLl8Kaq1/4qB0IqP1SEAKhmmTYv7/krFHUo+IcXJhsO/oWZbWkAAAAASUVORK5CYII=') !important;
 }
-img.ic_window-new, img.ic_b_table_add, img.ic_b_index_add, img.ic_b_column_add { /* Plus */
+img.ic_window-new, img.ic_b_table_add, img.ic_b_index_add, img.ic_b_column_add, img.ic_b_insrow{ /* Plus */
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJ1BMVEUAAAD///////////////////////////////////////////////+uPUo5AAAADHRSTlMAAxIUODtkg4WL0/l0+GxtAAAAPklEQVQIW2NgYGDIKGEAA6YzpyEM5jNnCDDmnAGDLQwQ+sxxGOMEwxoI4xiDsLHpmTPGxgpYtGNjMK45CSQBO9QsZmDy9kMAAAAASUVORK5CYII=') !important;
 }
-img.ic_s_collapseall { /* Colapse */
+img.ic_s_collapseall{ /* Colapse */
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAV1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////+ORg7oAAAAHHRSTlMAAQMFBgoMEhQVFicrQUZLUVZsgIaPqLTm7fv9mPsOcgAAAFJJREFUGFeNzssaQCAUReFFKPc7ofd/ToNCGbVm+x+c75DM5kvXMBm/s0AHYFrCbYYo2CrlaiyMvFlYM+GSsUd/cITQsYRQInZvXj1A/vylZAo3ZKAWRkpRz70AAAAASUVORK5CYII=') !important;
 }
-img.ic_s_link { /* Link */
+img.ic_s_link{ /* Link */
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAwFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8Do+ZMAAAAP3RSTlMAAQIDBQgLDQ4TGBkjMDg9Pj9ESVBVVmlscHR3eHt8foKLlJeYmp6goqiqq62vsLnAztHV19ng4uTp7fX3+fsx6b3MAAAAkklEQVQYGQXBBUICUQAFwPnf7sLAWgMXCxUxUFfe/W/FDBb7w14BwMp3kqcKYOkn26XJSwU4yxbOcw3QpsJzKmA3d6VMH8YzAE3aOkgOKYCLfP0mr70uTQEOJu97x8l4lGEBsJM8usoAwLh7+y9usg/w+bGwSk0LcJRTbOYSwG361ru/ZQDlPpNZtwGAcjIdrTEHaPwRxj1jtSYAAAAASUVORK5CYII=') !important;
 }
-img.ic_s_unlink { /* Unlink */
+img.ic_s_unlink{ /* Unlink */
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAA8ElEQVQoz2XRq0pEYRTF8TU3GASDwQfQKV6CKAiKGNViEQwGi8ViGMGiWU7yMSxiESw+gSjTRfQNxCxi+hnOmWEuq3zsvf6wNutLkiQ6Nk2lkqUMS90t+LNabYok0TCfRM0j9s3oYaMPaLjWSOIYO0mipYftRHdgJ+78DMJaer51EtOVnTjFUSakq1BYiLpXHI7Zc8NDyyt2R4Cv8tzh7JsR4A1ro8jeCND2geUkzhUKixNHtn361e6PtSSx5sL2AJnFemW7UrOo6Zl+mC10SvtSsyq46aVs1gruS/JAa+iLSuQdT+pj3VVvw5kHJ6X9DyfUtSY8fMNIAAAAAElFTkSuQmCC') !important;
 }
-img.ic_b_props { /* Table */
+img.ic_b_props{ /* Table */
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMAAQIDBAUGBwgJCg8QGBkaHCFDnfNuI9tmAAAAW0lEQVQYV22POxaAIAwEx6jxh6LA3v+qNhYKTrFF3mbyAjXdeb04O7I+ZFSBgtmmwSyoNwtCDqMAf0KH+67VPWpxj/pxzDAJmJ9oB81KI63Plm+jkMrbUFLz/Q2XwwwPXlkD/AAAAABJRU5ErkJggg==') !important;
 }
-img.ic_pause {
+img.ic_pause{
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAD///////////////////////////////////////////+0CY3pAAAAC3RSTlMAAgUGCAx0o6bT+1M72GgAAAA3SURBVAhbY6jeDQYTGCD07s0MWwUFpQMFBTczbGZg4DZgYKAeYwmEsYkhG2JXAwOTMQgYMcABAAP3JBCxFrkDAAAAAElFTkSuQmCC') !important;
 }
-img.ic_b_index {
+img.ic_b_index, img.ic_s_asci, img.ic_bd_browse, img.ic_b_browse{
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAHlBMVEUAAAD///////////////////////////////////8kfJuVAAAACXRSTlMAAgbR09XX7e8Hj3uzAAAAOklEQVQIW2NggAEhJTBQZKicCQbTGTwhjClwJQyREJGpDJkQxjSElCVEZDJDJ4QxA2EgnAGXwjQZBgBmyidz+iT5OQAAAABJRU5ErkJggg==') !important;
+}
+img.ic_s_passwd{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAclBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9eWEHEAAAAJXRSTlMAAQIFCRESFR0gIy0wMUNVVlx1fIWLlKqrrbK1vL7Hyszk7/P9z4BxiAAAAGVJREFUGFe1yFsCgVAYAOHhuF/qdxdSZPa/RQ9RNmDe5gNgmFdNmQ34lipVz52crOej5cPt56c+EzDR1ELmDoCrixZyA4C9qxaigzUAs8IiIiLuHscAjX0XgJ+3/AfcAA79vzbwBmCxFDrhdWvkAAAAAElFTkSuQmCC') !important;
+}
+img.ic_b_sql{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAOVBMVEUAAAD///////////////////////////////////////////////////////////////////////8KOjVvAAAAEnRSTlMAAQMJExQjJjhvcHGaubq82uj2krslAAAAXklEQVQYV13MwQ6CUAxE0evAEx7q//+nxpCgAouZje2muSdN9RAA4w2PmuUyRcRw9820BBgj8xL4F/ljpAdokd4DNH+kXwP76r19DPvr534fKo1Ko9KoNCqNnu5vmhNjGS0lj0zSoQAAAABJRU5ErkJggg==') !important;
+}
+img.ic_s_rights{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAilBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////2N2iNAAAALXRSTlMAAQMEBgcJCxAREhMUFxkgISMlLkBSZGtxd3yMjo+Ym6C8x8jX5Onv8/X5+/1G/AG+AAAAcUlEQVQYGU3BBxKCQBQFwcGAAVTMARWzCLz7X09YWet389NJ5l2MZS4VK/4iOQneXs4Z7yLnhreVk+INPqpVMa3+aPqQnothiLOW0sk4ig/ShlqsRlWqMQN2Mo7AXcYLKGUFUMgKIJNxBXqnt1p5FvIFhnMZYDvhzY4AAAAASUVORK5CYII=') !important;
+}
+img.ic_s_status{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAY1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+aRQ2gAAAAIHRSTlMAAREaJiwvMjtBREZJVldiZm9we4WRnqCyt7y+3uLx+1j6rVAAAABnSURBVBgZjcFbEoIwEEXBi0aM4Kjg4CsKZ/+rlKICX1Jlt37YPNOr1MLsBDSWBbmfgcazKGk7QK0/VCndNLLs2AF7C/Ks7YDaoxYXeBdacU/pqpmZlUC/s0mQux+AvvJJ1Kj4wENrvuU5CVAEeeMMAAAAAElFTkSuQmCC') !important;
+}
+img.ic_b_export{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAkFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+WABnwAAAAL3RSTlMAAQIGCAkLDA0QJy4xNjc4OTpHUVVXWV9kc4+SlJWYoKWtr7K0usXHzM7X2e3v8+0310IAAAB0SURBVBgZjcFXEoJAFEXBO5gdzAkTKOYAZ/+78wFF+and+s/0lh37+oopLFQbUBkuJyrFwLw9w6xl3AMI5TF3ScEFE8pjTg1pBUS+paaPgHdPTyB1koIzJlWGSZzcgZI2FLZuR+mlTk4hozKWuvuc2nWk3z4hLBWk1u2XiAAAAABJRU5ErkJggg==') !important;
+}
+img.ic_b_import{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAk1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////ROyVeAAAAMHRSTlMAAgMEBQYIDg8YISouLzAxNztARlBRWVtrfn+Mjo+UlZqruby+wMPFzM/X5vH1+/05JPdbAAAAdElEQVQYGY3B2RaBUACG0Z9UJEmGzBxDhPje/+l0zmJxx976T2rKZUcfc6yB3ro49yTvy1kBJjhQG8kqYNeQdwaMahs4NSX5F1hIGgN55CuIpkDhqcSKleHMdMOKleFctcYatiY4e4UV33pSe1vx8jgm+u0JEXYV0r1GVPMAAAAASUVORK5CYII=') !important;
+}
+img.ic_s_replication{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAKlBMVEUAAAD///////////////////////////////////////////////////+Gu8ovAAAADXRSTlMAAQITFHCGiby+1df9w7BZJgAAAEhJREFUCFtjYIABRiUlBgYlJQGG2rt3N2nfvXud4e7du1d8gQQWxtm7dy/b3r17hyHm7t1JGnfvHkVoz717d5HW3bvXSNMOAwCDDUktzzpCdgAAAABJRU5ErkJggg==') !important;
+}
+img.ic_b_more{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAD///////////////////////////////////////////+0CY3pAAAAC3RSTlMAAw4dNVddZ3TX6OuhbfAAAAA4SURBVAjXY2DADTw6wKCQYfZuMNjMoAVhJDAwrQbR24CKtCACDGChbWB9WhABkNA2qFGaAQzEAQDaOR0AEHjNNAAAAABJRU5ErkJggg==') !important;
+}
+img.ic_s_vars{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAllBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AJcWoAAAAMXRSTlMAAQIEBQYIChARExUWGiEqLS8yN0BBRUZJV1hbYWhrd3h5fIOPnaClqK+1urzc3uv5jjRDGQAAAH5JREFUGFddzkcOwkAQRNHvApNzMDmYHBzo+1+OhT0exF8+qVsFDyvK1xRZKEkKLTqWIABkzOI/INr8AJmZ5R4aN6TQStCewWXcRw7OWxarTlZ3MH1CPGJ+dzB5wbvN8lqdnHZ81E1rFQTbZsqw559C6+DG+WEVJOZLAAh8wBcGeg7BSkCdrQAAAABJRU5ErkJggg==') !important;
+}
+img.ic_b_engine{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAA3UlEQVQYGZ3BsSqEAQAH8H+xieFGpRSu8A7HPQCvoDBcGSgDUkzqpnsEmQwmeQK6lHTxCgaJDAZ9yfTT90lHsfj98k92TWvazF90lA7SZ8m7lVRsuDdizJ2NJMb1TDnHhSk9dWfeDBjy5jSJWz+dJ9ruPdtLSR2FeTVNBSYSxxa1HCWxpoe5VDTRtZo+n2qpqKmkz7JLNFIxj2vr+c4kXjXUzCkwmTi2oOUwJV0/XSXanrzYS8mYG9Mu0FV3a9aJwqBhhZN8sYJWKnY8GjLqwXZ+p6N0kL/YN6NpK/kAftvhn6iMQ/8AAAAASUVORK5CYII=') !important;
+}
+img[alt="Plugins"]{
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAjVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8DizOFAAAALnRSTlMAAQMHCAsPFRYeICgqNDU9P1BUXF1ebHd4e4KDjJKVm6W+wMfK3ODm6e/19/n9hOPSmAAAAHFJREFUGBl9wVcOglAAAMHF3nsXsTeUvf/xNJC84I8zfDXVNiV1zWqUbZ3zY+KA4JIs48x0l5zO5Az25AxW5Aw2UKmCwas/fdtDfbRoXC3EqGtgoek40RnqEaKLxtAZRvjVZaQeyKnPJt2b3ilEEX99AIdaE/opkhztAAAAAElFTkSuQmCC') !important;
+}
+img.ic_b_no_favorite{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAjVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8DizOFAAAALnRSTlMAAQIEBQYICgwPERMVFxwsLTM1QkpMUmNkbHR1fIORlJWYo6WrucDHzOnt8fn7wPC46AAAAHFJREFUGBldwQcSgjAARcEniIVi7w27RuTf/3gyScaJ7uJF/DnO+ZHKRIQO0oxAX5KJ8JJifFVjP8xi4FQrUC0oKgWeCWQvfT3aNFIj7x5jjeR1cabycpytvAnOTarXpaQVzlu7DuQXnbFamx7WYAl8ADfoE9osbr20AAAAAElFTkSuQmCC') !important;
+}
+img.ic_bd_select, img.ic_b_select, img.ic_b_search{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAnFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+TINBkAAAAM3RSTlMAAQIDBwgJDg8RExcdICMzPUJERUdMUVJcX2F5e36FiZigoqWrtcPF2eDi5Obp6+/z+fuRCq6wAAAAiklEQVQYGVXBRwKCMABFwU8QFbtgwV6wV/Dd/26GZKMzspIbUC5r8swB79mWs4VVHEbDN8+arC6MVWm8Wcpac5Q3pDSSLqTyImhJKujLC6Ej6UQmL4ampBkPI2fFXVb9Q25kjWGkSgKPrJ8egamc5IPzgomcaH4urpuuyWGqX8EeBvoV7FjoT9AzXxZnEVySl7A0AAAAAElFTkSuQmCC') !important;
+}
+img.ic_b_empty, img.ic_bd_empty{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAb1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8v0wLRAAAAJHRSTlMAAQIEBQYHCAwSExQVHB4gMUNEUVZmbXN5f4WgsLfo8fP5+/2qkLc8AAAAbklEQVQYV62OSRKCQBAEc3ooxV1A3Dew//9GDsOgDzBvlR0dVQDU7u5HJqxbm6kvU4pS9ZxJureSgJf/8DHg2uTX/QOS2DIv2YRJFF4cLvjqryJ6bM50i29tAAh5x6llpLoBsHzn4f0uHYJGDGAAqYIMHMti20oAAAAASUVORK5CYII=') !important;
+}
+img.ic_b_drop, img.ic_bd_drop{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAA60lEQVQYGW3BO0tbAQAG0O96ry+Kz1qyCoKDoItbHBx07NTBnyP9NV1cSikIIUiDuDgIjjpkkpAgGTsUh9PevDDQczLl2DdjbeeKvGfVnXldO5myrI8nJ5YVlhy5xx8fM+Y7rpSZULlVe1YksYueKhMqHfQ84DSJS3zJhEoHfWsOcZ3EI3YyovQLfeuJRbUifmM1/yjdYGAjI2pVPKKRKLXxajMjKrUivuJCqYVXm5lwgHYSexhqYWgrMzo4S81PtaHtzLhEV5GaFQN0NS0lSvtu8OZTpnxwb96LRuZp+mHszmcL+R+FSpE5fwE9OQRHpWn73wAAAABJRU5ErkJggg==') !important;
+}
+img.ic_b_print{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAWlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////9ZMre9AAAAHXRSTlMAAQIEBQYMEBEUFh8pMDVndXi+w8fT2drg7/H1/aw3RS8AAABdSURBVBhXbY5HDoBADMSG3nsv/v83ObDAroRPkUeTRPphAYC1eAShJCWcpSOild2zhSSiX9Ecn2DIFQNjf0Ndzcqw6FpcAbd4K4BSsJay2effYXr6m2+SwGA+d7kAsCgLPvaWfLAAAAAASUVORK5CYII=') !important;
+}
+img.ic_b_tblanalyse{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAYFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////98JRy6AAAAH3RSTlMAAQIDBAkeJig1PFZiaXB5e4CCoKKwtMPFyNHk+fv9DpWzrAAAAGhJREFUGFe1zrsSgkAQRNE7qOODxVlFZZFH//9fGpBsQOoJb1VXNUCaM0CeWzbLSQam4wRAKmo0ljKKdUiApIMkSSatW6gAunjn/nL3u58FqOEKAdyw/fCMd8Q3Ij7x+Nukr4/2AFaBH9xFC/z5vDowAAAAAElFTkSuQmCC') !important;
+}
+img.ic_b_events{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAA4klEQVQoU23OPyuFYRyH8e9znMefyMQrMGCxyaIsykQmb8ZgMvEilLJYpAwMSlI6A5PhSAYToyRJ+hjOczgPrunXfV33776TCjN2vOHTgXlFelHaV+fSyI9uuseDJcMaBs1q4dVoN9jFkbJnY2EbV4okJvDY1UovVXKBxSQ2sfZ9t59qmsF5Em2M/xM0QRHvGEoSDf3Gu0ECyrjDWJLYAM+1DY3Ywkr+YBqtJKbwoPknOMFyZzzEnkZNr6NdnRnwhBtzykSfScf46Pyskww5U+e2RyeJwoLTSl5brT/Ym5W/1RcsJuQY5GrcXgAAAABJRU5ErkJggg==') !important;
 }
 
 /*
-img.ic_b_sqlhelp {
+img.ic_b_engine{
     background-image: url('') !important;
 }
 */
@@ -455,24 +498,24 @@ img.ic_b_sqlhelp {
     ---------------------------------------------------------------------------
 */
 
-h2 img {
+h2 img{
     display: none;
 }
 
-h2 a img {
+h2 a img{
     display: inline;
 }
 
 .data,
-.data_full_width {
+.data_full_width{
     margin: 10px 0;
 }
 
-.data_full_width {
+.data_full_width{
     width: 100%;
 }
 
-h3 {
+h3{
     font-family: "open sans extrabold", "segoe black";
     text-transform: uppercase;
     font-weight: normal;
@@ -484,7 +527,7 @@ a:link,
 a:visited,
 a:active,
 button.mult_submit,
-.checkall_box+label {
+.checkall_box+label{
     text-decoration: none;
     color: <?php echo $GLOBALS['cfg']['MainLinkColor']; ?>;
     cursor: pointer;
@@ -495,128 +538,112 @@ button.mult_submit,
 a:hover,
 button.mult_submit:hover,
 button.mult_submit:focus,
-.checkall_box+label:hover {
+.checkall_box+label:hover{
     text-decoration: underline;
     color: <?php echo $GLOBALS['cfg']['MainLinkColor']; ?>;
 }
 
-#initials_table
-{
+#initials_table{
     background: <?php echo $GLOBALS['cfg']['ThBackground']; ?>;
     border: 1px solid <?php echo $GLOBALS['cfg']['ThBorderColor']; ?>;
     margin-bottom: 10px;
 }
 
-#initials_table td
-{
+#initials_table td{
     padding:8px !important;
 }
 
-#initials_table a
-{
+#initials_table a{
     border: 1px solid <?php echo $GLOBALS['cfg']['ThBorderColor']; ?>;
     background: <?php echo $GLOBALS['cfg']['ThBackground']; ?>;
     padding: 4px 8px;
 }
 
-dfn:hover {
+dfn:hover{
     cursor: help;
 }
 
-.data th
-{
+.data th{
     border-bottom: 1px solid <?php echo $GLOBALS['cfg']['BorderColor']; ?>;
 }
 
-th, th a
-{
+th, th a{
     font-family: "open sans bold";
-    color: <?php echo $GLOBALS['cfg']['ThColor']; ?> !important;
+    color: <?php echo $GLOBALS['cfg']['MainColor']; ?> !important;
     font-weight: normal;
 }
 
-.data th a:hover
-{
+.data th a:hover{
     color: #999 !important;
 }
 
 .column_heading,
-.column_action
-{
+.column_action{
     border: 1px solid <?php echo $GLOBALS['cfg']['BorderColor']; ?>;
     background-color: #f6f6f6;
 }
 
-a img {
+a img{
     border: 0;
 }
 
-hr
-{
+hr{
     color: <?php echo $GLOBALS['cfg']['BorderColor']; ?>;
     background-color: <?php echo $GLOBALS['cfg']['BorderColor']; ?>;
     border: 0;
     height: 1px;
 }
 
-form {
+form{
     padding: 0;
     margin: 0;
     display: inline;
 }
 
-input[type=text], input[type=password], input[type=number]
-{
-    border: 1px solid <?php echo $GLOBALS['cfg']['BrowseGrayColor']; ?>;
-    color: <?php echo $GLOBALS['cfg']['ThColor']; ?>;
+input[type=text], input[type=password], input[type=number]{
+    border: 1px solid <?php echo $GLOBALS['cfg']['InputBorder']; ?>;
+    color: <?php echo $GLOBALS['cfg']['InputText']; ?>;
     padding: 5px;
     margin: 6px;
     font-family: <?php echo $GLOBALS['cfg']['FontFamily']; ?>;
-    background-color: <?php echo $GLOBALS['cfg']['MainBackground']; ?>;
+    background-color: <?php echo $GLOBALS['cfg']['InputBackground']; ?>;
 }
 
-input[type=text]:focus, input[type=password]:focus, input[type=number]:focus
-{
-    border: 1px solid <?php echo $GLOBALS['cfg']['NaviHoverBackground']; ?>;
-    color: <?php echo $GLOBALS['cfg']['MainColor']; ?>;
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus{
+    border: 1px solid <?php echo $GLOBALS['cfg']['InputBorderHover']; ?>;
 }
 
-input[type=submit], input[type=reset], input[type=button]
-{
+input[type=submit], input[type=reset], input[type=button]{
     margin-left: 14px;
-    border: 1px solid <?php echo $GLOBALS['cfg']['ButtonBackground']; ?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['ButtonBorder']; ?>;
     padding: 4px;
-    color: <?php echo $GLOBALS['cfg']['ButtonColor']; ?>;
+    color: <?php echo $GLOBALS['cfg']['ButtonText']; ?>;
     text-decoration: none;
     background-color: <?php echo $GLOBALS['cfg']['ButtonBackground']; ?>;
     font-family: <?php echo $GLOBALS['cfg']['FontFamily']; ?>;
 }
 
-input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover
-{
+input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover{
     position: relative;
     cursor:pointer;
-    background-color: <?php echo $GLOBALS['cfg']['ButtonHover']; ?>;
-    border: 1px solid <?php echo $GLOBALS['cfg']['ButtonHover']; ?>;
+    background-color: <?php echo $GLOBALS['cfg']['ButtonBackgroundHover']; ?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['ButtonBorderHover']; ?>;
 
 }
 
-input[type=submit]:active, input[type=reset]:active, input[type=button]:active
-{
+input[type=submit]:active, input[type=reset]:active, input[type=button]:active{
     position: relative;
     background-color: #333;
     border: 1px solid #333;
 }
 
-.sqlbutton, #tablefieldinsertbuttoncontainer input[type=button]
-{
+.sqlbutton, #tablefieldinsertbuttoncontainer input[type=button]{
     margin-top: 1em;
     margin-left: 0 !important;
     margin-right: 14px !important;
 }
 
-button
-{
+button{
     margin-left: 14px;
     padding: 4px;
     color: <?php echo $GLOBALS['cfg']['ButtonColor']; ?>;
@@ -624,16 +651,14 @@ button
     background-color: <?php echo $GLOBALS['cfg']['ButtonBackground']; ?>;
 }
 
-textarea
-{
+textarea{
     overflow: visible;
     border: 1px solid <?php echo $GLOBALS['cfg']['BrowseGrayColor']; ?>;
     color: <?php echo $GLOBALS['cfg']['ThColor']; ?>;
     background-color: <?php echo $GLOBALS['cfg']['MainBackground']; ?>;
 }
 
-fieldset
-{
+fieldset{
     margin-top: 20px;
     padding: 5px;
     border: 1px solid <?php echo $GLOBALS['cfg']['BorderColor']; ?>;
@@ -641,52 +666,49 @@ fieldset
     background-color: <?php echo $GLOBALS['cfg']['ThBackground']; ?>;
 }
 
-fieldset fieldset
-{
+fieldset fieldset{
     margin: 20px;
     margin-bottom: 0;
     background-color: <?php echo $GLOBALS['cfg']['MainBackground']; ?>;
     border: none;
 }
 
-legend
-{
+legend{
   padding: 0 5px;
 }
 
-.some-margin {
+.some-margin{
     margin: 20px;
 }
 
 /* buttons in some browsers (eg. Konqueror) are block elements,
    this breaks design */
-button {
+button{
     display: inline;
 }
 
 table caption,
 table th,
-table td {
+table td{
     padding: 0.6em;
     vertical-align: top;
 }
 
-table {
+table{
     border-collapse: collapse;
 }
 
-th {
+th{
     text-align: left;
 }
 
 
 img,
-button {
+button{
     vertical-align: middle;
 }
 
-select
-{
+select{
     border: 1px solid <?php echo $GLOBALS['cfg']['BrowseGrayColor']; ?>;
     color: <?php echo $GLOBALS['cfg']['ThColor']; ?>;
     padding: 4px;
@@ -696,140 +718,107 @@ select
     max-width: 17em;
 }
 
-select:focus
-{
+select:focus{
     border: 1px solid <?php echo $GLOBALS['cfg']['NaviHoverBackground']; ?>;
     color: <?php echo $GLOBALS['cfg']['MainColor']; ?>;
 }
-
-select[multiple] {
-
-}
-
 /*
     ---------------------------------------------------------------------------
     Classes
     ---------------------------------------------------------------------------
 */
 
-.clearfloat {
+.clearfloat{
     clear: both;
 }
 
-.floatleft {
+.floatleft{
     float: <?php echo $left; ?>;
     margin-<?php echo $right; ?>: 1em;
 }
 
-.floatright {
+.floatright{
     float: <?php echo $right; ?>;
 }
 
-.center {
+.center{
     text-align: center;
 }
 
-.displayblock {
+.displayblock{
     display: block;
 }
 
-table.nospacing {
+table.nospacing{
     border-spacing: 0;
 }
 
-table.nopadding tr th, table.nopadding tr td {
+table.nopadding tr th, table.nopadding tr td{
     padding: 0;
 }
 
-th.left, td.left {
+th.left, td.left{
     text-align: left;
 }
 
-th.center, td.center {
+th.center, td.center{
     text-align: center;
 }
 
-th.right, td.right {
+th.right, td.right{
     text-align: right;
     padding-right: 1em;
 }
 
-tr.vtop th, tr.vtop td, th.vtop, td.vtop {
+tr.vtop th, tr.vtop td, th.vtop, td.vtop{
     vertical-align: top;
 }
 
-tr.vmiddle th, tr.vmiddle td, th.vmiddle, td.vmiddle {
+tr.vmiddle th, tr.vmiddle td, th.vmiddle, td.vmiddle{
     vertical-align: middle;
 }
 
-tr.vbottom th, tr.vbottom td, th.vbottom, td.vbottom {
+tr.vbottom th, tr.vbottom td, th.vbottom, td.vbottom{
     vertical-align: bottom;
 }
 
-.paddingtop {
+.paddingtop{
     padding-top: 1em;
 }
 
-.separator {
+.separator{
     color: #fff;
 }
 
-.result_query
-{
+.result_query{
     background: <?php echo $GLOBALS['cfg']['ThBackground']; ?>;
     margin-bottom: 20px;
 }
 
-div.tools
-{
+div.tools{
     padding: 10px;
     text-align: <?php echo $right; ?>;
 }
 
-div.tools span {
+div.tools span{
     float: <?php echo $right; ?>;
     margin: 6px 2px;
 }
 
-div.tools a
-{
+div.tools a{
     color: <?php echo $GLOBALS['cfg']['BlueHeader']; ?> !important;
 }
 
-.chrome input[type="checkbox"] {
-    left: -9999px;
-    position: relative;
-}
-
-.chrome input[type="checkbox"]:before {
-    font-family: 'IcoMoon';
-    content: "";
-    color: <?php echo $GLOBALS['cfg']['ThColor']; ?>;
-    cursor: default;
-    position: absolute;
-    padding: 4px;
-    top: 0;
-    left: 9995px;
-}
-
-.chrome input[type="checkbox"]:indeterminate:before {
-    content: "";
-}
-
-.chrome input[type="checkbox"]:checked:before {
-    content: "";
-}
-
-.chrome .navigation input[type="checkbox"]:before {
+.chrome .navigation input[type="checkbox"]:before{
     color: #fff;
 }
 
-.chrome input[type="radio"] {
+.chrome input[type="radio"]{
     left: -9999px;
     position: relative;
 }
 
-.chrome input[type="radio"]:before {
+.chrome input[type="radio"]:before{
     font-family: 'IcoMoon';
     content: "";
     color: <?php echo $GLOBALS['cfg']['ThColor']; ?>;
@@ -840,17 +829,15 @@ div.tools a
     left: 9995px;
 }
 
-.chrome input[type="radio"]:checked:before {
+.chrome input[type="radio"]:checked:before{
     content: "";
 }
 
-tr.noclick td:first-child:before
-{
+tr.noclick td:first-child:before{
     content: "";
 }
 
-fieldset.tblFooters
-{
+fieldset.tblFooters{
     margin-top: -1px;
     border-top: 0;
     text-align: <?php echo $right; ?>;
@@ -858,15 +845,14 @@ fieldset.tblFooters
     clear: both;
 }
 
-div.null_div {
+div.null_div{
     height: 20px;
     text-align: center;
     font-style: normal;
     min-width: 50px;
 }
 
-fieldset .formelement
-{
+fieldset .formelement{
     float: <?php echo $left; ?>;
     margin-<?php echo $right; ?>: 0.5em;
 }
@@ -877,12 +863,11 @@ fieldset .formelement
     ---------------------------------------------------------------------------
 */
 
-fieldset div[class=formelement] {
+fieldset div[class=formelement]{
     white-space: normal;
 }
 
-button.mult_submit
-{
+button.mult_submit{
     border: none;
     background-color: transparent;
     color: <?php echo $GLOBALS['cfg']['BrowsePointerColor']; ?>;
@@ -891,33 +876,19 @@ button.mult_submit
 
 /* odd items 1,3,5,7,... */
 table tr.odd th,
-.odd
-{
-    background: <?php echo $GLOBALS['cfg']['BgTwo']; ?>;
+.odd{
+    background: <?php echo $GLOBALS['cfg']['TableOdd']; ?>;
     border-bottom: none;
 }
 
 /* even items 2,4,6,8,... */
 /* (tested on CRTs and ACLs) */
 table tr.even th,
-.even
-{
-    background: <?php echo $GLOBALS['cfg']['BgOne']; ?>;
+.even{
+    background: <?php echo $GLOBALS['cfg']['TableEven']; ?>;
     border-bottom: none;
 }
-
-/* odd table rows 1,3,5,7,... */
-table tr.odd th,
-table tr.odd,
-table tr.even th,
-table tr.even
-{
-    text-align: <?php echo $left; ?>;
-    border-bottom: 1px solid #eee;
-}
-
-table tr.odd, table tr.even
-{
+table tr.odd, table tr.even{
     border-left: 3px solid transparent;
 }
 
@@ -925,18 +896,15 @@ table tr.odd, table tr.even
 td.marked:not(.nomarker),
 table tr.marked:not(.nomarker) td,
 table tr.marked:not(.nomarker) th,
-table tr.marked:not(.nomarker)
-{
+table tr.marked:not(.nomarker){
     color: <?php echo $GLOBALS['cfg']['MainColor']; ?>;
 }
 
-td.marked:not(.nomarker)
-{
+td.marked:not(.nomarker){
     background-color: <?php echo $GLOBALS['cfg']['BrowseMarkerBackground']; ?>;
 }
 
-table tr.marked:not(.nomarker)
-{
+table tr.marked:not(.nomarker){
     border-left: 3px solid #24A0DA;
 }
 
@@ -949,46 +917,38 @@ table tr.marked:not(.nomarker)
 .odd:not(.nopointer):hover,
 .even:not(.nopointer):hover,
 .hover:not(.nopointer),
-.structure_actions_dropdown
-{
-    background-color: <?php echo $GLOBALS['cfg']['BrowseMarkerBackground']; ?>;
-    color: <?php echo $GLOBALS['cfg']['MainColor']; ?>;
+.structure_actions_dropdown{
+    background-color: <?php echo $GLOBALS['cfg']['TableHover']; ?>;
 }
 
-.structure_actions_dropdown .icon
-{
+.structure_actions_dropdown .icon{
     vertical-align: middle !important;
 }
 
 /* hovered table rows */
 table tr.odd:not(.nopointer):hover th,
 table tr.even:not(.nopointer):hover th,
-table tr.hover:not(.nopointer) th
-{
-    background-color: <?php echo $GLOBALS['cfg']['BrowseMarkerBackground']; ?>;
-    color: <?php echo $GLOBALS['cfg']['ThPointerColor']; ?>;
+table tr.hover:not(.nopointer) th{
+    background-color: <?php echo $GLOBALS['cfg']['TableHover']; ?>;
 }
 
 /* marks table rows/cells if the db field is in a where condition */
 
-.condition
-{
+.condition{
     border-color: <?php echo $GLOBALS['cfg']['BrowseWarningColor']; ?> !important;
 }
 
-th.condition, th.condition a
-{
+th.condition, th.condition a{
     border: 1px solid <?php echo $GLOBALS['cfg']['BrowseWarningColor']; ?>;
     background: <?php echo $GLOBALS['cfg']['BrowseWarningColor']; ?>;
     color: <?php echo $GLOBALS['cfg']['MainBackground']; ?> !important;
 }
 
-td.condition
-{
+td.condition{
     border: 1px solid;
 }
 
-<?php if ($GLOBALS['text_dir'] === 'ltr') { ?>
+<?php if ($GLOBALS['text_dir'] === 'ltr'){ ?>
 /* for first th which must have right border set (ltr only) */
 
 <?php } ?>
@@ -996,45 +956,45 @@ td.condition
 /**
  * cells with the value NULL
  */
-td.null {
+td.null{
     font-style: italic;
     text-align: <?php echo $right; ?>;
 }
 
-table .valueHeader {
+table .valueHeader{
     text-align: <?php echo $right; ?>;
     white-space: normal;
 }
-table .value {
+table .value{
     text-align: <?php echo $right; ?>;
     white-space: normal;
 }
 /* IE doesnt handles 'pre' right */
-table [class=value] {
+table [class=value]{
     white-space: normal;
 }
 
 
-<?php if (! empty($GLOBALS['cfg']['FontFamilyFixed'])) { ?>
-.value {
+<?php if (! empty($GLOBALS['cfg']['FontFamilyFixed'])){ ?>
+.value{
     font-family: <?php echo $GLOBALS['cfg']['FontFamilyFixed']; ?>;
 }
 <?php } ?>
-.attention {
+.attention{
     color: red;
     font-weight: bold;
 }
 
-.allfine {
+.allfine{
     color: green;
 }
 
 
-img.lightbulb {
+img.lightbulb{
     cursor: pointer;
 }
 
-.pdflayout {
+.pdflayout{
     overflow: hidden;
     clip: inherit;
     background-color: #fff;
@@ -1043,7 +1003,7 @@ img.lightbulb {
     position: relative;
 }
 
-.pdflayout_table {
+.pdflayout_table{
     background: #D3DCE3;
     color: #000;
     overflow: hidden;
@@ -1058,35 +1018,34 @@ img.lightbulb {
 }
 
 /* Doc links in SQL */
-.cm-sql-doc {
+.cm-sql-doc{
     text-decoration: none;
     border-bottom: 1px dotted #999999;
     color: inherit !important;
 }
 
 /* no extra space in table cells */
-td .icon {
+td .icon{
     margin: 0;
 }
 
-.selectallarrow {
+.selectallarrow{
     margin-<?php echo $right; ?>: .3em;
     margin-<?php echo $left; ?>: .6em;
 }
 
 /* message boxes: error, confirmation */
-#pma_errors, #pma_demo, #pma_footer {
+#pma_errors, #pma_demo, #pma_footer{
     padding: 20px;
 }
 
-#pma_errors #pma_errors
-{
+#pma_errors #pma_errors{
     padding: 0;
 }
 
 .success h1,
 .notice h1,
-div.error h1 {
+div.error h1{
     text-align: <?php echo $left; ?>;
     margin: 0 0 0.2em 0;
     color: <?php echo $GLOBALS['cfg']['NaviColor']; ?>;
@@ -1095,97 +1054,93 @@ div.error h1 {
 div.success,
 div.notice,
 div.error,
-div.footnotes {
+div.footnotes{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     margin: 20px 0 20px;
     border: 1px solid;
     background-repeat: no-repeat;
-        <?php if ($GLOBALS['text_dir'] === 'ltr') { ?>
+        <?php if ($GLOBALS['text_dir'] === 'ltr'){ ?>
     background-position: 10px 50%;
     padding: 10px 10px 10px 10px;
-        <?php } else { ?>
+        <?php } else{ ?>
     background-position: 99% 50%;
     padding: 10px 35px 10px 10px;
         <?php } ?>
-
 }
 
-div.success
-{
+div.success{
     margin: 0 0 1em 0;
     border: none;
 }
 
 .success a,
 .notice a,
-.error a {
+.error a{
     text-decoration: underline;
     color: <?php echo $GLOBALS['cfg']['ButtonColor']; ?>;
 }
 
-.success {
+.success{
     color: <?php echo $GLOBALS['cfg']['ButtonColor']; ?>;
     background-color: <?php echo $GLOBALS['cfg']['BrowseSuccessColor']; ?>;
 }
 
 h1.success,
-div.success {
+div.success{
     border-color: <?php echo $GLOBALS['cfg']['BrowseSuccessColor']; ?>;
 }
 
-.notice, .footnotes
-{
+.notice{
+    color: <?php echo $GLOBALS['cfg']['NoticeText']; ?>;
+    background-color: <?php echo $GLOBALS['cfg']['NoticeBackground']; ?>;
+}
+
+.footnotes{
     color: <?php echo $GLOBALS['cfg']['ButtonColor']; ?>;
     background-color: <?php echo $GLOBALS['cfg']['BlueHeader']; ?>;
 }
 
 h1.notice,
 div.notice,
-div.footnotes
-{
+div.footnotes{
     border-color: <?php echo $GLOBALS['cfg']['BlueHeader']; ?>;
 }
 
-.notice a
-{
+.notice a{
     color: <?php echo $GLOBALS['cfg']['ButtonColor']; ?>;
 }
 
-.error
-{
+.error{
     border: 1px solid <?php echo $GLOBALS['cfg']['BrowseWarningColor']; ?> !important;
     color: <?php echo $GLOBALS['cfg']['ButtonColor']; ?>;
     background-color: <?php echo $GLOBALS['cfg']['BrowseWarningColor']; ?>;
 }
 
 h1.error,
-div.error
-{
+div.error{
     border-color: <?php echo $GLOBALS['cfg']['MainColor']; ?>;
 }
 
-.confirmation
-{
+.confirmation{
     color: <?php echo $GLOBALS['cfg']['ButtonColor']; ?>;
     background-color: <?php echo $GLOBALS['cfg']['BrowseWarningColor']; ?>;
 }
 
-fieldset.confirmation legend
-{
+fieldset.confirmation legend{
     background-color: <?php echo $GLOBALS['cfg']['BrowseWarningColor']; ?>;
 }
 
 /* end messageboxes */
 
-.tblcomment {
+.tblcomment{
     font-size: 70%;
     font-weight: normal;
     color: #000099;
 }
 
-.tblHeaders {
+.tblHeaders{
     font-family: "open sans bold";
     color: <?php echo $GLOBALS['cfg']['ThColor']; ?>;
     background: <?php echo $GLOBALS['cfg']['ThBackground']; ?>;
@@ -1193,7 +1148,7 @@ fieldset.confirmation legend
 }
 
 div.tools,
-.tblFooters {
+.tblFooters{
     font-weight: normal;
     color: <?php echo $GLOBALS['cfg']['ThColor']; ?>;
     background: <?php echo $GLOBALS['cfg']['ThBackground']; ?>;
@@ -1207,18 +1162,18 @@ div.tools a:visited,
 div.tools a:active,
 .tblFooters a:link,
 .tblFooters a:active,
-.tblFooters a:visited {
+.tblFooters a:visited{
     color: #0000FF;
 }
 
 .tblHeaders a:hover,
 div.tools a:hover,
-.tblFooters a:hover {
+.tblFooters a:hover{
     color: #FF0000;
 }
 
 /* forbidden, no privileges */
-.noPrivileges {
+.noPrivileges{
     color: #FF0000;
     font-weight: bold;
 }
@@ -1227,22 +1182,22 @@ div.tools a:hover,
 .disabled,
 .disabled a:link,
 .disabled a:active,
-.disabled a:visited {
+.disabled a:visited{
     color: #666;
 }
 
-.disabled a:hover {
+.disabled a:hover{
     color: #666;
     text-decoration: none;
 }
 
 tr.disabled td,
-td.disabled {
+td.disabled{
     background-color: #f3f3f3;
     color: #aaa;
 }
 
-.nowrap {
+.nowrap{
     white-space: nowrap;
 }
 
@@ -1251,34 +1206,32 @@ td.disabled {
 
 /* topmenu */
 
-#topmenu .error {
+#topmenu .error{
     background: #eee;
     border: 0 !important;
     color: #aaa;
 }
 
 ul#topmenu,
-ul#topmenu2
-{
+ul#topmenu2{
     list-style-type: none;
     margin: 0;
     height: 48px;
 }
 
-ul.tabs
-{
+ul.tabs{
     list-style-type: none;
     margin: 0;
 }
 
-ul#topmenu2 {
+ul#topmenu2{
     margin: -20px -10px 20px;
     padding: 10px;
     clear: both;
 }
 
 ul#topmenu li,
-ul#topmenu2 li {
+ul#topmenu2 li{
     float: <?php echo $left; ?>;
     margin: 0;
     vertical-align: middle;
@@ -1287,27 +1240,26 @@ ul#topmenu2 li {
 }
 
 #topmenu img,
-#topmenu2 img {
+#topmenu2 img{
     margin-right: .5em;
     vertical-align: -3px;
 }
 
-.menucontainer {
+.menucontainer{
     background-color: <?php echo $GLOBALS['cfg']['ThBackground']; ?>;
     height: 48px;
 }
 
 /* default tab styles */
-#topmenu .tabactive {
-    background: #fff !important;
+#topmenu .tabactive{
+    background: <?php echo $GLOBALS['cfg']['NaviActive']; ?> !important;
 }
 
-#topmenu2 .tabactive
-{
+#topmenu2 .tabactive{
     background: #ccc;
 }
 
-ul#topmenu2 a {
+ul#topmenu2 a{
     display: block;
     margin: 7px 0;
     margin-<?php echo $left; ?>: 0;
@@ -1320,124 +1272,111 @@ ul#topmenu2 a {
     background-color: #f6f6f6;
 }
 
-fieldset.caution
-{
+fieldset.caution{
     background: <?php echo $GLOBALS['cfg']['BrowseWarningColor']; ?>;
     border: 1px solid <?php echo $GLOBALS['cfg']['BrowseWarningColor']; ?>;
 }
 
-fieldset.caution legend
-{
+fieldset.caution legend{
     background-color: #fff;
 }
 
-fieldset.caution a
-{
+fieldset.caution a{
     font-family: 'Open Sans Bold';
     text-transform: uppercase;
     color: <?php echo $GLOBALS['cfg']['ButtonColor']; ?>;
     font-weight: normal;
 }
 
-fieldset.caution ul, #tbl_maintenance
-{
+fieldset.caution ul, #tbl_maintenance{
     padding: 0;
 }
 
-fieldset.caution li, #tbl_maintenance li
-{
+fieldset.caution li, #tbl_maintenance li{
     display: block;
 }
 
-fieldset.caution li:before
-{
+fieldset.caution li:before{
     font-family: 'IcoMoon';
     content: "";
     color: <?php echo $GLOBALS['cfg']['ButtonColor']; ?>;
     margin-right: 10px;
 }
 
-fieldset.caution li a:nth-child(2) img
-{
+fieldset.caution li a:nth-child(2) img{
     background: url('./themes/metro/img/s_info.png') !important;
 }
 
-#tbl_maintenance li a
-{
+#tbl_maintenance li a{
     font-family: 'Open Sans Bold';
     text-transform: uppercase;
     font-weight: normal;
 }
 
-#tbl_maintenance li:before
-{
+#tbl_maintenance li:before{
     font-family: 'IcoMoon';
     content: "%";
     margin-right: 10px;
 }
 
-#topmenu {
+#topmenu{
     padding-left: 20px;
     padding-right: 20px;
 }
 
-ul#topmenu ul {
-
+ul#topmenu ul a{
+    color: <?php echo $GLOBALS['cfg']['DropdownText']; ?>;
+}
+ul#topmenu ul{
+    background-color: <?php echo $GLOBALS['cfg']['DropdownBackground']; ?>;
+    color: <?php echo $GLOBALS['cfg']['DropdownText']; ?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['DropdownBorder']; ?>;
 }
 
-ul#topmenu ul.only {
+ul#topmenu ul.only{
     <?php echo $left; ?>: 0;
-}
-
-ul#topmenu > li {
-
 }
 
 /* default tab styles */
 ul#topmenu a,
-ul#topmenu span {
+ul#topmenu span{
     padding: 5px 10px;
     height: 28px;
     line-height: 28px;
     font-family: "open sans extrabold", "segoe black";
     text-transform: uppercase;
-    color: #666;
+    color: <?php echo $GLOBALS['cfg']['NaviText']; ?>;
     font-weight: normal;
 }
 
-ul#topmenu ul a {
+ul#topmenu ul a{
     border-width: 1pt 0 0 0;
 }
 
-ul#topmenu ul li:first-child a {
+ul#topmenu ul li:first-child a{
     border-width: 0;
 }
 
 /* enabled hover/active tabs */
 ul#topmenu > li > a:hover,
-ul#topmenu > li > .tabactive {
+ul#topmenu > li > .tabactive{
     text-decoration: none;
-    color: #333;
+    color: <?php echo $GLOBALS['cfg']['NaviText']; ?>;
 }
 
 ul#topmenu ul a:hover,
-ul#topmenu ul .tabactive {
+ul#topmenu ul .tabactive{
     text-decoration: none;
 }
 
-ul#topmenu a.tab:hover,
-ul#topmenu .tabactive {
-
-}
-
 ul#topmenu2 a,
-ul#topmenu2 a:hover {
+ul#topmenu2 a:hover{
 
     text-decoration: none;
 }
 
 /* to be able to cancel the bottom border, use <li class="active"> */
-ul#topmenu > li.active {
+ul#topmenu > li.active{
 
     border-right: 0;
 }
@@ -1445,52 +1384,52 @@ ul#topmenu > li.active {
 
 /* zoom search */
 div#dataDisplay input,
-div#dataDisplay select {
+div#dataDisplay select{
     margin: 0;
     margin-<?php echo $right; ?>: .5em;
 }
-div#dataDisplay th {
+div#dataDisplay th{
     line-height: 2em;
 }
 
-table#tableFieldsId {
+table#tableFieldsId{
     width: 100%;
 }
 
 /* Calendar */
-table.calendar {
+table.calendar{
     width: 100%;
 }
-table.calendar td {
+table.calendar td{
     text-align: center;
 }
-table.calendar td a {
+table.calendar td a{
     display: block;
 }
 
-table.calendar td a:hover {
+table.calendar td a:hover{
     background-color: #CCFFCC;
 }
 
-table.calendar th {
+table.calendar th{
     background-color: #D3DCE3;
 }
 
-table.calendar td.selected {
+table.calendar td.selected{
     background-color: #FFCC99;
 }
 
-img.calendar {
+img.calendar{
     border: none;
 }
-form.clock {
+form.clock{
     text-align: center;
 }
 /* end Calendar */
 
 
 /* table stats */
-div#tablestatistics table {
+div#tablestatistics table{
     float: <?php echo $left; ?>;
     margin-bottom: .5em;
     margin-<?php echo $right; ?>: 1.5em;
@@ -1504,7 +1443,7 @@ div#tablestatistics table {
 /* server privileges */
 #tableuserrights td,
 #tablespecificuserrights td,
-#tabledatabases td {
+#tabledatabases td{
     vertical-align: middle;
 }
 
@@ -1512,12 +1451,11 @@ div#tablestatistics table {
 
 
 /* Heading */
-#topmenucontainer {
+#topmenucontainer{
     width: 100%;
 }
 
-#serverinfo
-{
+#serverinfo{
     padding: 12px 30px;
     overflow: hidden;
     margin: 0;
@@ -1529,40 +1467,35 @@ div#tablestatistics table {
     height: 15px;
 }
 
-#serverinfo .item
-{
+#serverinfo .item{
     font-family: <?php echo $GLOBALS['cfg']['FontFamily']; ?>;
     white-space: nowrap;
     color: <?php echo $GLOBALS['cfg']['ButtonColor']; ?>;
 }
 
-#serverinfo .item:before
-{
+#serverinfo .item:before{
     padding-left: 5px;
     padding-right: 5px;
-    font-family: "IcoMoon";
+    font-family: FontAwesome;
     font-size: 10px;
     color: #eee;
-    content: "";
+    content: "\f105";
 }
 
-#serverinfo a:hover
-{
+#serverinfo a:hover{
     text-decoration: none;
 }
 
-#serverinfo a:first-child
-{
+#serverinfo a:first-child{
     display: none !important;
 }
 
 #serverinfo .separator,
-#serverinfo .icon
-{
+#serverinfo .icon{
     display: none;
 }
 
-#page_nav_icons {
+#page_nav_icons{
     position: fixed;
     top: 0;
     <?php echo $right; ?>: 0;
@@ -1570,43 +1503,43 @@ div#tablestatistics table {
     padding: .25em 0;
 }
 
-#goto_pagetop, #lock_page_icon, #page_settings_icon {
+#goto_pagetop, #lock_page_icon, #page_settings_icon{
     padding: .25em;
 }
 
-#page_settings_icon {
+#page_settings_icon{
     cursor: pointer;
     display: none;
 }
 
-#page_settings_modal {
+#page_settings_modal{
     display: none;
 }
 
-#pma_navigation_settings {
+#pma_navigation_settings{
     display: none;
 }
 
-#span_table_comment {
+#span_table_comment{
     font-weight: normal;
     font-style: italic;
     white-space: nowrap;
     margin-left: 10px;
 }
 
-#serverinfo img {
+#serverinfo img{
     margin: 0 .1em 0;
     margin-<?php echo $left; ?>: .2em;
 }
 
-#textSQLDUMP {
+#textSQLDUMP{
     width: 95%;
     height: 95%;
     font-family: Consolas, "Courier New", Courier, mono;
     font-size: 110%;
 }
 
-#TooltipContainer {
+#TooltipContainer{
     position: absolute;
     z-index: 99;
     width: 20em;
@@ -1620,13 +1553,13 @@ div#tablestatistics table {
 }
 
 /* user privileges */
-#fieldset_add_user_login div.item {
+#fieldset_add_user_login div.item{
     border-bottom: 1px solid #ddd;
     padding-bottom: .3em;
     margin-bottom: .3em;
 }
 
-#fieldset_add_user_login label {
+#fieldset_add_user_login label{
     float: <?php echo $left; ?>;
     display: block;
     width: 10em;
@@ -1638,12 +1571,12 @@ div#tablestatistics table {
 
 #fieldset_add_user_login span.options #select_pred_username,
 #fieldset_add_user_login span.options #select_pred_hostname,
-#fieldset_add_user_login span.options #select_pred_password {
+#fieldset_add_user_login span.options #select_pred_password{
     width: 100%;
     max-width: 100%;
 }
 
-#fieldset_add_user_login span.options {
+#fieldset_add_user_login span.options{
     float: <?php echo $left; ?>;
     display: block;
     width: 12em;
@@ -1651,44 +1584,43 @@ div#tablestatistics table {
     padding-<?php echo $right; ?>: .5em;
 }
 
-#fieldset_add_user_login input {
+#fieldset_add_user_login input{
     width: 12em;
     clear: <?php echo $right; ?>;
     max-width: 100%;
 }
 
-#fieldset_add_user_login span.options input {
+#fieldset_add_user_login span.options input{
     width: auto;
 }
 
-#fieldset_add_user_login span.options input[type=button]
-{
+#fieldset_add_user_login span.options input[type=button]{
     margin: 4px;
 }
 
-#fieldset_user_priv div.item {
+#fieldset_user_priv div.item{
     float: <?php echo $left; ?>;
     width: 9em;
     max-width: 100%;
 }
 
-#fieldset_user_priv div.item div.item {
+#fieldset_user_priv div.item div.item{
     float: none;
 }
 
-#fieldset_user_priv div.item label {
+#fieldset_user_priv div.item label{
     white-space: nowrap;
 }
 
-#fieldset_user_priv div.item select {
+#fieldset_user_priv div.item select{
     width: 100%;
 }
 
-#fieldset_user_global_rights fieldset {
+#fieldset_user_global_rights fieldset{
     float: <?php echo $left; ?>;
 }
 
-#fieldset_user_group_rights fieldset {
+#fieldset_user_group_rights fieldset{
     float: <?php echo $left; ?>;
 }
 /* END user privileges */
@@ -1696,40 +1628,40 @@ div#tablestatistics table {
 
 /* serverstatus */
 
-.linkElem:hover {
+.linkElem:hover{
     text-decoration: underline;
     color: #235a81;
     cursor: pointer;
 }
 
-h3#serverstatusqueries span {
+h3#serverstatusqueries span{
     font-size: 60%;
     display: inline;
 }
 
-.buttonlinks {
+.buttonlinks{
     float: <?php echo $right; ?>;
     white-space: nowrap;
 }
 
 /* Also used for the variables page */
-fieldset#tableFilter {
+fieldset#tableFilter{
     margin-bottom: 1em;
 }
 
-fieldset#tableFilter input[type=submit] {
+fieldset#tableFilter input[type=submit]{
     margin-top: 9px;
 }
 
-div#serverStatusTabs {
+div#serverStatusTabs{
     margin-top: 1em;
 }
 
-caption a.top {
+caption a.top{
     float: <?php echo $right; ?>;
 }
 
-div#serverstatusquerieschart {
+div#serverstatusquerieschart{
     float: <?php echo $left; ?>;
     width: 500px;
     height: 350px;
@@ -1737,76 +1669,76 @@ div#serverstatusquerieschart {
 }
 
 table#serverstatusqueriesdetails,
-table#serverstatustraffic {
+table#serverstatustraffic{
     float: <?php echo $left; ?>;
 }
 
-table#serverstatusqueriesdetails th {
+table#serverstatusqueriesdetails th{
     min-width: 35px;
 }
 
-table#serverstatusvariables {
+table#serverstatusvariables{
     width: 100%;
     margin-bottom: 1em;
 }
-table#serverstatusvariables .name {
+table#serverstatusvariables .name{
     width: 18em;
     white-space: nowrap;
 }
-table#serverstatusvariables .value {
+table#serverstatusvariables .value{
     width: 6em;
 }
-table#serverstatusconnections {
+table#serverstatusconnections{
     float: <?php echo $left; ?>;
     margin-<?php echo $left; ?>: 30px;
 }
 
 div#serverstatus table tbody td.descr a,
-div#serverstatus table .tblFooters a {
+div#serverstatus table .tblFooters a{
     white-space: nowrap;
 }
 
-div.liveChart {
+div.liveChart{
     clear: both;
     min-width: 500px;
     height: 400px;
     padding-bottom: 80px;
 }
 
-#addChartDialog input[type="text"] {
+#addChartDialog input[type="text"]{
     margin: 0;
     padding: 3px;
 }
 
-div#chartVariableSettings {
+div#chartVariableSettings{
     margin-left: 10px;
 }
 
-table#chartGrid td {
+table#chartGrid td{
     padding: 3px;
     margin: 0;
 }
 
-table#chartGrid div.monitorChart {
+table#chartGrid div.monitorChart{
     background: <?php echo $GLOBALS['cfg']['ThBackground']; ?>;
     overflow: hidden;
 }
 
-div.tabLinks {
+div.tabLinks{
     margin-left: 0.3em;
     float: <?php echo $left; ?>;
     padding: 5px 0;
 }
 
-div.tabLinks a, div.tabLinks label {
+div.tabLinks a, div.tabLinks label{
     margin-right: 7px;
 }
 
-div.tabLinks .icon {
+div.tabLinks .icon{
     margin: -0.2em 0.3em 0 0;
 }
 
-.popupContent {
+.popupContent{
     display: none;
     position: absolute;
     border: 1px solid #CCC;
@@ -1816,97 +1748,97 @@ div.tabLinks .icon {
     z-index: 2;
 }
 
-div#logTable {
+div#logTable{
     padding-top: 10px;
     clear: both;
 }
 
-div#logTable table {
+div#logTable table{
     width: 100%;
 }
 
-div#queryAnalyzerDialog {
+div#queryAnalyzerDialog{
     min-width: 700px;
 }
 
-div#queryAnalyzerDialog div.CodeMirror-scroll {
+div#queryAnalyzerDialog div.CodeMirror-scroll{
     height: auto;
 }
 
-div#queryAnalyzerDialog div#queryProfiling {
+div#queryAnalyzerDialog div#queryProfiling{
     height: 300px;
 }
 
-div#queryAnalyzerDialog td.explain {
+div#queryAnalyzerDialog td.explain{
     width: 250px;
 }
 
-div#queryAnalyzerDialog table.queryNums {
+div#queryAnalyzerDialog table.queryNums{
     display: none;
     border: 0;
     text-align: left;
 }
 
-.smallIndent {
+.smallIndent{
     padding-<?php echo $left; ?>: 7px;
 }
 
 /* end serverstatus */
 
 /* server variables */
-#serverVariables {
+#serverVariables{
     table-layout: fixed;
     width: 100%;
 }
-#serverVariables .var-row > td {
+#serverVariables .var-row > td{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 2em;
 }
-#serverVariables .var-header {
+#serverVariables .var-header{
     color: <?php echo $GLOBALS['cfg']['ThColor']; ?>;
     background: #f3f3f3;
     font-weight: bold;
 }
-#serverVariables .var-header {
+#serverVariables .var-header{
     text-align: <?php echo $left; ?>;
 }
-#serverVariables .var-row {
+#serverVariables .var-row{
     padding: 0.5em;
     min-height: 18px;
 }
-#serverVariables .var-action {
+#serverVariables .var-action{
     width: 120px;
 }
-#serverVariables .var-name {
+#serverVariables .var-name{
     float: <?php echo $left; ?>;
 }
-#serverVariables .var-name.session {
+#serverVariables .var-name.session{
     font-weight: normal;
     font-style: italic;
 }
-#serverVariables .var-value {
+#serverVariables .var-value{
     width: 50%;
     float: <?php echo $right; ?>;
     text-align: <?php echo $right; ?>;
 }
-#serverVariables .var-doc {
+#serverVariables .var-doc{
     overflow:visible;
     float: <?php echo $right; ?>;
 }
 
 /* server variables editor */
-#serverVariables .editLink {
+#serverVariables .editLink{
     padding-<?php echo $right; ?>: 1em;
     float: <?php echo $left; ?>;
     font-family: sans-serif;
 }
-#serverVariables .serverVariableEditor {
+#serverVariables .serverVariableEditor{
     width: 100%;
     overflow: hidden;
 }
-#serverVariables .serverVariableEditor input {
+#serverVariables .serverVariableEditor input{
     width: 100%;
     margin: 0 0.5em;
     box-sizing: border-box;
@@ -1915,12 +1847,12 @@ div#queryAnalyzerDialog table.queryNums {
     -webkit-box-sizing: border-box;
     height: 2.2em;
 }
-#serverVariables .serverVariableEditor div {
+#serverVariables .serverVariableEditor div{
     display: block;
     overflow: hidden;
     padding-<?php echo $right; ?>: 1em;
 }
-#serverVariables .serverVariableEditor a {
+#serverVariables .serverVariableEditor a{
     float: <?php echo $right; ?>;
     margin: 0 0.5em;
     line-height: 2em;
@@ -1928,14 +1860,14 @@ div#queryAnalyzerDialog table.queryNums {
 /* end server variables */
 
 
-p.notice {
+p.notice{
     margin: 1.5em 0;
     border: 1px solid #000;
     background-repeat: no-repeat;
-        <?php if ($GLOBALS['text_dir'] === 'ltr') { ?>
+        <?php if ($GLOBALS['text_dir'] === 'ltr'){ ?>
     background-position: 10px 50%;
     padding: 10px 10px 10px 25px;
-        <?php } else { ?>
+        <?php } else{ ?>
     background-position: 99% 50%;
     padding: 25px 10px 10px 10px
         <?php } ?>
@@ -1943,14 +1875,14 @@ p.notice {
     color: #d4fb6a;
 }
 
-p.notice a {
+p.notice a{
     color: #fff;
     text-decoration: underline;
 }
 
 /* profiling */
 
-div#profilingchart {
+div#profilingchart{
     width: 850px;
     height: 370px;
     float: <?php echo $left; ?>;
@@ -1960,13 +1892,13 @@ div#profilingchart {
 
 /* table charting */
 
-#resizer {
+#resizer{
     border: 1px solid silver;
 }
-#inner-resizer { /* make room for the resize handle */
+#inner-resizer{ /* make room for the resize handle */
     padding: 10px;
 }
-.chartOption {
+.chartOption{
     float: <?php echo $left; ?>;
     margin-<?php echo $right;?>: 40px;
 }
@@ -1975,26 +1907,25 @@ div#profilingchart {
 
 /* querybox */
 
-#togglequerybox {
+#togglequerybox{
     margin: 0 10px;
 }
 
-#serverstatus h3
-{
+#serverstatus h3{
     margin: 15px 0;
     font-weight: normal;
     color: #999;
     font-size: 1.7em;
 }
 
-#sectionlinks {
+#sectionlinks{
     padding: 16px;
     background: #f3f3f3;
     border: 1px solid #aaa;
 }
 #sectionlinks a,
 .buttonlinks a,
-a.button {
+a.button{
     font-size: .88em;
     font-weight: bold;
     line-height: 35px;
@@ -2009,43 +1940,43 @@ a.button {
 
 #sectionlinks a:hover,
 .buttonlinks a:hover,
-a.button:hover {
+a.button:hover{
 
 }
 
-div#sqlquerycontainer {
+div#sqlquerycontainer{
     float: <?php echo $left; ?>;
     width: 69%;
     /* height: 15em; */
 }
 
-div#tablefieldscontainer {
+div#tablefieldscontainer{
     float: <?php echo $right; ?>;
     width: 29%;
     margin-top: -20px;
     /* height: 15em; */
 }
 
-div#tablefieldscontainer select {
+div#tablefieldscontainer select{
     width: 100%;
     background: #fff;
     max-width: initial;
     /* height: 12em; */
 }
 
-textarea#sqlquery {
+textarea#sqlquery{
     width: 100%;
     /* height: 100%; */
     border: 1px solid #aaa;
     padding: 5px;
     font-family: inherit;
 }
-textarea#sql_query_edit {
+textarea#sql_query_edit{
     height: 7em;
     width: 95%;
     display: block;
 }
-div#queryboxcontainer div#bookmarkoptions {
+div#queryboxcontainer div#bookmarkoptions{
     margin-top: .5em;
 }
 /* end querybox */
@@ -2053,24 +1984,23 @@ div#queryboxcontainer div#bookmarkoptions {
 /* main page */
 
 #mysqlmaininformation,
-#pmamaininformation {
+#pmamaininformation{
     float: <?php echo $left; ?>;
     width: 49%;
 }
 
-#maincontainer ul {
+#maincontainer ul{
     list-style-type: square;
     vertical-align: middle;
-    color: <?php echo $GLOBALS['cfg']['ThColor']; ?>;
+    color: <?php echo $GLOBALS['cfg']['MainText']; ?>;
     margin-left: 20px;
 }
 
-#maincontainer ul li
-{
+#maincontainer ul li{
     line-height: 1.5;
 }
 
-#full_name_layer {
+#full_name_layer{
     position: absolute;
     padding: 2px;
     margin-top: -3px;
@@ -2085,93 +2015,59 @@ div#queryboxcontainer div#bookmarkoptions {
 
 /* iconic view for ul items */
 
-li br
-{
+li br{
     display: none;
 }
 
-li.no_bullets {
+li.no_bullets{
     list-style-type:none !important;
 }
 
-li#li_mysql_client_version
-{
+li#li_mysql_client_version{
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-li#li_create_database
-{
-    background-color: #f6f6f6;
-    padding: 10px;
-    border: 1px solid <?php echo $GLOBALS['cfg']['BorderColor']; ?>;
-    display: block;
-    margin-bottom: 20px;
-}
-
-li#li_select_lang select
-{
+li#li_select_lang select{
     margin: 0 !important;
     height: 26px;
 }
 
-li#li_select_lang
-{
+li#li_select_lang{
     display: block;
     padding: 10px;
     padding-left: 20px;
     font-family: <?php echo $GLOBALS['cfg']['FontFamilyLight']; ?>;
 }
 
-li#li_select_lang:hover
-{
-    background: #f6f6f6;
-}
-
-li#li_select_mysql_collation select
-{
+li#li_select_mysql_collation select{
     margin: 0 !important;
 }
 
-li#li_select_mysql_collation
-{
+li#li_select_mysql_collation{
     display: block;
     padding: 10px;
     padding-left: 20px;
     font-family: <?php echo $GLOBALS['cfg']['FontFamilyLight']; ?>;
 }
 
-li#li_select_mysql_collation:hover
-{
-    background: #f6f6f6;
-}
-
-li#li_select_theme select
-{
+li#li_select_theme select{
     margin: 0 !important;
 }
 
-li#li_select_theme
-{
+li#li_select_theme{
     display: block;
     padding: 10px;
     padding-left: 20px;
     font-family: <?php echo $GLOBALS['cfg']['FontFamilyLight']; ?>;
 }
 
-li#li_select_theme:after
-{
+li#li_select_theme:after{
     content: "Scheme: <?php echo $GLOBALS['cfg']['Scheme']; ?>";
     margin-left: 10px;
 }
 
-li#li_select_theme:hover
-{
-    background: #f6f6f6;
-}
-
-li#li_change_password
-{
+li#li_change_password{
     /* list-style-image: url(<?php echo $_SESSION['PMA_Theme']->getImgPath(); ?>s_passwd.png); */
     display: block;
     padding: 10px;
@@ -2179,13 +2075,7 @@ li#li_change_password
     font-family: <?php echo $GLOBALS['cfg']['FontFamilyLight']; ?>;
 }
 
-li#li_change_password:hover
-{
-    background: #f6f6f6;
-}
-
-li#li_user_preferences
-{
+li#li_user_preferences{
     /* list-style-image: url(<?php echo $_SESSION['PMA_Theme']->getImgPath(); ?>b_tblops.png); */
     display: block;
     padding: 10px;
@@ -2193,13 +2083,7 @@ li#li_user_preferences
     font-family: <?php echo $GLOBALS['cfg']['FontFamilyLight']; ?>;
 }
 
-li#li_user_preferences:hover
-{
-    background: #f6f6f6;
-}
-
-li#li_switch_dbstats
-{
+li#li_switch_dbstats{
     background-color: #f6f6f6;
     padding: 10px;
     border: 1px solid <?php echo $GLOBALS['cfg']['BorderColor']; ?>;
@@ -2208,34 +2092,34 @@ li#li_switch_dbstats
 
 /* END iconic view for ul items */
 
-#body_browse_foreigners {
+#body_browse_foreigners{
     background: <?php echo $GLOBALS['cfg']['NaviBackground']; ?>;
     margin: .5em .5em 0 .5em;
 }
 
-#bodyquerywindow {
+#bodyquerywindow{
     background: <?php echo $GLOBALS['cfg']['NaviBackground']; ?>;
 }
 
-#bodythemes {
+#bodythemes{
     width: 500px;
     margin: auto;
     text-align: center;
 }
 
-#bodythemes img {
+#bodythemes img{
     border: .1em solid #000;
 }
 
-#bodythemes a:hover img {
+#bodythemes a:hover img{
     border: .1em solid red;
 }
 
-#fieldset_select_fields {
+#fieldset_select_fields{
     float: <?php echo $left; ?>;
 }
 
-#selflink {
+#selflink{
     clear: both;
     display: block;
     margin-top: 20px;
@@ -2247,53 +2131,52 @@ li#li_switch_dbstats
 }
 
 #table_innodb_bufferpool_usage,
-#table_innodb_bufferpool_activity {
+#table_innodb_bufferpool_activity{
     float: <?php echo $left; ?>;
 }
 
-#div_mysql_charset_collations table {
+#div_mysql_charset_collations table{
     float: <?php echo $left; ?>;
 }
 
 #div_mysql_charset_collations table th,
-#div_mysql_charset_collations table td {
+#div_mysql_charset_collations table td{
     padding: 0.4em;
 }
 
-#div_mysql_charset_collations table th#collationHeader {
+#div_mysql_charset_collations table th#collationHeader{
     width: 35%;
 }
 
-.operations_half_width {
+.operations_half_width{
     width: 100%;
     float: <?php echo $left; ?>;
     margin-bottom: 10px;
 }
 
-.operations_full_width {
+.operations_full_width{
     width: 100%;
     clear: both;
 }
 
-#qbe_div_table_list {
+#qbe_div_table_list{
     float: <?php echo $left; ?>;
 }
 
-#qbe_div_sql_query {
+#qbe_div_sql_query{
     float: <?php echo $left; ?>;
 }
 
-label.desc {
+label.desc{
     width: 30em;
     float: <?php echo $left; ?>;
 }
 
-label.desc sup {
+label.desc sup{
     position: absolute;
 }
 
-.sqlOuter code.sql, div.sqlvalidate, #inline_editor_outer
-{
+.sqlOuter code.sql, div.sqlvalidate, #inline_editor_outer{
     display: block;
     padding: 1em;
     margin: 1em;
@@ -2303,35 +2186,30 @@ label.desc sup {
     direction: ltr;
 }
 
-#main_pane_left
-{
+#main_pane_left{
     width: 60%;
     min-width: 260px;
     float: <?php echo $left; ?>;
     padding-top: 1em;
 }
 
-#main_pane_right
-{
+#main_pane_right{
     overflow: hidden;
     min-width: 160px;
     padding-top: 1em;
     padding-<?php echo $left; ?>: 3em;
 }
 
-.group
-{
+.group{
     margin-bottom: 1em;
     padding-bottom: 1em;
 }
 
-.group input[type=submit]
-{
+.group input[type=submit]{
     margin-left: 0;
 }
 
-.group h2
-{
+.group h2{
     color: <?php echo $GLOBALS['cfg']['MainHeaderColor']; ?>;
     font-size: 2.8em;
     font-weight: normal;
@@ -2340,23 +2218,23 @@ label.desc sup {
     margin-bottom: 0.6em;
 }
 
-.group-cnt {
+.group-cnt{
     padding: 0 0 0 0.5em;
     display: inline-block;
     width: 98%;
 }
 
-textarea#partitiondefinition {
+textarea#partitiondefinition{
     height: 3em;
 }
 
 
 /* for elements that should be revealed only via js */
-.hide {
+.hide{
     display: none;
 }
 
-#list_server {
+#list_server{
     list-style-image: none;
     padding: 0;
 }
@@ -2364,15 +2242,13 @@ textarea#partitiondefinition {
 /**
   *  Progress bar styles
   */
-div.upload_progress
-{
+div.upload_progress{
     width: 400px;
     margin: 3em auto;
     text-align: center;
 }
 
-div.upload_progress_bar_outer
-{
+div.upload_progress_bar_outer{
     border: 1px solid #000;
     width: 202px;
     position: relative;
@@ -2380,41 +2256,38 @@ div.upload_progress_bar_outer
     color: <?php echo $GLOBALS['cfg']['MainColor']; ?>;
 }
 
-div.upload_progress_bar_inner
-{
+div.upload_progress_bar_inner{
     background-color: <?php echo $GLOBALS['cfg']['NaviBackground']; ?>;
     width: 0;
     height: 12px;
     margin: 1px;
     overflow: hidden;
-    <?php if ($GLOBALS['cfg']['BrowseMarkerEnable']) { ?>
+    <?php if ($GLOBALS['cfg']['BrowseMarkerEnable']){ ?>
     color: <?php echo $GLOBALS['cfg']['BrowseMarkerColor']; ?>;
     <?php } ?>
     position: relative;
 }
 
-div.upload_progress_bar_outer div.percentage
-{
+div.upload_progress_bar_outer div.percentage{
     position: absolute;
     top: 0;
     <?php echo $left; ?>: 0;
     width: 202px;
 }
 
-div.upload_progress_bar_inner div.percentage
-{
+div.upload_progress_bar_inner div.percentage{
     top: -1px;
     <?php echo $left; ?>: -1px;
 }
 
-div#statustext {
+div#statustext{
     margin-top: .5em;
 }
 
 table#serverconnection_src_remote,
 table#serverconnection_trg_remote,
 table#serverconnection_src_local,
-table#serverconnection_trg_local  {
+table#serverconnection_trg_local {
   float: <?php echo $left; ?>;
 }
 /**
@@ -2424,7 +2297,7 @@ input[type=text].invalid_value,
 input[type=password].invalid_value,
 input[type=number].invalid_value,
 input[type=date].invalid_value
-.invalid_value {
+.invalid_value{
     background: #FFCCCC;
 }
 
@@ -2432,7 +2305,7 @@ input[type=date].invalid_value
   *  Ajax notification styling
   */
 /* additional styles */
-.ajax_notification {
+.ajax_notification{
     top: 0;
     position: fixed;
     width: 100%;
@@ -2452,13 +2325,12 @@ input[type=date].invalid_value
     height: 19px;
 }
 
-.dismissable
-{
+.dismissable{
     margin-left: -10px;
     margin-top: -10px;
 }
 
-#loading_parent {
+#loading_parent{
     /** Need this parent to properly center the notification division */
     position: relative;
     width: 100%;
@@ -2467,51 +2339,51 @@ input[type=date].invalid_value
   * Export and Import styles
   */
 
-.export_table_list_container {
+.export_table_list_container{
     display: inline-block;
     max-height: 20em;
     overflow-y: scroll;
 }
 
-.export_table_select th {
+.export_table_select th{
     text-align: center;
     vertical-align: middle;
 }
 
-.export_table_select .all {
+.export_table_select .all{
     font-weight: bold;
     border-bottom: 1px solid black;
 }
 
-.export_structure, .export_data {
+.export_structure, .export_data{
     text-align: center;
 }
 
-.export_table_name {
+.export_table_name{
     vertical-align: middle;
 }
 
 .exportoptions h3,
-.importoptions h3 {
+.importoptions h3{
     border-bottom: 1px #ccc solid;
     font-size: 110%;
 }
 
 .exportoptions ul,
 .importoptions ul,
-.format_specific_options ul {
+.format_specific_options ul{
     list-style-type: none;
     margin-bottom: 15px;
 }
 
 .exportoptions li,
-.importoptions li {
+.importoptions li{
     margin: 7px;
 }
 .exportoptions label,
 .importoptions label,
 .exportoptions p,
-.importoptions p {
+.importoptions p{
     margin: 5px;
     float: none;
 }
@@ -2519,41 +2391,41 @@ input[type=date].invalid_value
 #csv_options label.desc,
 #ldi_options label.desc,
 #latex_options label.desc,
-#output label.desc {
+#output label.desc{
     float: <?php echo $left; ?>;
     width: 15em;
 }
 
 .exportoptions,
-.importoptions {
+.importoptions{
     margin: 20px 30px 30px;
     margin-<?php echo $left; ?>: 10px;
 }
 
 .exportoptions #buttonGo,
-.importoptions #buttonGo {
+.importoptions #buttonGo{
     padding: 5px 12px;
     text-decoration: none;
     cursor: pointer;
     margin: 0;
 }
-#buttonGo:hover {
+#buttonGo:hover{
 
 }
 
-.format_specific_options h3 {
+.format_specific_options h3{
     margin: 10px 0 0;
     margin-<?php echo $left; ?>: 10px;
     border: 0;
 }
 
-.format_specific_options {
+.format_specific_options{
     border: 1px solid #999;
     margin: 7px 0;
     padding: 3px;
 }
 
-p.desc {
+p.desc{
     margin: 5px;
 }
 
@@ -2561,49 +2433,49 @@ p.desc {
   * Export styles only
   */
 select#db_select,
-select#table_select {
+select#table_select{
     width: 400px;
 }
 
-.export_sub_options {
+.export_sub_options{
     margin: 20px 0 0;
     margin-<?php echo $left; ?>: 30px;
 }
 
-.export_sub_options h4 {
+.export_sub_options h4{
     border-bottom: 1px #999 solid;
 }
 
-.export_sub_options li.subgroup {
+.export_sub_options li.subgroup{
     display: inline-block;
     margin-top: 0;
 }
 
-.export_sub_options li {
+.export_sub_options li{
     margin-bottom: 0;
 }
 
-#output_quick_export {
+#output_quick_export{
     display: none;
 }
 /**
  * Import styles only
  */
 
-.importoptions #import_notification {
+.importoptions #import_notification{
     margin: 10px 0;
     font-style: italic;
 }
 
-input#input_import_file {
+input#input_import_file{
     margin: 5px;
 }
 
-.formelementrow {
+.formelementrow{
     margin: 5px 0 5px 0;
 }
 
-#popup_background {
+#popup_background{
     display: none;
     position: fixed;
     width: 100%;
@@ -2618,31 +2490,31 @@ input#input_import_file {
 /**
  * Table structure styles
  */
-#fieldsForm ul.table-structure-actions {
+#fieldsForm ul.table-structure-actions{
     margin: 0;
     padding: 0;
     list-style: none;
 }
-#fieldsForm ul.table-structure-actions li {
+#fieldsForm ul.table-structure-actions li{
     float: <?php echo $left; ?>;
     margin-<?php echo $right; ?>: 0.3em; /* same as padding of "table td" */
 }
-#fieldsForm ul.table-structure-actions .submenu li {
+#fieldsForm ul.table-structure-actions .submenu li{
     padding: 0;
     margin: 0;
 }
-#fieldsForm ul.table-structure-actions .submenu li span {
+#fieldsForm ul.table-structure-actions .submenu li span{
     padding: 0.3em;
     margin: 0.1em;
 }
-#structure-action-links a {
+#structure-action-links a{
     margin-<?php echo $right; ?>: 1em;
 }
 /**
  * Indexes
  */
 #index_frm .index_info input,
-#index_frm .index_info select {
+#index_frm .index_info select{
     width: 14em;
     box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -2650,57 +2522,57 @@ input#input_import_file {
     -webkit-box-sizing: border-box;
 }
 
-#index_frm .index_info div {
+#index_frm .index_info div{
     padding: .2em 0;
 }
 
-#index_frm .index_info .label {
+#index_frm .index_info .label{
     float: <?php echo $left; ?>;
     min-width: 12em;
 }
 
-#index_frm .slider {
+#index_frm .slider{
     width: 10em;
     margin: .6em;
     float: <?php echo $left; ?>;
 }
 
-#index_frm .add_fields {
+#index_frm .add_fields{
     float: <?php echo $left; ?>;
 }
 
-#index_frm .add_fields input {
+#index_frm .add_fields input{
     margin-<?php echo $left; ?>: 1em;
 }
 
-#index_frm input {
+#index_frm input{
     margin: 0;
 }
 
-#index_frm td {
+#index_frm td{
     vertical-align: middle;
 }
 
-table#index_columns {
+table#index_columns{
     width: 100%;
 }
 
-table#index_columns select {
+table#index_columns select{
     width: 85%;
     float: right;
 }
 
-#move_columns_dialog div {
+#move_columns_dialog div{
     padding: 1em;
 }
 
-#move_columns_dialog ul {
+#move_columns_dialog ul{
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#move_columns_dialog li {
+#move_columns_dialog li{
     background: <?php echo $GLOBALS['cfg']['ThBackground']; ?>;
     border: 1px solid #aaa;
     color: <?php echo $GLOBALS['cfg']['ThColor']; ?>;
@@ -2710,19 +2582,19 @@ table#index_columns select {
 }
 
 /* config forms */
-.config-form ul.tabs {
+.config-form ul.tabs{
     margin: 1.1em .2em 0;
     padding: 0 0 .3em 0;
     list-style: none;
     font-weight: bold;
 }
 
-.config-form ul.tabs li {
+.config-form ul.tabs li{
     float: <?php echo $left; ?>;
     margin-bottom: -1px;
 }
 
-.config-form ul.tabs li a {
+.config-form ul.tabs li a{
     display: block;
     margin: .1em .2em 0;
     white-space: nowrap;
@@ -2732,18 +2604,18 @@ table#index_columns select {
     font-family: "open sans bold";
 }
 
-.config-form ul.tabs li a {
+.config-form ul.tabs li a{
     padding: 7px 10px;
     background: #f2f2f2;
     color: #555;
 }
 
 .config-form ul.tabs li a:hover,
-.config-form ul.tabs li a:active {
+.config-form ul.tabs li a:active{
     background: #e5e5e5;
 }
 
-.config-form ul.tabs li.active a {
+.config-form ul.tabs li.active a{
     background-color: #fff;
     margin-top: 1px;
     color: #000;
@@ -2751,18 +2623,18 @@ table#index_columns select {
     border-bottom: 1px solid #fff;
 }
 
-.config-form fieldset {
+.config-form fieldset{
     margin-top: 0;
     padding: 0;
     clear: both;
     background: none;
 }
 
-.config-form legend {
+.config-form legend{
     display: none;
 }
 
-.config-form fieldset p {
+.config-form fieldset p{
     margin: 0;
     padding: 10px;
     background: #fff;
@@ -2770,7 +2642,7 @@ table#index_columns select {
     font-size: 16px;
 }
 
-.config-form fieldset .errors { /* form error list */
+.config-form fieldset .errors{ /* form error list */
     margin: 0 -2px 1em;
     padding: .5em 1.5em;
     background: #FBEAD9;
@@ -2781,7 +2653,7 @@ table#index_columns select {
     font-size: small;
 }
 
-.config-form fieldset .inline_errors { /* field error list */
+.config-form fieldset .inline_errors{ /* field error list */
     margin: .3em .3em .3em;
     margin-<?php echo $left; ?>: 0;
     padding: 0;
@@ -2790,24 +2662,21 @@ table#index_columns select {
     font-size: small;
 }
 
-.config-form fieldset table
-{
+.config-form fieldset table{
     background-color: #fff;
 }
 
-.config-form fieldset label
-{
+.config-form fieldset label{
     font-weight: normal;
 }
 
 .config-form fieldset textarea,
-.insertRowTable textarea
-{
+.insertRowTable textarea{
     margin: 5px;
     padding: 5px;
 }
 
-.config-form fieldset th {
+.config-form fieldset th{
     padding: 10px;
     padding-<?php echo $left; ?>: .5em;
     text-align: <?php echo $left; ?>;
@@ -2816,24 +2685,24 @@ table#index_columns select {
 }
 
 .config-form fieldset .doc,
-.config-form fieldset .disabled-notice {
+.config-form fieldset .disabled-notice{
     margin-<?php echo $left; ?>: 1em;
 }
 
-.config-form fieldset .disabled-notice {
+.config-form fieldset .disabled-notice{
     font-size: 80%;
     text-transform: uppercase;
     color: #E00;
     cursor: help;
 }
 
-.config-form fieldset td {
+.config-form fieldset td{
     padding-top: .3em;
     padding-bottom: .3em;
     vertical-align: top;
 }
 
-.config-form fieldset th small {
+.config-form fieldset th small{
     display: block;
     font-weight: normal;
     font-family: sans-serif;
@@ -2842,47 +2711,47 @@ table#index_columns select {
 }
 
 .config-form fieldset th,
-.config-form fieldset td {
+.config-form fieldset td{
     border-bottom: 1px <?php echo $GLOBALS['cfg']['NaviColor']; ?> solid;
     border-<?php echo $right; ?>: none;
 }
 
-fieldset .group-header th {
+fieldset .group-header th{
     background: <?php echo $GLOBALS['cfg']['BgTwo']; ?>;
 }
 
-fieldset .group-header + tr th {
+fieldset .group-header + tr th{
     padding-top: .6em;
 }
 
 fieldset .group-field-1 th,
-fieldset .group-header-2 th {
+fieldset .group-header-2 th{
     padding-<?php echo $left; ?>: 1.5em;
 }
 
 fieldset .group-field-2 th,
-fieldset .group-header-3 th {
+fieldset .group-header-3 th{
     padding-<?php echo $left; ?>: 3em;
 }
 
-fieldset .group-field-3 th {
+fieldset .group-field-3 th{
     padding-<?php echo $left; ?>: 4.5em;
 }
 
 fieldset .disabled-field th,
 fieldset .disabled-field th small,
-fieldset .disabled-field td {
+fieldset .disabled-field td{
     color: #666;
     background-color: #ddd;
 }
 
 form.create_table_form fieldset.tblFooters,
-form#multi_edit_central_columns fieldset.tblFooters {
+form#multi_edit_central_columns fieldset.tblFooters{
     background: none;
     border: none;
 }
 
-form#tableOptionsForm input[name="comment"], form#tableOptionsForm select[name="tbl_collation"] {
+form#tableOptionsForm input[name="comment"], form#tableOptionsForm select[name="tbl_collation"]{
     width: 130px;
 }
 
@@ -2894,72 +2763,65 @@ form#change_db_charset_form .tblFooters,
 form#alterTableOrderby .tblFooters,
 form#moveTableForm .tblFooters,
 form#copyTable .tblFooters,
-form#tableOptionsForm .tblFooters
-{
+form#tableOptionsForm .tblFooters{
     margin-top: -40px;
 }
 
-#create_table_form_minimal
-{
+#create_table_form_minimal{
     display: block;
 }
 
 #fieldset_zoom_search table th,
-#fieldset_zoom_search table td
-{
+#fieldset_zoom_search table td{
     line-height: 35px;
 }
 
 #fieldset_table_qbe table th,
-#fieldset_table_qbe table td
-{
+#fieldset_table_qbe table td{
     line-height: 35px;
 }
 
-#fieldset_delete_user_footer
-{
+#fieldset_delete_user_footer{
     margin-top: -59px;
 }
 
-#db_or_table_specific_priv .tblFooters
-{
+#db_or_table_specific_priv .tblFooters{
     margin-top: -68px;
 }
 
 #edit_user_dialog,
-#add_user_dialog
-{
+#add_user_dialog{
     margin: 20px !important;
 }
 
-.config-form .lastrow {
+.config-form .lastrow{
     padding: .5em;
     text-align: center;
 }
 
 /* form elements */
 
-.config-form span.checkbox {
+.config-form span.checkbox{
     padding: 2px;
     display: inline-block;
 }
 
-.config-form .custom { /* customized field */
+.config-form .custom{ /* customized field */
     background: #FFC;
 }
 
-.config-form span.checkbox.custom {
+.config-form span.checkbox.custom{
     padding: 1px;
     border: 1px #EDEC90 solid;
     background: #FFC;
 }
 
-.config-form img.ic_s_reload {
+.config-form img.ic_s_reload{
     -webkit-filter: invert(70%);
     filter: invert(70%);
 }
 
-.config-form .field-error {
+.config-form .field-error{
     border-color: #A11 !important;
 }
 
@@ -2967,7 +2829,7 @@ form#tableOptionsForm .tblFooters
 .config-form input[type="password"],
 .config-form input[type="number"],
 .config-form select,
-.config-form textarea {
+.config-form textarea{
     border: 1px #A7A6AA solid;
     height: auto;
 }
@@ -2976,12 +2838,12 @@ form#tableOptionsForm .tblFooters
 .config-form input[type="password"]:focus,
 .config-form input[type="number"]:focus,
 .config-form select:focus,
-.config-form textarea:focus {
+.config-form textarea:focus{
     border: 1px #6676FF solid;
     background: #F7FBFF;
 }
 
-.config-form .field-comment-mark {
+.config-form .field-comment-mark{
     font-family: serif;
     color: #007;
     cursor: help;
@@ -2990,49 +2852,49 @@ form#tableOptionsForm .tblFooters
     font-style: italic;
 }
 
-.config-form .field-comment-warning {
+.config-form .field-comment-warning{
     color: #A00;
 }
 
 /* error list */
-.config-form dd {
+.config-form dd{
     margin-<?php echo $left; ?>: .5em;
 }
 
-.config-form dd:before {
+.config-form dd:before{
     content: "\25B8  ";
 }
 
-.click-hide-message {
+.click-hide-message{
     cursor: pointer;
 }
 
-.prefsmanage_opts {
+.prefsmanage_opts{
     margin-<?php echo $left; ?>: 2em;
 }
 
-#prefs_autoload {
+#prefs_autoload{
     margin-bottom: .5em;
     margin-left: .5em;
 }
 
-#placeholder .button {
+#placeholder .button{
     position: absolute;
     cursor: pointer;
 }
 
-#placeholder div.button {
+#placeholder div.button{
     font-size: smaller;
     color: #999;
     background-color: #eee;
     padding: 2px;
 }
 
-.wrapper {
+.wrapper{
     float: <?php echo $left; ?>;
     margin-bottom: 1.5em;
 }
-.toggleButton {
+.toggleButton{
     position: relative;
     cursor: pointer;
     font-size: .8em;
@@ -3045,45 +2907,44 @@ form#tableOptionsForm .tblFooters
 }
 .toggleButton table,
 .toggleButton td,
-.toggleButton img {
+.toggleButton img{
     padding: 0;
     position: relative;
 }
-.toggleButton .container {
+.toggleButton .container{
     position: absolute;
 }
-.toggleButton .container td {
+.toggleButton .container td{
     background-image: none;
     background: none;
 }
-.toggleButton .toggleOn {
+.toggleButton .toggleOn{
     color: #fff;
     padding: 0 1em;
 }
-.toggleButton .toggleOff {
+.toggleButton .toggleOff{
     padding: 0 1em;
 }
 
-.doubleFieldset fieldset {
+.doubleFieldset fieldset{
     width: 48%;
     float: <?php echo $left; ?>;
     padding: 0;
 }
-.doubleFieldset fieldset.left {
+.doubleFieldset fieldset.left{
     margin-<?php echo $right; ?>: 1%;
 }
-.doubleFieldset fieldset.right {
+.doubleFieldset fieldset.right{
     margin-<?php echo $left; ?>: 1%;
 }
-.doubleFieldset legend {
+.doubleFieldset legend{
     margin-<?php echo $left; ?>: 1.5em;
 }
-.doubleFieldset div.wrap {
+.doubleFieldset div.wrap{
     padding: 1.5em;
 }
 
-form.append_fields_form .tblFooters
-{
+form.append_fields_form .tblFooters{
     background: none;
     border: none;
 }
@@ -3092,7 +2953,7 @@ form.append_fields_form .tblFooters
 #table_columns input[type="password"],
 #table_columns input[type="number"],
 #table_columns input[type="date"],
-#table_columns select {
+#table_columns select{
     width: 10em;
     box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -3100,61 +2961,61 @@ form.append_fields_form .tblFooters
     -webkit-box-sizing: border-box;
 }
 
-#table_columns select {
+#table_columns select{
     margin: 6px;
 }
 
-#placeholder {
+#placeholder{
     position: relative;
     border: 1px solid #aaa;
     float: <?php echo $right; ?>;
     overflow: hidden;
 }
 
-.placeholderDrag {
+.placeholderDrag{
     cursor: move;
 }
 
-#placeholder .button {
+#placeholder .button{
     position: absolute;
 }
 
-#left_arrow {
+#left_arrow{
     left: 8px;
     top: 26px;
 }
 
-#right_arrow {
+#right_arrow{
     left: 26px;
     top: 26px;
 }
 
-#up_arrow {
+#up_arrow{
     left: 17px;
     top: 8px;
 }
 
-#down_arrow {
+#down_arrow{
     left: 17px;
     top: 44px;
 }
 
-#zoom_in {
+#zoom_in{
     left: 17px;
     top: 67px;
 }
 
-#zoom_world {
+#zoom_world{
     left: 17px;
     top: 85px;
 }
 
-#zoom_out {
+#zoom_out{
     left: 17px;
     top: 103px;
 }
 
-.colborder {
+.colborder{
     cursor: col-resize;
     height: 100%;
     margin-<?php echo $left; ?>: -6px;
@@ -3162,36 +3023,36 @@ form.append_fields_form .tblFooters
     width: 5px;
 }
 
-.colborder_active {
+.colborder_active{
     border-<?php echo $right; ?>: 2px solid #a44;
 }
 
-.pma_table td {
+.pma_table td{
     position: static;
 }
 
 .pma_table th.draggable span,
-.pma_table tbody td span {
+.pma_table tbody td span{
     display: block;
     overflow: hidden;
 }
 
-.pma_table tbody td span code span {
+.pma_table tbody td span code span{
     display: inline;
 }
 
-.modal-copy input {
+.modal-copy input{
     display: block;
     width: 100%;
     margin-top: 1.5em;
     padding: .3em 0;
 }
 
-.cRsz {
+.cRsz{
     position: absolute;
 }
 
-.cCpy {
+.cCpy{
     background: #333;
     color: #FFF;
     font-weight: bold;
@@ -3200,7 +3061,7 @@ form.append_fields_form .tblFooters
     position: absolute;
 }
 
-.cPointer {
+.cPointer{
     background: url(<?php echo $_SESSION['PMA_Theme']->getImgPath('col_pointer.png');?>);
     height: 20px;
     margin-<?php echo $left; ?>: -5px;  /* must be minus half of its width */
@@ -3209,7 +3070,7 @@ form.append_fields_form .tblFooters
     width: 10px;
 }
 
-.tooltip {
+.tooltip{
     background: #333 !important;
     opacity: .8 !important;
     border: 1px solid #000 !important;
@@ -3220,18 +3081,18 @@ form.append_fields_form .tblFooters
     line-height: 1.5;
 }
 
-.tooltip * {
+.tooltip *{
     background: none !important;
     color: #FFF !important;
 }
 
-.cDrop {
+.cDrop{
     left: 0;
     position: absolute;
     top: 0;
 }
 
-.coldrop {
+.coldrop{
     background: url(<?php echo $_SESSION['PMA_Theme']->getImgPath('col_drop.png');?>);
     cursor: pointer;
     height: 16px;
@@ -3242,32 +3103,32 @@ form.append_fields_form .tblFooters
 }
 
 .coldrop:hover,
-.coldrop-hover {
+.coldrop-hover{
     background-color: #999;
 }
 
-.cList {
+.cList{
     background: #fff;
     border: solid 1px #ccc;
     position: absolute;
 }
 
-.cList .lDiv div {
+.cList .lDiv div{
     padding: .2em .5em .2em;
     padding-<?php echo $left; ?>: .2em;
 }
 
-.cList .lDiv div:hover {
+.cList .lDiv div:hover{
     background: <?php echo $GLOBALS['cfg']['NaviBackground']; ?>;
     cursor: pointer;
     color: #fff;
 }
 
-.cList .lDiv div input {
+.cList .lDiv div input{
     cursor: pointer;
 }
 
-.showAllColBtn {
+.showAllColBtn{
     border-bottom: solid 1px #ccc;
     border-top: solid 1px #ccc;
     cursor: pointer;
@@ -3278,33 +3139,30 @@ form.append_fields_form .tblFooters
     font-weight: normal;
 }
 
-.showAllColBtn:hover {
+.showAllColBtn:hover{
     background: <?php echo $GLOBALS['cfg']['NaviBackground']; ?>;
     cursor: pointer;
     color: #fff;
 }
 
-#page_content {
+#page_content{
     line-height: 1.5;
 }
 
-.navigation
-{
+.navigation{
     width: 100%;
     background-color: <?php echo $GLOBALS['cfg']['NaviBackground']; ?>;
     color: <?php echo $GLOBALS['cfg']['NaviColor']; ?>;
 }
 
-.navigation td
-{
+.navigation td{
     margin: 0;
     padding: 0;
     vertical-align: middle;
     white-space: nowrap;
 }
 
-.navigation_separator
-{
+.navigation_separator{
     color: #eee;
     display: inline-block;
     font-size: 1.5em;
@@ -3312,8 +3170,7 @@ form.append_fields_form .tblFooters
     height: 1.4em;
 }
 
-.navigation input[type=submit]
-{
+.navigation input[type=submit]{
     background: <?php echo $GLOBALS['cfg']['NaviBackground']; ?>;
     border: none;
     filter: none;
@@ -3321,35 +3178,30 @@ form.append_fields_form .tblFooters
     padding: 0.4em;
 }
 
-.navigation input[type=submit]:hover, .navigation input.edit_mode_active
-{
+.navigation input[type=submit]:hover, .navigation input.edit_mode_active{
     color: <?php echo $GLOBALS['cfg']['ButtonColor']; ?>;
     cursor: pointer;
     background-color: <?php echo $GLOBALS['cfg']['ThColor']; ?>;
 }
 
-.navigation select
-{
+.navigation select{
     margin: 0 0.8em;
     border: none;
 }
 
-.navigation input[type=text]
-{
+.navigation input[type=text]{
     border: none;
 }
 
-.navigation_goto
-{
+.navigation_goto{
     width: 100%;
 }
 
-.insertRowTable td, .insertRowTable th
-{
+.insertRowTable td, .insertRowTable th{
     vertical-align: middle;
 }
 
-.cEdit {
+.cEdit{
     margin: 0;
     padding: 0;
     position: absolute;
@@ -3357,14 +3209,14 @@ form.append_fields_form .tblFooters
 
 .cEdit input[type=text],
 .cEdit input[type=password],
-.cEdit input[type=number] {
+.cEdit input[type=number]{
     background: #FFF;
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-.cEdit .edit_area {
+.cEdit .edit_area{
     background: #FFF;
     border: 1px solid #999;
     min-width: 10em;
@@ -3372,73 +3224,73 @@ form.append_fields_form .tblFooters
 }
 
 .cEdit .edit_area select,
-.cEdit .edit_area textarea {
+.cEdit .edit_area textarea{
     width: 97%;
 }
 
-.cEdit .cell_edit_hint {
+.cEdit .cell_edit_hint{
     color: #555;
     font-size: .8em;
     margin: .3em .2em;
 }
 
-.cEdit .edit_box {
+.cEdit .edit_box{
     overflow: hidden;
     padding: 0;
     margin-top: 10px;
 }
 
-.cEdit .edit_box_posting {
+.cEdit .edit_box_posting{
     background: #FFF url(<?php echo $_SESSION['PMA_Theme']->getImgPath('ajax_clock_small.gif');?>) no-repeat right center;
     padding-<?php echo $right; ?>: 1.5em;
 }
 
-.cEdit .edit_area_loading {
+.cEdit .edit_area_loading{
     background: #FFF url(<?php echo $_SESSION['PMA_Theme']->getImgPath('ajax_clock_small.gif');?>) no-repeat center;
     height: 10em;
 }
 
-.cEdit .goto_link {
+.cEdit .goto_link{
     background: #EEE;
     color: #555;
     padding: .2em .3em;
 }
 
-.saving_edited_data {
+.saving_edited_data{
     background: url(<?php echo $_SESSION['PMA_Theme']->getImgPath('ajax_clock_small.gif');?>) no-repeat left;
     padding-<?php echo $left; ?>: 20px;
 }
 
-.relationalTable select {
+.relationalTable select{
     width: 125px;
     margin-right: 5px;
 }
 
 /* css for timepicker */
-.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
-.ui-timepicker-div dl { text-align: <?php echo $left; ?>; }
-.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
-.ui-timepicker-div dl dd { margin: 0 10px 10px 85px; }
-.ui-timepicker-div td { font-size: 90%; }
-.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
-.ui-timepicker-rtl { direction: rtl; }
-.ui-timepicker-rtl dl { text-align: right; }
-.ui-timepicker-rtl dl dd { margin: 0 65px 10px 10px; }
+.ui-timepicker-div .ui-widget-header{ margin-bottom: 8px; }
+.ui-timepicker-div dl{ text-align: <?php echo $left; ?>; }
+.ui-timepicker-div dl dt{ height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd{ margin: 0 10px 10px 85px; }
+.ui-timepicker-div td{ font-size: 90%; }
+.ui-tpicker-grid-label{ background: none; border: none; margin: 0; padding: 0; }
+.ui-timepicker-rtl{ direction: rtl; }
+.ui-timepicker-rtl dl{ text-align: right; }
+.ui-timepicker-rtl dl dd{ margin: 0 65px 10px 10px; }
 
-input.btn {
+input.btn{
     color: #333;
     background-color: #D0DCE0;
 }
 
-body .ui-widget {
+body .ui-widget{
     font-size: 1em;
 }
 
-.ui-dialog fieldset legend a {
+.ui-dialog fieldset legend a{
     color: #235A81;
 }
 
-.report-data {
+.report-data{
     height:13em;
     overflow:scroll;
     width:570px;
@@ -3447,114 +3299,114 @@ body .ui-widget {
     padding: 2px;
 }
 
-.report-description {
+.report-description{
     height:10em;
     width:570px;
 }
 
-div#page_content div#tableslistcontainer table.data {
+div#page_content div#tableslistcontainer table.data{
     border-top: 0.1px solid #EEEEEE;
 }
 
-div#page_content form#db_search_form.ajax fieldset {
+div#page_content form#db_search_form.ajax fieldset{
     margin-top: -0.3em;
 }
 
-div#page_content div#tableslistcontainer, div#page_content div.notice, div#page_content div.result_query {
+div#page_content div#tableslistcontainer, div#page_content div.notice, div#page_content div.result_query{
     margin-top: 1em;
 }
 
-table.show_create {
+table.show_create{
     margin-top: 1em;
 }
 
-table.show_create td {
+table.show_create td{
     border-right: 1px solid #bbb;
 }
 
-#alias_modal table th {
+#alias_modal table th{
     vertical-align: middle;
     padding-left: 1em;
 }
 
-#alias_modal label.col-2 {
+#alias_modal label.col-2{
     min-width: 20%;
     display: inline-block;
 }
 
-#alias_modal select {
+#alias_modal select{
     width: 25%;
     margin-right: 2em;
 }
 
-#alias_modal label {
+#alias_modal label{
     font-weight: bold;
 }
 
-.small_font {
+.small_font{
     font-size: smaller;
 }
 
 /* Console styles */
-#pma_console_container {
+#pma_console_container{
     width: 100%;
     position: fixed;
     bottom: 0;
     <?php echo $left; ?>: 0;
     z-index: 100;
 }
-#pma_console {
+#pma_console{
     position: relative;
     margin-<?php echo $left; ?>: 250px;
 }
-#pma_console .templates {
+#pma_console .templates{
     display: none;
 }
 #pma_console .mid_text,
-#pma_console .toolbar span {
+#pma_console .toolbar span{
     vertical-align: middle;
 }
-#pma_console .toolbar {
+#pma_console .toolbar{
     position: relative;
     background: <?php echo $GLOBALS['cfg']['ThBackground']; ?>;
     border-top: solid 1px #ccc;
     cursor: n-resize;
 }
-#pma_console .toolbar.collapsed:not(:hover) {
+#pma_console .toolbar.collapsed:not(:hover){
     display: inline-block;
     border-<?php echo $right; ?>: solid 1px #ccc;
 }
-#pma_console .toolbar.collapsed {
+#pma_console .toolbar.collapsed{
     cursor: default;
 }
-#pma_console .toolbar.collapsed>.button {
+#pma_console .toolbar.collapsed>.button{
     display: none;
 }
 #pma_console .message span.text,
 #pma_console .message span.action,
 #pma_console .toolbar .button,
 #pma_console .toolbar .text,
-#pma_console .switch_button {
+#pma_console .switch_button{
     padding: 0 3px;
     display: inline-block;
 }
 #pma_console .message span.action,
 #pma_console .toolbar .button,
-#pma_console .switch_button {
+#pma_console .switch_button{
     cursor: pointer;
 }
-#pma_console .toolbar .text {
+#pma_console .toolbar .text{
     font-weight: bold;
 }
 #pma_console .toolbar .button,
-#pma_console .toolbar .text {
+#pma_console .toolbar .text{
     margin-<?php echo $right; ?>: .4em;
 }
 #pma_console .toolbar .button,
-#pma_console .toolbar .text {
+#pma_console .toolbar .text{
     float: <?php echo $right; ?>;
 }
-#pma_console .content {
+#pma_console .content{
     overflow-x: hidden;
     overflow-y: auto;
     margin-bottom: -65px;
@@ -3562,79 +3414,79 @@ table.show_create td {
     background: #fff;
     padding-top: .4em;
 }
-#pma_console .content.console_dark_theme {
+#pma_console .content.console_dark_theme{
     background: #000;
     color: #fff;
 }
-#pma_console .content.console_dark_theme .CodeMirror-wrap {
+#pma_console .content.console_dark_theme .CodeMirror-wrap{
     background: #000;
     color: #fff;
 }
-#pma_console .content.console_dark_theme .action_content {
+#pma_console .content.console_dark_theme .action_content{
     color: #000;
 }
-#pma_console .content.console_dark_theme .message {
+#pma_console .content.console_dark_theme .message{
     border-color: #373B41;
 }
-#pma_console .content.console_dark_theme .CodeMirror-cursor {
+#pma_console .content.console_dark_theme .CodeMirror-cursor{
     border-color: #fff;
 }
-#pma_console .content.console_dark_theme .cm-keyword {
+#pma_console .content.console_dark_theme .cm-keyword{
     color: #de935f;
 }
 #pma_console .message,
-#pma_console .query_input {
+#pma_console .query_input{
     position: relative;
     font-family: Monaco, Consolas, monospace;
     cursor: text;
     margin: 0 10px .2em 1.4em;
 }
-#pma_console .message {
+#pma_console .message{
     border-bottom: solid 1px #ccc;
     padding-bottom: .2em;
 }
-#pma_console .message.expanded>.action_content {
+#pma_console .message.expanded>.action_content{
     position: relative;
 }
 #pma_console .message:before,
-#pma_console .query_input:before {
+#pma_console .query_input:before{
     left: -0.7em;
     position: absolute;
     content: ">";
 }
-#pma_console .query_input:before {
+#pma_console .query_input:before{
     top: -2px;
 }
-#pma_console .query_input textarea {
+#pma_console .query_input textarea{
     width: 100%;
     height: 4em;
     resize: vertical;
 }
-#pma_console .message:hover:before {
+#pma_console .message:hover:before{
     color: #7cf;
     font-weight: bold;
 }
-#pma_console .message.expanded:before {
+#pma_console .message.expanded:before{
     content: "]";
 }
-#pma_console .message.welcome:before {
+#pma_console .message.welcome:before{
     display: none;
 }
 #pma_console .message.failed:before,
 #pma_console .message.failed.expanded:before,
-#pma_console .message.failed:hover:before {
+#pma_console .message.failed:hover:before{
     content: "=";
     color: #944;
 }
-#pma_console .message.pending:before {
+#pma_console .message.pending:before{
     opacity: .3;
 }
-#pma_console .message.collapsed>.query {
+#pma_console .message.collapsed>.query{
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
-#pma_console .message.expanded>.query {
+#pma_console .message.expanded>.query{
     display: block;
     white-space: pre;
     word-wrap: break-word;
@@ -3645,7 +3497,7 @@ table.show_create td {
 #pma_console .message .action.requery,
 #pma_console .message .action.profiling,
 #pma_console .message .action.explain,
-#pma_console .message .action.bookmark {
+#pma_console .message .action.bookmark{
     display: none;
 }
 #pma_console .message.select .action.profiling,
@@ -3657,52 +3509,52 @@ table.show_create td {
 #pma_console .message.bookmark .action.requery,
 #pma_console .message.bookmark .action.bookmark,
 #pma_console .message.successed .action.requery,
-#pma_console .message.successed .action.bookmark {
+#pma_console .message.successed .action.bookmark{
     display: inline-block;
 }
-#pma_console .message .action_content {
+#pma_console .message .action_content{
     position: absolute;
     bottom: 100%;
     background: #ccc;
     border: solid 1px #aaa;
 }
-html.ie8 #pma_console .message .action_content {
+html.ie8 #pma_console .message .action_content{
     position: relative!important;
 }
 #pma_console .message.bookmark .text.targetdb,
-#pma_console .message .text.query_time {
+#pma_console .message .text.query_time{
     margin: 0;
     display: inline-block;
 }
 #pma_console .message.failed .text.query_time,
-#pma_console .message .text.failed {
+#pma_console .message .text.failed{
     display: none;
 }
-#pma_console .message.failed .text.failed {
+#pma_console .message.failed .text.failed{
     display: inline-block;
 }
-#pma_console .message .text {
+#pma_console .message .text{
     background: #fff;
 }
-#pma_console .message.collapsed>.action_content {
+#pma_console .message.collapsed>.action_content{
     display: none;
 }
-#pma_console .message.collapsed:hover>.action_content {
+#pma_console .message.collapsed:hover>.action_content{
     display: block;
 }
-#pma_console .message .bookmark_label {
+#pma_console .message .bookmark_label{
     padding: 0 4px;
     top: 0;
     background: #369;
     color: #fff;
 }
-#pma_console .message .bookmark_label.shared {
+#pma_console .message .bookmark_label.shared{
     background: #396;
 }
-#pma_console .query_input {
+#pma_console .query_input{
     position: relative;
 }
-#pma_console .mid_layer {
+#pma_console .mid_layer{
     height: 100%;
     width: 100%;
     position: absolute;
@@ -3714,7 +3566,7 @@ html.ie8 #pma_console .message .action_content {
     cursor: pointer;
     z-index: 200;
 }
-#pma_console .card {
+#pma_console .card{
     position: absolute;
     width: 94%;
     height: 100%;
@@ -3728,50 +3580,50 @@ html.ie8 #pma_console .message .action_content {
     -webkit-transition: <?php echo $left; ?> 0.2s;
     -moz-transition: <?php echo $left; ?> 0.2s;
 }
-#pma_console .card.show {
+#pma_console .card.show{
     <?php echo $left; ?>: 6%;
 }
 
-html.ie7 #pma_console .query_input {
+html.ie7 #pma_console .query_input{
     display: none;
 }
 
 #pma_bookmarks .content.add_bookmark,
-#pma_console_options .content {
+#pma_console_options .content{
     padding: 4px 6px;
 }
-#pma_bookmarks .content.add_bookmark .options {
+#pma_bookmarks .content.add_bookmark .options{
     margin-<?php echo $left; ?>: 1.4em;
     padding-bottom: .4em;
     margin-bottom: .4em;
     border-bottom: solid 1px #ccc;
 }
-#pma_bookmarks .content.add_bookmark .options button {
+#pma_bookmarks .content.add_bookmark .options button{
     margin: 0 7px;
     vertical-align: bottom;
 }
-#pma_bookmarks .content.add_bookmark input[type=text] {
+#pma_bookmarks .content.add_bookmark input[type=text]{
     margin: 0;
     padding: 2px 4px;
 }
 #pma_console .button.hide,
-#pma_console .message span.text.hide {
+#pma_console .message span.text.hide{
     display: none;
 }
 #debug_console.grouped .ungroup_queries,
-#debug_console.ungrouped .group_queries {
+#debug_console.ungrouped .group_queries{
     display: inline-block;
 }
 #debug_console.ungrouped .ungroup_queries,
 #debug_console.ungrouped .sort_count,
-#debug_console.grouped .group_queries {
+#debug_console.grouped .group_queries{
     display: none;
 }
-#debug_console .count {
+#debug_console .count{
     margin-right: 8px;
 }
 #debug_console .show_trace .trace,
-#debug_console .show_args .args {
+#debug_console .show_args .args{
     display: block;
 }
 #debug_console .hide_trace .trace,
@@ -3779,59 +3631,59 @@ html.ie7 #pma_console .query_input {
 #debug_console .show_trace .action.dbg_show_trace,
 #debug_console .hide_trace .action.dbg_hide_trace,
 #debug_console .traceStep.hide_args .action.dbg_hide_args,
-#debug_console .traceStep.show_args .action.dbg_show_args {
+#debug_console .traceStep.show_args .action.dbg_show_args{
     display: none;
 }
 
 #debug_console .traceStep:after,
 #debug_console .trace.welcome:after,
-#debug_console .debug>.welcome:after {
+#debug_console .debug>.welcome:after{
     content: "";
     display: table;
     clear: both;
 }
-#debug_console .debug_summary {
+#debug_console .debug_summary{
     float: left;
 }
-#debug_console .trace.welcome .time {
+#debug_console .trace.welcome .time{
     float: right;
 }
 #debug_console .traceStep .file,
-#debug_console .script_name {
+#debug_console .script_name{
     float: right;
 }
-#debug_console .traceStep .args pre {
+#debug_console .traceStep .args pre{
     margin: 0;
 }
 
 /* Code mirror console style*/
 
 .cm-s-pma .CodeMirror-code pre,
-.cm-s-pma .CodeMirror-code {
+.cm-s-pma .CodeMirror-code{
     font-family: Monaco, Consolas, monospace;
 }
 .cm-s-pma .CodeMirror-measure>pre,
 .cm-s-pma .CodeMirror-code>pre,
-.cm-s-pma .CodeMirror-lines {
+.cm-s-pma .CodeMirror-lines{
     padding: 0;
 }
-.cm-s-pma.CodeMirror {
+.cm-s-pma.CodeMirror{
     resize: none;
     height: auto;
     width: 100%;
     min-height: initial;
     max-height: initial;
 }
-.firefox .cm-s-pma.CodeMirror {
+.firefox .cm-s-pma.CodeMirror{
     font-size: 120%;
 }
-.cm-s-pma .CodeMirror-scroll {
+.cm-s-pma .CodeMirror-scroll{
     cursor: text;
 }
 
 /* PMA drop-improt style */
 
-.pma_drop_handler {
+.pma_drop_handler{
     display: none;
     position: fixed;
     top: 0;
@@ -3846,7 +3698,7 @@ html.ie7 #pma_console .query_input {
     padding-top: 20%;
 }
 
-.pma_sql_import_status {
+.pma_sql_import_status{
     display: none;
     position: fixed;
     bottom: 0;
@@ -3857,7 +3709,7 @@ html.ie7 #pma_console .query_input {
 }
 
 .pma_sql_import_status h2,
-.pma_drop_result h2 {
+.pma_drop_result h2{
     background-color: #bbb;
     padding: .1em .3em;
     margin-top: 0;
@@ -3867,31 +3719,31 @@ html.ie7 #pma_console .query_input {
     font-weight: normal;
 }
 
-.pma_sql_import_status div {
+.pma_sql_import_status div{
     height: 270px;
     overflow-y:auto;
     overflow-x:hidden;
     list-style-type: none;
 }
 
-.pma_sql_import_status div li {
+.pma_sql_import_status div li{
     padding: 8px 10px;
     border-bottom: 1px solid #bbb;
     color: rgb(148, 14, 14);
     background: white;
 }
 
-.pma_sql_import_status div li .filesize {
+.pma_sql_import_status div li .filesize{
     float: right;
 }
 
-.pma_sql_import_status h2 .minimize {
+.pma_sql_import_status h2 .minimize{
     float: right;
     margin-right: 5px;
     padding: 0 10px;
 }
 
-.pma_sql_import_status h2 .close {
+.pma_sql_import_status h2 .close{
     float: right;
     margin-right: 5px;
     padding: 0 10px;
@@ -3900,21 +3752,21 @@ html.ie7 #pma_console .query_input {
 
 .pma_sql_import_status h2 .minimize:hover,
 .pma_sql_import_status h2 .close:hover,
-.pma_drop_result h2 .close:hover {
+.pma_drop_result h2 .close:hover{
     background: rgba(155, 149, 149, 0.78);
     cursor: pointer;
 }
 
-.pma_drop_file_status {
+.pma_drop_file_status{
     color: #235a81;
 }
 
-.pma_drop_file_status span.underline:hover {
+.pma_drop_file_status span.underline:hover{
     cursor: pointer;
     text-decoration: underline;
 }
 
-.pma_drop_result {
+.pma_drop_result{
     position: fixed;
     top: 10%;
     left: 20%;
@@ -3925,23 +3777,23 @@ html.ie7 #pma_console .query_input {
     cursor: move;
 }
 
-.pma_drop_result h2 .close {
+.pma_drop_result h2 .close{
     float: right;
     margin-right: 5px;
     padding: 0 10px;
 }
 
-.dependencies_box {
+.dependencies_box{
     background-color: white;
     border: 3px ridge black;
 }
 
-#composite_index_list {
+#composite_index_list{
     list-style-type: none;
     list-style-position: inside;
 }
 
-span.drag_icon {
+span.drag_icon{
     display: inline-block;
     background-image: url('<?php echo $_SESSION['PMA_Theme']->getImgPath('s_sortable.png');?>');
     background-position: center center;
@@ -3951,21 +3803,21 @@ span.drag_icon {
     cursor: move;
 }
 
-.topmargin {
+.topmargin{
     margin-top: 1em;
 }
 
 /* styles for sortable tables created with tablesorter jquery plugin */
-th.header {
+th.header{
     cursor: pointer;
     color: #235a81;
 }
 
-th.header:hover {
+th.header:hover{
     text-decoration: underline;
 }
 
-th.header .sorticon {
+th.header .sorticon{
     width: 16px;
     height: 16px;
     background-repeat: no-repeat;
@@ -3975,26 +3827,26 @@ th.header .sorticon {
     float: right;
 }
 
-th.headerSortUp .sorticon, th.headerSortDown:hover .sorticon {
+th.headerSortUp .sorticon, th.headerSortDown:hover .sorticon{
     background-image: url(<?php echo $_SESSION['PMA_Theme']->getImgPath('s_desc.png');?>);
 }
 
-th.headerSortDown .sorticon, th.headerSortUp:hover .sorticon {
+th.headerSortDown .sorticon, th.headerSortUp:hover .sorticon{
     background-image: url(<?php echo $_SESSION['PMA_Theme']->getImgPath('s_asc.png');?>);
 }
 /* end of styles of sortable tables */
 
 /* styles for jQuery-ui to support rtl languages */
-body .ui-dialog .ui-dialog-titlebar-close {
+body .ui-dialog .ui-dialog-titlebar-close{
     <?php echo $right; ?>: .3em;
     <?php echo $left; ?>: initial;
 }
 
-body .ui-dialog .ui-dialog-title {
+body .ui-dialog .ui-dialog-title{
     float: <?php echo $left; ?>;
 }
 
-body .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+body .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset{
     float: <?php echo $right; ?>;
 }
 /* end of styles for jQuery-ui to support rtl languages */
@@ -4003,53 +3855,53 @@ body .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
 body .ui-corner-all,
 body .ui-corner-top,
 body .ui-corner-left,
-body .ui-corner-tl {
+body .ui-corner-tl{
     border-top-left-radius: 0;
 }
 body .ui-corner-all,
 body .ui-corner-top,
 body .ui-corner-right,
-body .ui-corner-tr {
+body .ui-corner-tr{
     border-top-right-radius: 0;
 }
 body .ui-corner-all,
 body .ui-corner-bottom,
 body .ui-corner-left,
-body .ui-corner-bl {
+body .ui-corner-bl{
     border-bottom-left-radius: 0;
 }
 body .ui-corner-all,
 body .ui-corner-bottom,
 body .ui-corner-right,
-body .ui-corner-br {
+body .ui-corner-br{
     border-bottom-right-radius: 0;
 }
 /* Override  jQuery-ui styling for ui-dialog */
-body .ui-dialog {
+body .ui-dialog{
     padding: 0;
 }
-body .ui-dialog .ui-widget-header {
+body .ui-dialog .ui-widget-header{
     color: <?php echo $GLOBALS['cfg']['ButtonColor']; ?>;
     border: none;
     background-color: <?php echo $GLOBALS['cfg']['NaviBackground']; ?>;
     background-image: none;
 }
-body .ui-dialog .ui-dialog-title {
+body .ui-dialog .ui-dialog-title{
     padding: 5px;
     font-weight: normal;
 }
-body .ui-dialog .ui-dialog-buttonpane button {
+body .ui-dialog .ui-dialog-buttonpane button{
     font-family: <?php echo $GLOBALS['cfg']['FontFamily']; ?>;
     color: <?php echo $GLOBALS['cfg']['ButtonColor']; ?>;
     background-color: <?php echo $GLOBALS['cfg']['NaviBackground']; ?>;
     background-image: none;
     border: 1px solid <?php echo $GLOBALS['cfg']['ButtonBackground']; ?>;
 }
-body .ui-dialog .ui-dialog-buttonpane button.ui-state-hover {
+body .ui-dialog .ui-dialog-buttonpane button.ui-state-hover{
     background-color: <?php echo $GLOBALS['cfg']['ButtonHover']; ?>;
     border: 1px solid <?php echo $GLOBALS['cfg']['ButtonHover']; ?>;
 }
-body .ui-dialog .ui-dialog-buttonpane button.ui-state-active {
+body .ui-dialog .ui-dialog-buttonpane button.ui-state-active{
     background-color: #333;
     border: 1px solid #333;
 }

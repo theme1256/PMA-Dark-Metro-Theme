@@ -8,12 +8,16 @@
     $GLOBALS['cfg']['Scheme']                   = "Dark";
 
     $GLOBALS['cfg']['MainColor']                = '#EEEEEE';
+    $GLOBALS['cfg']['MainText']                 = '#EEEEEE';
     $GLOBALS['cfg']['MainHeaderColor']          = '#E0E0E0';
     $GLOBALS['cfg']['MainBackground']           = '#151515';
-    $GLOBALS['cfg']['MainLinkColor']            = '#01579B';
+    $GLOBALS['cfg']['MainLinkColor']            = '#297CBC';
 
     $GLOBALS['cfg']['LoginBackground']          = '#151515';
     $GLOBALS['cfg']['LoginText']                = '#EEEEEE';
+
+    $GLOBALS['cfg']['NoticeBackground']         = '#555555';
+    $GLOBALS['cfg']['NoticeText']               = '#EEEEEE';
 
     $GLOBALS['cfg']['NaviColor']                = '#212121';
     $GLOBALS['cfg']['NaviBackground']           = '#424242';
@@ -25,8 +29,13 @@
     $GLOBALS['cfg']['NaviHoverBackground']      = '#999999';
     $GLOBALS['cfg']['NaviHeader']               = '#313131';
     $GLOBALS['cfg']['NaviText']                 = '#EEEEEE';
+    $GLOBALS['cfg']['NaviActive']               = '#424242';
 
-    $GLOBALS['cfg']['BrowsePointerColor']       = '#666666';
+    $GLOBALS['cfg']['DropdownBackgroundHover']  = '#565656';
+    $GLOBALS['cfg']['DropdownBackground']       = '#424242';
+    $GLOBALS['cfg']['DropdownBorder']           = '#424242';
+    $GLOBALS['cfg']['DropdownText']             = '#EEEEEE';
+
     $GLOBALS['cfg']['BrowseMarkerColor']        = '#000000';
     $GLOBALS['cfg']['BrowseWarningColor']       = '#666666';
     $GLOBALS['cfg']['BrowseSuccessColor']       = '#888888';
@@ -34,10 +43,6 @@
     $GLOBALS['cfg']['BrowseMarkerBackground']   = '#EEEEEE';
 
     $GLOBALS['cfg']['BorderColor']              = '#DDDDDD';
-
-    $GLOBALS['cfg']['ButtonColor']              = '#FFFFFF';
-    $GLOBALS['cfg']['ButtonBackground']         = '#AAAAAA';
-    $GLOBALS['cfg']['ButtonHover']              = '#000000';
 
     $GLOBALS['cfg']['ThBackground']             = '#212121';
     $GLOBALS['cfg']['ThDisabledBackground']     = '#F3F3F3';
@@ -49,10 +54,22 @@
     $GLOBALS['cfg']['BgTwo']                    = '#FFFFFF';
     $GLOBALS['cfg']['BlueHeader']               = '#555555';
 
+    $GLOBALS['cfg']['TableHover']               = '#252525';
+    $GLOBALS['cfg']['TableOdd']                 = '#212121';
+    $GLOBALS['cfg']['TableEven']                = '#151515';
+
     $GLOBALS['cfg']['InputBackground']          = '#212121';
     $GLOBALS['cfg']['InputBackgroundHover']     = '#252525';
     $GLOBALS['cfg']['InputText']                = '#EEEEEE';
     $GLOBALS['cfg']['InputBorder']              = '#424242';
     $GLOBALS['cfg']['InputBorderHover']         = '#505050';
+
+    $GLOBALS['cfg']['ButtonBorder']             = '#424242';
+    $GLOBALS['cfg']['ButtonBorderHover']        = '#505050';
+    $GLOBALS['cfg']['ButtonColor']              = '#EEEEEE';
+    $GLOBALS['cfg']['ButtonText']               = '#EEEEEE';
+    $GLOBALS['cfg']['ButtonBackground']         = '#212121';
+    $GLOBALS['cfg']['ButtonHover']              = '#252525';
+    $GLOBALS['cfg']['ButtonBackgroundHover']    = '#252525';
 
 ?>
