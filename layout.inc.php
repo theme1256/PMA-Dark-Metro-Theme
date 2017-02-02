@@ -12,12 +12,23 @@
     $GLOBALS['cfg']['MainHeaderColor']          = '#E0E0E0';
     $GLOBALS['cfg']['MainBackground']           = '#151515';
     $GLOBALS['cfg']['MainLinkColor']            = '#297CBC';
+    $GLOBALS['cfg']['FootBackground']           = '#151515';
+    $GLOBALS['cfg']['FootText']                 = '#EEEEEE';
+    $GLOBALS['cfg']['FootBorder']               = '#EEEEEE';
 
     $GLOBALS['cfg']['LoginBackground']          = '#151515';
     $GLOBALS['cfg']['LoginText']                = '#EEEEEE';
 
     $GLOBALS['cfg']['NoticeBackground']         = '#555555';
     $GLOBALS['cfg']['NoticeText']               = '#EEEEEE';
+    $GLOBALS['cfg']['NoticeBorder']             = '#555555';
+    $GLOBALS['cfg']['SuccessBackground']        = '#555555';
+    $GLOBALS['cfg']['SucesssText']              = '#EEEEEE';
+    $GLOBALS['cfg']['SuccessBorder']            = '#555555';
+    $GLOBALS['cfg']['ErrorBackground']          = '#555555';
+    $GLOBALS['cfg']['ErrorText']                = '#EEEEEE';
+    $GLOBALS['cfg']['ErrorBorder']              = '#555555';
+
     $GLOBALS['cfg']['PopupHeaderBackground']    = '#212121';
     $GLOBALS['cfg']['PopupHeaderText']          = '#EEEEEE';
     $GLOBALS['cfg']['PopupFadeBackground']      = '#000000';
@@ -26,15 +37,19 @@
     $GLOBALS['cfg']['PopupBorder']              = '#424242';
 
     $GLOBALS['cfg']['NaviColor']                = '#212121';
+    $GLOBALS['cfg']['NaviBackground1']          = '#212121';
     $GLOBALS['cfg']['NaviBackground']           = '#424242';
+    $GLOBALS['cfg']['NaviBackground2']          = '#424242';
     $GLOBALS['cfg']['NaviLogoBackground']       = '#565656';
     $GLOBALS['cfg']['NaviBackgroundLight']      = '#999999';
     $GLOBALS['cfg']['NaviPointerColor']         = '#666666';
     $GLOBALS['cfg']['NaviPointerBackground']    = '#666666';
     $GLOBALS['cfg']['NaviDatabaseNameColor']    = '#EEEEEE';
     $GLOBALS['cfg']['NaviHoverBackground']      = '#999999';
+    $GLOBALS['cfg']['NaviBackgroundHover']      = '#999999';
     $GLOBALS['cfg']['NaviHeader']               = '#313131';
     $GLOBALS['cfg']['NaviText']                 = '#EEEEEE';
+    $GLOBALS['cfg']['NaviTextHover']            = '#DDDDDD';
     $GLOBALS['cfg']['NaviActive']               = '#424242';
 
     $GLOBALS['cfg']['DropdownBackgroundHover']  = '#565656';
@@ -71,12 +86,4 @@
     $GLOBALS['cfg']['InputText']                = '#EEEEEE';
     $GLOBALS['cfg']['InputBorder']              = '#424242';
     $GLOBALS['cfg']['InputBorderHover']         = '#505050';
-
-    $GLOBALS['cfg']['ButtonBorder']             = '#424242';
-    $GLOBALS['cfg']['ButtonBorderHover']        = '#505050';
-    $GLOBALS['cfg']['ButtonColor']              = '#EEEEEE';
-    $GLOBALS['cfg']['ButtonText']               = '#EEEEEE';
-    $GLOBALS['cfg']['ButtonBackground']         = '#212121';
-    $GLOBALS['cfg']['ButtonHover']              = '#252525';
-    $GLOBALS['cfg']['ButtonBackgroundHover']    = '#252525';
 ?>

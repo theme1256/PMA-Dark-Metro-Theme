@@ -137,17 +137,9 @@
     background-color: <?php echo $GLOBALS['cfg']['NaviHeader']; ?>;
 }
 
-div#left_tableList li a:first-child:before
-{
-    color: <?php echo $GLOBALS['cfg']['NaviPointerColor']; ?>;
-    font-family: 'IcoMoon';
-    content: "";
-    margin: 10px;
-}
-
 div#left_tableList li:hover a:first-child:before
 {
-    color: <?php echo $GLOBALS['cfg']['ButtonColor']; ?>;
+    color: <?php echo $GLOBALS['cfg']['ButtonText']; ?>;
 }
 
 img.ic_b_home, img.ic_s_loggoff, img.ic_b_docs, img.ic_b_sqlhelp, img.ic_s_reload
@@ -165,11 +157,6 @@ img.ic_b_home, img.ic_s_loggoff, img.ic_b_docs, img.ic_b_sqlhelp, img.ic_s_reloa
     margin-right: 10px;
     padding: 5px;
     font-size: 15px;
-}
-
-#navipanellinks a:hover
-{
-    color: <?php echo $GLOBALS['cfg']['ThColor']; ?>;
 }
 
 #pma_navigation #serverChoice,
@@ -239,17 +226,13 @@ img.ic_b_home, img.ic_s_loggoff, img.ic_b_docs, img.ic_b_sqlhelp, img.ic_s_reloa
     z-index: 100;
 }
 #pma_navigation_tree a {
-    color: <?php echo $GLOBALS['cfg']['NaviColor']; ?>;
+    color: <?php echo $GLOBALS['cfg']['NaviText']; ?>;
 }
-#pma_navigation_tree a:hover {
-    text-decoration: none;
-    color: <?php echo $GLOBALS['cfg']['ThColor']; ?>;
-}
-#pma_navigation_tree li.activePointer {
-    color: <?php echo $GLOBALS['cfg']['ThColor']; ?>;
-}
+#pma_navigation_tree a:hover,
+#pma_navigation_tree li.activePointer,
 #pma_navigation_tree li.selected {
-    color: <?php echo $GLOBALS['cfg']['ThColor']; ?>;
+    text-decoration: none;
+    color: <?php echo $GLOBALS['cfg']['NaviTextHover']; ?>;
 }
 #pma_navigation_tree ul {
     clear: both;
@@ -351,9 +334,6 @@ img.ic_b_home, img.ic_s_loggoff, img.ic_b_docs, img.ic_b_sqlhelp, img.ic_s_reloa
     margin-<?php echo $left; ?>: 0.75em;
     padding-<?php echo $left; ?>: 0.75em;
 }
-#pma_navigation_tree .last > .list_container {
-    border-<?php echo $left; ?>: 0 solid #616161;
-}
 
 /* Fast filter */
 li.fast_filter {
@@ -364,8 +344,8 @@ li.fast_filter {
 }
 li.fast_filter input {
     width: 100%;
-    background-color: #FFFFFF;
-    border: 1px solid #CCCCCC;
+    background-color: <?php echo $GLOBALS['cfg']['InputBackground'];?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['InputBorder'];?>;
     color: #666666;
     font-family: "Open Sans","Segoe UI";
     padding: 2px;
@@ -443,9 +423,9 @@ li.fast_filter.db_fast_filter {
 }
 .pma_quick_warp .drop_button {
     padding: .2em .5em;
-    border: 1px solid <?php echo $GLOBALS['cfg']['DropdownBorder']; ?>;
-    background: <?php echo $GLOBALS['cfg']['DropdownBackground']; ?>;
-    color: <?php echo $GLOBALS['cfg']['DropdownText']; ?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['InputBorder']; ?>;
+    background: <?php echo $GLOBALS['cfg']['InputBackground']; ?>;
+    color: <?php echo $GLOBALS['cfg']['InputText']; ?>;
     cursor: pointer;
 }/*
 .pma_quick_warp .drop_list:hover .drop_button {

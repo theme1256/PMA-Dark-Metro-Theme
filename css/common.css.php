@@ -72,7 +72,7 @@ body{
 
 /* Override style formats by html tags */
 font[color=red], span[style="color: #FF0000"]{
-    color: <?php echo $GLOBALS['cfg']['BrowseWarningColor'];?> !important;
+    color: <?php echo $GLOBALS['cfg']['ErrorText'];?> !important;
 }
 
 strong{
@@ -1068,7 +1068,6 @@ div.footnotes{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     margin: 20px 0 20px;
-    border: 1px solid;
     background-repeat: no-repeat;
         <?php if ($GLOBALS['text_dir'] === 'ltr'){?>
     background-position: 10px 50%;
@@ -1079,66 +1078,26 @@ div.footnotes{
         <?php }?>
 }
 
-div.success{
-    margin: 0 0 1em 0;
-    border: none;
-}
-
-.success a,
-.notice a,
-.error a{
-    text-decoration: underline;
-    color: <?php echo $GLOBALS['cfg']['ButtonColor'];?>;
-}
-
-.success{
-    color: <?php echo $GLOBALS['cfg']['ButtonColor'];?>;
-    background-color: <?php echo $GLOBALS['cfg']['BrowseSuccessColor'];?>;
-}
-
-h1.success,
-div.success{
-    border-color: <?php echo $GLOBALS['cfg']['BrowseSuccessColor'];?>;
-}
-
+.confirmation,
 .notice{
     color: <?php echo $GLOBALS['cfg']['NoticeText'];?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['NoticeBorder'];?>;
     background-color: <?php echo $GLOBALS['cfg']['NoticeBackground'];?>;
 }
-
 .footnotes{
-    color: <?php echo $GLOBALS['cfg']['ButtonColor'];?>;
-    background-color: <?php echo $GLOBALS['cfg']['BlueHeader'];?>;
+    color: <?php echo $GLOBALS['cfg']['FootText'];?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['FootBorder'];?>;
+    background-color: <?php echo $GLOBALS['cfg']['FootBackground'];?>;
 }
-
-h1.notice,
-div.notice,
-div.footnotes{
-    border-color: <?php echo $GLOBALS['cfg']['BlueHeader'];?>;
+.success{
+    color: <?php echo $GLOBALS['cfg']['SuccessText'];?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['SuccessBorder'];?>;
+    background-color: <?php echo $GLOBALS['cfg']['SuccessBackground'];?>;
 }
-
-.notice a{
-    color: <?php echo $GLOBALS['cfg']['ButtonColor'];?>;
-}
-
 .error{
-    border: 1px solid <?php echo $GLOBALS['cfg']['BrowseWarningColor'];?> !important;
-    color: <?php echo $GLOBALS['cfg']['ButtonColor'];?>;
-    background-color: <?php echo $GLOBALS['cfg']['BrowseWarningColor'];?>;
-}
-
-h1.error,
-div.error{
-    border-color: <?php echo $GLOBALS['cfg']['MainColor'];?>;
-}
-
-.confirmation{
-    color: <?php echo $GLOBALS['cfg']['ButtonColor'];?>;
-    background-color: <?php echo $GLOBALS['cfg']['BrowseWarningColor'];?>;
-}
-
-fieldset.confirmation legend{
-    background-color: <?php echo $GLOBALS['cfg']['BrowseWarningColor'];?>;
+    color: <?php echo $GLOBALS['cfg']['ErrorText'];?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['ErrorBorder'];?>;
+    background-color: <?php echo $GLOBALS['cfg']['ErrorBackground'];?>;
 }
 
 /* end messageboxes */
@@ -1287,7 +1246,7 @@ fieldset.caution legend{
 fieldset.caution a{
     font-family: 'Open Sans Bold';
     text-transform: uppercase;
-    color: <?php echo $GLOBALS['cfg']['ButtonColor'];?>;
+    color: <?php echo $GLOBALS['cfg']['InputText'];?>;
     font-weight: normal;
 }
 
@@ -1302,7 +1261,7 @@ fieldset.caution li, #tbl_maintenance li{
 fieldset.caution li:before{
     font-family: 'IcoMoon';
     content: "";
-    color: <?php echo $GLOBALS['cfg']['ButtonColor'];?>;
+    color: <?php echo $GLOBALS['cfg']['InputText'];?>;
     margin-right: 10px;
 }
 
@@ -1369,6 +1328,7 @@ ul#topmenu ul li:first-child a{
 ul#topmenu > li > a:hover,
 ul#topmenu > li > .tabactive{
     text-decoration: none;
+    background-color: <?php echo $GLOBALS['cfg']['NaviActive'];?>;
     color: <?php echo $GLOBALS['cfg']['NaviText'];?>;
 }
 
@@ -1385,7 +1345,6 @@ ul#topmenu2 a:hover{
 
 /* to be able to cancel the bottom border, use <li class="active"> */
 ul#topmenu > li.active{
-
     border-right: 0;
 }
 /* end topmenu */
@@ -1469,7 +1428,7 @@ div#tablestatistics table{
     margin: 0;
     margin-left: -1em;
     font-family: <?php echo $GLOBALS['cfg']['FontFamily'];?>;
-    color: <?php echo $GLOBALS['cfg']['ButtonColor'];?>;
+    color: <?php echo $GLOBALS['cfg']['InputText'];?>;
     background: <?php echo $GLOBALS['cfg']['NaviBackground'];?>;
     font-height: 1.1em;
     height: 15px;
@@ -1478,7 +1437,7 @@ div#tablestatistics table{
 #serverinfo .item{
     font-family: <?php echo $GLOBALS['cfg']['FontFamily'];?>;
     white-space: nowrap;
-    color: <?php echo $GLOBALS['cfg']['ButtonColor'];?>;
+    color: <?php echo $GLOBALS['cfg']['InputText'];?>;
 }
 
 #serverinfo .item:before{
@@ -2099,12 +2058,12 @@ li#li_switch_dbstats{
 /* END iconic view for ul items */
 
 #body_browse_foreigners{
-    background: <?php echo $GLOBALS['cfg']['NaviBackground'];?>;
+    background: <?php echo $GLOBALS['cfg']['NaviBackground2'];?>;
     margin: .5em .5em 0 .5em;
 }
 
 #bodyquerywindow{
-    background: <?php echo $GLOBALS['cfg']['NaviBackground'];?>;
+    background: <?php echo $GLOBALS['cfg']['NaviBackground2'];?>;
 }
 
 #bodythemes{
@@ -2263,7 +2222,7 @@ div.upload_progress_bar_outer{
 }
 
 div.upload_progress_bar_inner{
-    background-color: <?php echo $GLOBALS['cfg']['NaviBackground'];?>;
+    background-color: <?php echo $GLOBALS['cfg']['NaviBackground2'];?>;
     width: 0;
     height: 12px;
     margin: 1px;
@@ -2324,7 +2283,7 @@ input[type=date].invalid_value
     background-repeat: no-repeat;
     background-position: 46%;
     margin: 0;
-    background-color: <?php echo $GLOBALS['cfg']['NaviColor'];?>;
+    background-color: <?php echo $GLOBALS['cfg']['NaviBackground1'];?>;
     color: <?php echo $GLOBALS['cfg']['MainColor'];?>;
     padding: 10px !important;
     border: none;
@@ -2631,12 +2590,12 @@ table#index_columns select{
     margin: .1em .2em 0;
     white-space: nowrap;
     text-decoration: none;
-    border: 1px solid <?php echo $GLOBALS['cfg']['NaviColor'];?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['NaviBackground1'];?>;
     border-bottom: 1px solid <?php echo $GLOBALS['cfg']['NaviText'];?>;
     color: <?php echo $GLOBALS['cfg']['NaviText'];?>;
     font-family: "open sans bold";
     padding: 7px 10px;
-    background: <?php echo $GLOBALS['cfg']['NaviColor'];?>;
+    background: <?php echo $GLOBALS['cfg']['NaviBackground1'];?>;
 }
 
 .config-form ul.tabs li a:hover,
@@ -2737,7 +2696,7 @@ table#index_columns select{
 
 .config-form fieldset th,
 .config-form fieldset td{
-    border-bottom: 1px <?php echo $GLOBALS['cfg']['NaviColor'];?> solid;
+    border-bottom: 1px <?php echo $GLOBALS['cfg']['NaviBackground1'];?> solid;
     border-<?php echo $right;?>: none;
 }
 
@@ -3126,7 +3085,7 @@ form.append_fields_form .tblFooters{
 }
 
 .cList .lDiv div:hover{
-    background: <?php echo $GLOBALS['cfg']['NaviBackground'];?>;
+    background: <?php echo $GLOBALS['cfg']['NaviBackground2'];?>;
     cursor: pointer;
     color: #fff;
 }
@@ -3147,7 +3106,7 @@ form.append_fields_form .tblFooters{
 }
 
 .showAllColBtn:hover{
-    background: <?php echo $GLOBALS['cfg']['NaviBackground'];?>;
+    background: <?php echo $GLOBALS['cfg']['NaviBackground2'];?>;
     cursor: pointer;
     color: #fff;
 }
@@ -3158,7 +3117,7 @@ form.append_fields_form .tblFooters{
 
 .navigation{
     width: 100%;
-    background-color: <?php echo $GLOBALS['cfg']['NaviBackground'];?>;
+    background-color: <?php echo $GLOBALS['cfg']['NaviBackground2'];?>;
     color: <?php echo $GLOBALS['cfg']['NaviText'];?>;
 }
 
@@ -3178,18 +3137,18 @@ form.append_fields_form .tblFooters{
 }
 
 .navigation input[type=submit]{
-    background: <?php echo $GLOBALS['cfg']['ButtonBackground'];?>;
+    background: <?php echo $GLOBALS['cfg']['InputBackground'];?>;
     border: none;
     filter: none;
     margin: 5px;
     padding: 0.4em;
-    color: <?php echo $GLOBALS['cfg']['ButtonText'];?>;
+    color: <?php echo $GLOBALS['cfg']['InputText'];?>;
 }
 
 .navigation input[type=submit]:hover, .navigation input.edit_mode_active{
-    color: <?php echo $GLOBALS['cfg']['ButtonText'];?>;
+    color: <?php echo $GLOBALS['cfg']['InputText'];?>;
     cursor: pointer;
-    background-color: <?php echo $GLOBALS['cfg']['ButtonBackground'];?>;
+    background-color: <?php echo $GLOBALS['cfg']['InputBackground'];?>;
 }
 
 .navigation select{
@@ -3889,9 +3848,9 @@ body .ui-dialog{
     padding: 0;
 }
 body .ui-dialog .ui-widget-header{
-    color: <?php echo $GLOBALS['cfg']['ButtonColor'];?>;
+    color: <?php echo $GLOBALS['cfg']['InputText'];?>;
     border: none;
-    background-color: <?php echo $GLOBALS['cfg']['NaviBackground'];?>;
+    background-color: <?php echo $GLOBALS['cfg']['NaviBackground2'];?>;
     background-image: none;
 }
 body .ui-dialog .ui-dialog-title{
@@ -3900,14 +3859,14 @@ body .ui-dialog .ui-dialog-title{
 }
 body .ui-dialog .ui-dialog-buttonpane button{
     font-family: <?php echo $GLOBALS['cfg']['FontFamily'];?>;
-    color: <?php echo $GLOBALS['cfg']['ButtonColor'];?>;
-    background-color: <?php echo $GLOBALS['cfg']['NaviBackground'];?>;
+    color: <?php echo $GLOBALS['cfg']['InputText'];?>;
+    background-color: <?php echo $GLOBALS['cfg']['NaviBackground2'];?>;
     background-image: none;
-    border: 1px solid <?php echo $GLOBALS['cfg']['ButtonBackground'];?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['InputBackground'];?>;
 }
 body .ui-dialog .ui-dialog-buttonpane button.ui-state-hover{
-    background-color: <?php echo $GLOBALS['cfg']['ButtonHover'];?>;
-    border: 1px solid <?php echo $GLOBALS['cfg']['ButtonHover'];?>;
+    background-color: <?php echo $GLOBALS['cfg']['InputBackgroundHover'];?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['InputBackgroundHover'];?>;
 }
 body .ui-dialog .ui-dialog-buttonpane button.ui-state-active{
     background-color: #333;
