@@ -9,6 +9,7 @@
 
     $GLOBALS['cfg']['MainColor']                = '#EEEEEE';
     $GLOBALS['cfg']['MainText']                 = '#EEEEEE';
+    $GLOBALS['cfg']['MainTextFaded']            = '#DDDDDD';
     $GLOBALS['cfg']['MainHeaderColor']          = '#E0E0E0';
     $GLOBALS['cfg']['MainBackground']           = '#151515';
     $GLOBALS['cfg']['MainLinkColor']            = '#297CBC';
@@ -18,6 +19,12 @@
 
     $GLOBALS['cfg']['NoticeBackground']         = '#555555';
     $GLOBALS['cfg']['NoticeText']               = '#EEEEEE';
+    $GLOBALS['cfg']['PopupHeaderBackground']    = '#212121';
+    $GLOBALS['cfg']['PopupHeaderText']          = '#EEEEEE';
+    $GLOBALS['cfg']['PopupFadeBackground']      = '#000000';
+    $GLOBALS['cfg']['PopupBackground']          = '#424242';
+    $GLOBALS['cfg']['PopupText']                = '#EEEEEE';
+    $GLOBALS['cfg']['PopupBorder']              = '#424242';
 
     $GLOBALS['cfg']['NaviColor']                = '#212121';
     $GLOBALS['cfg']['NaviBackground']           = '#424242';
@@ -55,8 +62,9 @@
     $GLOBALS['cfg']['BlueHeader']               = '#555555';
 
     $GLOBALS['cfg']['TableHover']               = '#252525';
-    $GLOBALS['cfg']['TableOdd']                 = '#212121';
+    $GLOBALS['cfg']['TableOdd']                 = '#191919';
     $GLOBALS['cfg']['TableEven']                = '#151515';
+    $GLOBALS['cfg']['TableHeader']              = '#252525';
 
     $GLOBALS['cfg']['InputBackground']          = '#212121';
     $GLOBALS['cfg']['InputBackgroundHover']     = '#252525';

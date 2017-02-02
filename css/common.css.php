@@ -361,15 +361,15 @@ img.ic_b_props,
 img.ic_pause,
 img.ic_b_index, img.ic_s_asci, img.ic_bd_browse, img.ic_b_browse,
 img.ic_s_passwd,
-img.ic_b_sql,
-img.ic_s_rights,
+img.ic_b_sql, img.ic_b_triggers,
+img.ic_s_rights, img.ic_b_usredit,
 img.ic_s_status,
-img.ic_b_export,
-img.ic_b_import,
+img.ic_b_export, img.ic_b_tblexport,
+img.ic_b_import, img.ic_b_tblimport,
 img.ic_s_replication,
 img.ic_b_more,
 img.ic_s_vars,
-img.ic_b_engine,
+img.ic_b_engine, img.ic_b_routines,
 img[alt="Plugins"],
 img.ic_b_no_favorite,
 img.ic_bd_select, img.ic_b_select, img.ic_b_search,
@@ -377,12 +377,19 @@ img.ic_b_empty, img.ic_bd_empty,
 img.ic_b_drop, img.ic_bd_drop,
 img.ic_b_print,
 img.ic_b_tblanalyse,
-img.ic_b_events{
+img.ic_b_events,
+img.ic_eye,
+img.ic_b_edit,
+img.ic_normalize,
+img.ic_b_primary,
+img.ic_b_unique,
+img.ic_b_move,
+img.ic_centralColumns_add, img.ic_centralColumns,
+img.ic_lightbulb_off{
     background: transparent !important;
     display: inline-block;
     padding-right: 3px;
     vertical-align: middle;
-    color: <?php echo $GLOBALS['cfg']['MainColor'];?>;
 }
 
 /* Set icons */
@@ -434,19 +441,19 @@ img.ic_b_index, img.ic_s_asci, img.ic_bd_browse, img.ic_b_browse{
 img.ic_s_passwd{
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAclBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9eWEHEAAAAJXRSTlMAAQIFCRESFR0gIy0wMUNVVlx1fIWLlKqrrbK1vL7Hyszk7/P9z4BxiAAAAGVJREFUGFe1yFsCgVAYAOHhuF/qdxdSZPa/RQ9RNmDe5gNgmFdNmQ34lipVz52crOej5cPt56c+EzDR1ELmDoCrixZyA4C9qxaigzUAs8IiIiLuHscAjX0XgJ+3/AfcAA79vzbwBmCxFDrhdWvkAAAAAElFTkSuQmCC') !important;
 }
-img.ic_b_sql{
+img.ic_b_sql, img.ic_b_triggers{
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAOVBMVEUAAAD///////////////////////////////////////////////////////////////////////8KOjVvAAAAEnRSTlMAAQMJExQjJjhvcHGaubq82uj2krslAAAAXklEQVQYV13MwQ6CUAxE0evAEx7q//+nxpCgAouZje2muSdN9RAA4w2PmuUyRcRw9820BBgj8xL4F/ljpAdokd4DNH+kXwP76r19DPvr534fKo1Ko9KoNCqNnu5vmhNjGS0lj0zSoQAAAABJRU5ErkJggg==') !important;
 }
-img.ic_s_rights{
+img.ic_s_rights, img.ic_b_usredit{
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAilBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////2N2iNAAAALXRSTlMAAQMEBgcJCxAREhMUFxkgISMlLkBSZGtxd3yMjo+Ym6C8x8jX5Onv8/X5+/1G/AG+AAAAcUlEQVQYGU3BBxKCQBQFwcGAAVTMARWzCLz7X09YWet389NJ5l2MZS4VK/4iOQneXs4Z7yLnhreVk+INPqpVMa3+aPqQnothiLOW0sk4ig/ShlqsRlWqMQN2Mo7AXcYLKGUFUMgKIJNxBXqnt1p5FvIFhnMZYDvhzY4AAAAASUVORK5CYII=') !important;
 }
 img.ic_s_status{
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAY1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+aRQ2gAAAAIHRSTlMAAREaJiwvMjtBREZJVldiZm9we4WRnqCyt7y+3uLx+1j6rVAAAABnSURBVBgZjcFbEoIwEEXBi0aM4Kjg4CsKZ/+rlKICX1Jlt37YPNOr1MLsBDSWBbmfgcazKGk7QK0/VCndNLLs2AF7C/Ks7YDaoxYXeBdacU/pqpmZlUC/s0mQux+AvvJJ1Kj4wENrvuU5CVAEeeMMAAAAAElFTkSuQmCC') !important;
 }
-img.ic_b_export{
+img.ic_b_export, img.ic_b_tblexport{
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAkFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+WABnwAAAAL3RSTlMAAQIGCAkLDA0QJy4xNjc4OTpHUVVXWV9kc4+SlJWYoKWtr7K0usXHzM7X2e3v8+0310IAAAB0SURBVBgZjcFXEoJAFEXBO5gdzAkTKOYAZ/+78wFF+and+s/0lh37+oopLFQbUBkuJyrFwLw9w6xl3AMI5TF3ScEFE8pjTg1pBUS+paaPgHdPTyB1koIzJlWGSZzcgZI2FLZuR+mlTk4hozKWuvuc2nWk3z4hLBWk1u2XiAAAAABJRU5ErkJggg==') !important;
 }
-img.ic_b_import{
+img.ic_b_import, img.ic_b_tblimport{
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAk1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////ROyVeAAAAMHRSTlMAAgMEBQYIDg8YISouLzAxNztARlBRWVtrfn+Mjo+UlZqruby+wMPFzM/X5vH1+/05JPdbAAAAdElEQVQYGY3B2RaBUACG0Z9UJEmGzBxDhPje/+l0zmJxx976T2rKZUcfc6yB3ro49yTvy1kBJjhQG8kqYNeQdwaMahs4NSX5F1hIGgN55CuIpkDhqcSKleHMdMOKleFctcYatiY4e4UV33pSe1vx8jgm+u0JEXYV0r1GVPMAAAAASUVORK5CYII=') !important;
 }
 img.ic_s_replication{
@@ -458,7 +465,7 @@ img.ic_b_more{
 img.ic_s_vars{
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAllBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AJcWoAAAAMXRSTlMAAQIEBQYIChARExUWGiEqLS8yN0BBRUZJV1hbYWhrd3h5fIOPnaClqK+1urzc3uv5jjRDGQAAAH5JREFUGFddzkcOwkAQRNHvApNzMDmYHBzo+1+OhT0exF8+qVsFDyvK1xRZKEkKLTqWIABkzOI/INr8AJmZ5R4aN6TQStCewWXcRw7OWxarTlZ3MH1CPGJ+dzB5wbvN8lqdnHZ81E1rFQTbZsqw559C6+DG+WEVJOZLAAh8wBcGeg7BSkCdrQAAAABJRU5ErkJggg==') !important;
 }
-img.ic_b_engine{
+img.ic_b_engine, img.ic_b_routines{
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAA3UlEQVQYGZ3BsSqEAQAH8H+xieFGpRSu8A7HPQCvoDBcGSgDUkzqpnsEmQwmeQK6lHTxCgaJDAZ9yfTT90lHsfj98k92TWvazF90lA7SZ8m7lVRsuDdizJ2NJMb1TDnHhSk9dWfeDBjy5jSJWz+dJ9ruPdtLSR2FeTVNBSYSxxa1HCWxpoe5VDTRtZo+n2qpqKmkz7JLNFIxj2vr+c4kXjXUzCkwmTi2oOUwJV0/XSXanrzYS8mYG9Mu0FV3a9aJwqBhhZN8sYJWKnY8GjLqwXZ+p6N0kL/YN6NpK/kAftvhn6iMQ/8AAAAASUVORK5CYII=') !important;
 }
 img[alt="Plugins"]{
@@ -485,9 +492,33 @@ img.ic_b_tblanalyse{
 img.ic_b_events{
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAA4klEQVQoU23OPyuFYRyH8e9znMefyMQrMGCxyaIsykQmb8ZgMvEilLJYpAwMSlI6A5PhSAYToyRJ+hjOczgPrunXfV33776TCjN2vOHTgXlFelHaV+fSyI9uuseDJcMaBs1q4dVoN9jFkbJnY2EbV4okJvDY1UovVXKBxSQ2sfZ9t59qmsF5Em2M/xM0QRHvGEoSDf3Gu0ECyrjDWJLYAM+1DY3Ywkr+YBqtJKbwoPknOMFyZzzEnkZNr6NdnRnwhBtzykSfScf46Pyskww5U+e2RyeJwoLTSl5brT/Ym5W/1RcsJuQY5GrcXgAAAABJRU5ErkJggg==') !important;
 }
+img.ic_eye{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAzElEQVQYGb3BsUpCARQA0Pv0gVEhQbi02F5D/kAR/UBFS5ObDRHRZwRRS1MRtNgS0dQW4tYnBCLhFEJISIPj6YlIb2iMzom/JlWM31lxbWRs6Ew18sxqGfmypuDB2MitNCZU9dVc2bCsY+LQtp6FiDDvXSXCh7KuqccIqzrS8KwWGW/6fjQjY89puNGIjAN5m5Fx7iikutYjFLyYuouMurYkIpS9OpEo2HWvaUui6FJLKSYUXejZUVEyY0ndwLEk8ixqaBv69GTfXPyfb2emu1clNXn3AAAAAElFTkSuQmCC') !important;
+}
+img.ic_b_edit{ /* Pencil */
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAhFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8g2+bRAAAAK3RSTlMAAQMEBQYLIScqLC0vMjU2ODk+QkN+f4KGi46SlZeanbe5wMHDyNni8/f9aI/hMAAAAHhJREFUGFdNyEkCgjAQAMFBE8R9iUFxx6ho+v//88BA6Fu1SN/mXSSIiIM4GzgrAdJxT1MCv867WAXj4arexn1NMP6etV5HVwMvo15G9wC4qRfqi3quPqun308AOLUUiZO8AarOQjHOG469BVajcEgWAD+wWGvt0H9mzA2dd1P4sQAAAABJRU5ErkJggg==') !important;
+}
+img.ic_normalize{ /* Magic */
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAD///////////////////////////////////////////+0CY3pAAAAC3RSTlMAAQoUPj9AkabR0xl2m5MAAABPSURBVAhbY2Bg4GYAA+4EboZsEINtGwiBQJowWwKYwdgOoXczF6Rxb4DIQaWAdBlUV/ruBIg5bLsh+oEG7oaoYoAJMSALbYEJ7YQyWBcBAFRoFIJWX2FXAAAAAElFTkSuQmCC') !important;
+}
+img.ic_b_primary{ /* Key */
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAtFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////oK74hAAAAO3RSTlMAAQIFBwgJCgwSExYaHicvMDg9QEtNXWFncXl8f4WGiImLjJqboKWmqKrIz9HT19na3ODm6evt8/X7/WQbxP0AAACGSURBVBhXZchFFsJAAATRGiRBgrsEd7dB0ve/F6sh8KhdfQCvNe/niatFkhTELzVMWQv3/ksRsLMO2ppVwNitg401UJmq5cBugUj3pIOVSqYuXTNQzQEUJOmx1sU3l3sWIAiXzRQDnb2ibhk+DXU89WwYAyM9PT/xBYx1SPPTRPtfoNvhvzfrVA7Y7EZG9AAAAABJRU5ErkJggg==') !important;
+}
+img.ic_b_unique{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEHRSTlMAARg4OjxASUyRkpqt6e/xaV1o5AAAAFZJREFUGFdtjksSgCAMxQoiCIrm/qd14QPxk13STqdmwudai7dOAoClzwGCm2k7BcCZoyhUgMkFqsKBUIjNyS+/jg6eBt92PSaPOi+3G/6CjXzC+lQ7Ac6bBr3KOumJAAAAAElFTkSuQmCC') !important;
+}
+img.ic_b_move{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAALVBMVEUAAAD///////////////////////////////////////////////////////+hSKubAAAADnRSTlMABgsTLj9BQ19iaWyIiQK0G7wAAAA0SURBVAhbY2BgYOA4wAAB895CaLZ37zaAGUx+zw0gQnwPGajBgBvI+u7dAohQ3xuoGrAzAJuSE+8Oe0IVAAAAAElFTkSuQmCC') !important;
+}
+img.ic_centralColumns_add, img.ic_centralColumns{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAilBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////2N2iNAAAALXRSTlMAAQIDBAYHDBAREyAyMzQ2Nzw9QFdYWWJkeIiVl6ClqKqytNPV19rc3uL19/mdYrNNAAAAfklEQVQYGW3Bhw7BUABA0etRtVftqr2K+/+/R6WRCOfwT62fXPScDGq8VQ7T5KqXZHKsUGgvKC3aFMYdSp0xhU1MKd5SGPIxAlK/rEj1ZummKWSGh5FG3oNrYGY4ieIxOAe6RntR3NXtAS0bmShmTVtA1VxzzTU38LL0Y8mvJzLiEqax3iBsAAAAAElFTkSuQmCC') !important;
+}
+img.ic_lightbulb_off{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAA1klEQVQYGbXBPyuEAQAH4N/rdP52GSQkCwYUymSSDyBZWKRYjL6DySxKGY02KSm72SCRSTcwGQyS4fFel8LM8+RvqerRbdSjvvykxZJbX9615Tu9HtS9mlF1jrXEgM40GVc35Ni8WR941pKY9qw/iR51tcSLmkcNC4nhxIgXXXFlMiXXnjTcKFTspGTZfuxZT8mKpsnEhomU7NuKVvfmEoUzXCTabadky6UiiU53NhWOMJhoTVQdOFNJk4pdTzhMVIzZ9mZDke+copY4cGJRR34zZTX/4hO3hq7sa/TW5AAAAABJRU5ErkJggg==') !important;
+}
 
 /*
-img.ic_b_engine{
+img.ic_lightbulb_off{
     background-image: url('') !important;
 }
 */
@@ -579,8 +610,7 @@ th, th a{
 
 .column_heading,
 .column_action{
-    border: 1px solid <?php echo $GLOBALS['cfg']['BorderColor']; ?>;
-    background-color: #f6f6f6;
+    background-color: <?php echo $GLOBALS['cfg']['TableHeader']; ?>;
 }
 
 a img{
@@ -1256,7 +1286,7 @@ ul#topmenu2 li{
 }
 
 #topmenu2 .tabactive{
-    background: #ccc;
+    background: <?php echo $GLOBALS['cfg']['NaviActive']; ?> !important;
 }
 
 ul#topmenu2 a{
@@ -1267,9 +1297,9 @@ ul#topmenu2 a{
     white-space: nowrap;
     font-family: "open sans extrabold", "segoe black";
     font-weight: normal;
-    color: <?php echo $GLOBALS['cfg']['NaviPointerColor']; ?>;
+    color: <?php echo $GLOBALS['cfg']['NaviText']; ?>;
     text-transform: uppercase;
-    background-color: #f6f6f6;
+    background-color: <?php echo $GLOBALS['cfg']['NaviColor']; ?>;
 }
 
 fieldset.caution{
@@ -1324,11 +1354,16 @@ fieldset.caution li a:nth-child(2) img{
     padding-right: 20px;
 }
 
-ul#topmenu ul a{
+ul#topmenu ul a,
+ul.resizable-menu li:hover ul a,
+ul.resizable-menu .submenuhover ul a{
     color: <?php echo $GLOBALS['cfg']['DropdownText']; ?>;
 }
-ul#topmenu ul{
+ul#topmenu ul,
+ul.resizable-menu li:hover ul,
+ul.resizable-menu .submenuhover ul{
     background-color: <?php echo $GLOBALS['cfg']['DropdownBackground']; ?>;
+    background: <?php echo $GLOBALS['cfg']['DropdownBackground']; ?> !important;
     color: <?php echo $GLOBALS['cfg']['DropdownText']; ?>;
     border: 1px solid <?php echo $GLOBALS['cfg']['DropdownBorder']; ?>;
 }
@@ -2335,6 +2370,32 @@ input[type=date].invalid_value
     position: relative;
     width: 100%;
  }
+
+/* Popups */
+.ui-widget-content{
+    border: 1px solid <?php echo $GLOBALS['cfg']['PopupBorder']; ?>;
+    background: <?php echo $GLOBALS['cfg']['PopupBackground']; ?>;
+    color: <?php echo $GLOBALS['cfg']['PopupText']; ?>;
+}
+body .ui-dialog .ui-widget-header{
+    background-color: <?php echo $GLOBALS['cfg']['PopupHeaderBackground']; ?> !important;
+    background: <?php echo $GLOBALS['cfg']['PopupHeaderBackground']; ?>;
+    color: <?php echo $GLOBALS['cfg']['PopupHeaderText']; ?>;
+}
+body .ui-dialog .ui-dialog-titlebar-close{
+    background: transparent !important;
+    border: 0px solid white;
+}
+.ui-icon-closethick{
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAALVBMVEUAAAD///////////////////////////////////////////////////////+hSKubAAAADnRSTlMAAj0+P0BBQkOrr7CytA91atQAAABgSURBVAhbY2BcwQAEUQIMMu8aGBhY311kmPfuOQND3LtXDHrv3iWwvnv3lIEZSMS9exfAwOD37h1IAKTwHVgApBIsgGDApeJAjGdgAZD2ApAAyMAXCCvgljLuAGmNFgAAy6U/tvTUCj8AAAAASUVORK5CYII=') !important;
+    background: transparent !important;
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+}
+div.ui-widget-overlay{
+    background: <?php echo $GLOBALS['cfg']['PopupFadeBackground']; ?>;
+}
 /**
   * Export and Import styles
   */
@@ -2599,35 +2660,33 @@ table#index_columns select{
     margin: .1em .2em 0;
     white-space: nowrap;
     text-decoration: none;
-    border: 1px solid <?php echo $GLOBALS['cfg']['BgTwo']; ?>;
-    border-bottom: 1px solid #ddd;
+    border: 1px solid <?php echo $GLOBALS['cfg']['NaviColor']; ?>;
+    border-bottom: 1px solid <?php echo $GLOBALS['cfg']['NaviText']; ?>;
+    color: <?php echo $GLOBALS['cfg']['NaviText']; ?>;
     font-family: "open sans bold";
-}
-
-.config-form ul.tabs li a{
     padding: 7px 10px;
-    background: #f2f2f2;
-    color: #555;
+    background: <?php echo $GLOBALS['cfg']['NaviColor']; ?>;
 }
 
 .config-form ul.tabs li a:hover,
 .config-form ul.tabs li a:active{
-    background: #e5e5e5;
+    background: <?php echo $GLOBALS['cfg']['NaviActive']; ?>;
 }
 
 .config-form ul.tabs li.active a{
-    background-color: #fff;
+    background-color: <?php echo $GLOBALS['cfg']['NaviActive']; ?>;
     margin-top: 1px;
-    color: #000;
-    border-color: #ddd;
-    border-bottom: 1px solid #fff;
+    color: <?php echo $GLOBALS['cfg']['NaviText']; ?>;
+    border-color: <?php echo $GLOBALS['cfg']['NaviText']; ?>;
+    border-bottom: 1px solid <?php echo $GLOBALS['cfg']['NaviText']; ?>;
 }
 
 .config-form fieldset{
     margin-top: 0;
     padding: 0;
     clear: both;
-    background: none;
+    background: <?php echo $GLOBALS['cfg']['ThBackground']; ?>;
+    background-color: <?php echo $GLOBALS['cfg']['ThBackground']; ?>;
 }
 
 .config-form legend{
@@ -2637,7 +2696,6 @@ table#index_columns select{
 .config-form fieldset p{
     margin: 0;
     padding: 10px;
-    background: #fff;
     font-family: <?php echo $GLOBALS['cfg']['FontFamilyLight']; ?>;
     font-size: 16px;
 }
@@ -2660,10 +2718,6 @@ table#index_columns select{
     list-style: none;
     color: #9A0000;
     font-size: small;
-}
-
-.config-form fieldset table{
-    background-color: #fff;
 }
 
 .config-form fieldset label{
@@ -2707,7 +2761,7 @@ table#index_columns select{
     font-weight: normal;
     font-family: sans-serif;
     font-size: x-small;
-    color: #444;
+    color: <?php echo $GLOBALS['cfg']['MainTextFaded']; ?>;
 }
 
 .config-form fieldset th,
@@ -2823,24 +2877,6 @@ form#tableOptionsForm .tblFooters{
 
 .config-form .field-error{
     border-color: #A11 !important;
-}
-
-.config-form input[type="text"],
-.config-form input[type="password"],
-.config-form input[type="number"],
-.config-form select,
-.config-form textarea{
-    border: 1px #A7A6AA solid;
-    height: auto;
-}
-
-.config-form input[type="text"]:focus,
-.config-form input[type="password"]:focus,
-.config-form input[type="number"]:focus,
-.config-form select:focus,
-.config-form textarea:focus{
-    border: 1px #6676FF solid;
-    background: #F7FBFF;
 }
 
 .config-form .field-comment-mark{
@@ -3152,7 +3188,7 @@ form.append_fields_form .tblFooters{
 .navigation{
     width: 100%;
     background-color: <?php echo $GLOBALS['cfg']['NaviBackground']; ?>;
-    color: <?php echo $GLOBALS['cfg']['NaviColor']; ?>;
+    color: <?php echo $GLOBALS['cfg']['NaviText']; ?>;
 }
 
 .navigation td{
@@ -3171,17 +3207,18 @@ form.append_fields_form .tblFooters{
 }
 
 .navigation input[type=submit]{
-    background: <?php echo $GLOBALS['cfg']['NaviBackground']; ?>;
+    background: <?php echo $GLOBALS['cfg']['ButtonBackground']; ?>;
     border: none;
     filter: none;
     margin: 5px;
     padding: 0.4em;
+    color: <?php echo $GLOBALS['cfg']['ButtonText']; ?>;
 }
 
 .navigation input[type=submit]:hover, .navigation input.edit_mode_active{
-    color: <?php echo $GLOBALS['cfg']['ButtonColor']; ?>;
+    color: <?php echo $GLOBALS['cfg']['ButtonText']; ?>;
     cursor: pointer;
-    background-color: <?php echo $GLOBALS['cfg']['ThColor']; ?>;
+    background-color: <?php echo $GLOBALS['cfg']['ButtonBackground']; ?>;
 }
 
 .navigation select{
