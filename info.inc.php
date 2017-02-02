@@ -1,4 +1,4 @@
 <?php
     $theme_name = 'Dark Metro';
-    $theme_full_version = '0.5';
+    $theme_full_version = '1.0';
 ?>
