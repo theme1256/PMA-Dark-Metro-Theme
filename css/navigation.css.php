@@ -87,14 +87,6 @@
     border-<?php echo $left; ?>: 1px solid #666;
 }
 
-#pma_navigation #pmalogo:after
-{
-    font-family: 'Open Sans Extrabold';
-    text-transform: uppercase;
-    margin-left: 5px;
-    content: 'phpMyAdmin';
-}
-
 #pma_navigation #pmalogo
 {
     margin: 0;

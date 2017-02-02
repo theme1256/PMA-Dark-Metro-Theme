@@ -15,6 +15,9 @@
     $GLOBALS['cfg']['FootBackground']           = '#151515';
     $GLOBALS['cfg']['FootText']                 = '#EEEEEE';
     $GLOBALS['cfg']['FootBorder']               = '#EEEEEE';
+    $GLOBALS['cfg']['BoxBackground']            = '#212121';
+    $GLOBALS['cfg']['BoxText']                  = '#EEEEEE';
+    $GLOBALS['cfg']['BoxBorder']                = '#EEEEEE';
 
     $GLOBALS['cfg']['LoginBackground']          = '#151515';
     $GLOBALS['cfg']['LoginText']                = '#EEEEEE';

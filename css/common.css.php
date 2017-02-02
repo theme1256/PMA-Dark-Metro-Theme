@@ -1104,10 +1104,11 @@ div.footnotes{
 }
 
 div.tools,
-.tblFooters{
+.tblFooters,
+.operations_half_width fieldset{
     font-weight: normal;
-    color: <?php echo $GLOBALS['cfg']['ThColor'];?>;
-    background: <?php echo $GLOBALS['cfg']['ThBackground'];?>;
+    color: <?php echo $GLOBALS['cfg']['BoxColor'];?> !important;
+    background: <?php echo $GLOBALS['cfg']['BoxBackground'];?> !important;
 }
 
 .tblHeaders a:link,
@@ -1220,41 +1221,6 @@ ul#topmenu2 a{
     color: <?php echo $GLOBALS['cfg']['NaviText'];?>;
     text-transform: uppercase;
     background-color: <?php echo $GLOBALS['cfg']['NaviBackground1'];?>;
-}
-
-fieldset.caution{
-    background: <?php echo $GLOBALS['cfg']['BrowseWarningColor'];?>;
-    border: 1px solid <?php echo $GLOBALS['cfg']['BrowseWarningColor'];?>;
-}
-
-fieldset.caution legend{
-    background-color: #fff;
-}
-
-fieldset.caution a{
-    font-family: 'Open Sans Bold';
-    text-transform: uppercase;
-    color: <?php echo $GLOBALS['cfg']['InputText'];?>;
-    font-weight: normal;
-}
-
-fieldset.caution ul, #tbl_maintenance{
-    padding: 0;
-}
-
-fieldset.caution li, #tbl_maintenance li{
-    display: block;
-}
-
-fieldset.caution li:before{
-    font-family: 'IcoMoon';
-    content: "";
-    color: <?php echo $GLOBALS['cfg']['InputText'];?>;
-    margin-right: 10px;
-}
-
-fieldset.caution li a:nth-child(2) img{
-    background: url('./themes/metro/img/s_info.png') !important;
 }
 
 #tbl_maintenance li a{
