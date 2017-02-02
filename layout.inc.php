@@ -1,5 +1,4 @@
 <?php
-
     $GLOBALS['cfg']['NaviWidth']                = '250';
     $GLOBALS['cfg']['FontFamily']               = '"Open Sans", "Segoe UI"';
     $GLOBALS['cfg']['FontFamilyLight']          = '"Open Sans Light", "Segoe UI Light", "Segoe UI"; font-weight: 300';
@@ -79,5 +78,4 @@
     $GLOBALS['cfg']['ButtonBackground']         = '#212121';
     $GLOBALS['cfg']['ButtonHover']              = '#252525';
     $GLOBALS['cfg']['ButtonBackgroundHover']    = '#252525';
-
 ?>

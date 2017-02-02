@@ -1,11 +1,6 @@
 # PMA-Dark-Metro-Theme
 A dark metro-like theme for PHPMyAdmin.
 
-This theme is based of of the ["metro"-theme](https://github.com/phpmyadmin/themes/tree/master/metro) from the official theme repo.
-
-# Generating the icons
-[FA2PNG](http://fa2png.io/) was used to create the images from the [Font Awesome](http://fontawesome.io/) icon set.
-
 # Installation
 
     # Download it to your server using this command
@@ -18,3 +13,10 @@ This theme is based of of the ["metro"-theme](https://github.com/phpmyadmin/them
     sudo unzip PMA-Dark-Metro-Theme.zip -d /usr/share/phpmyadmin/themes
 
 Not just reload the PHPMyAdmin site and it should be in the list of available themes.
+
+# Credits
+
+This theme is based of of the ["metro"-theme](https://github.com/phpmyadmin/themes/tree/master/metro) from the official PMA-theme-repository.
+
+## Generating the icons
+[FA2PNG](http://fa2png.io/) was used to create the images from the [Font Awesome](http://fontawesome.io/) icon set.

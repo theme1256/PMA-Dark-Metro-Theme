@@ -1,9 +1,8 @@
 <?php
-
-// unplanned execution path
-if (! defined('PMA_MINIMUM_COMMON') && ! defined('TESTSUITE')) {
-    exit();
-}
+    // unplanned execution path
+    if (! defined('PMA_MINIMUM_COMMON') && ! defined('TESTSUITE')) {
+        exit();
+    }
 ?>
 
 /******************************************************************************/
