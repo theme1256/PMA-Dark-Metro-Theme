@@ -64,6 +64,7 @@
     $GLOBALS['cfg']['TableOdd']                 = '#191919';
     $GLOBALS['cfg']['TableEven']                = '#151515';
     $GLOBALS['cfg']['TableHeader']              = '#252525';
+    $GLOBALS['cfg']['TableBorder']              = '#DDDDDD';
 
     $GLOBALS['cfg']['InputBackground']          = '#212121';
     $GLOBALS['cfg']['InputBackgroundHover']     = '#252525';

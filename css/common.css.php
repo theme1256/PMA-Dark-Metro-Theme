@@ -362,6 +362,144 @@ button.mult_submit:focus,
     color: <?php echo $GLOBALS['cfg']['MainLinkColor'];?>;
 }
 
+dfn:hover{
+    cursor: help;
+}
+
+th, th a{
+    font-family: "open sans bold";
+    color: <?php echo $GLOBALS['cfg']['MainColor'];?> !important;
+    font-weight: normal;
+}
+
+a img{
+    border: 0;
+}
+
+hr{
+    color: <?php echo $GLOBALS['cfg']['BorderColor'];?>;
+    background-color: <?php echo $GLOBALS['cfg']['BorderColor'];?>;
+    border: 0;
+    height: 1px;
+}
+
+form{
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+input[type=text], input[type=password], input[type=number]{
+    border: 1px solid <?php echo $GLOBALS['cfg']['InputBorder'];?>;
+    color: <?php echo $GLOBALS['cfg']['InputText'];?>;
+    padding: 5px;
+    margin: 6px;
+    font-family: <?php echo $GLOBALS['cfg']['FontFamily'];?>;
+    background-color: <?php echo $GLOBALS['cfg']['InputBackground'];?>;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus{
+    border: 1px solid <?php echo $GLOBALS['cfg']['InputBorderHover'];?>;
+}
+
+input[type=submit], input[type=reset], input[type=button]{
+    margin-left: 14px;
+    border: 1px solid <?php echo $GLOBALS['cfg']['InputBorder'];?>;
+    padding: 4px;
+    color: <?php echo $GLOBALS['cfg']['InputText'];?>;
+    text-decoration: none;
+    background-color: <?php echo $GLOBALS['cfg']['InputBackground'];?>;
+    font-family: <?php echo $GLOBALS['cfg']['FontFamily'];?>;
+}
+
+input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover{
+    position: relative;
+    cursor:pointer;
+    background-color: <?php echo $GLOBALS['cfg']['InputBackgroundHover'];?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['InputBorderHover'];?>;
+
+}
+
+input[type=submit]:active, input[type=reset]:active, input[type=button]:active{
+    background-color: <?php echo $GLOBALS['cfg']['InputBackgroundHover'];?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['InputBorderHover'];?>;
+}
+
+button{
+    margin-left: 14px;
+    padding: 4px;
+    color: <?php echo $GLOBALS['cfg']['InputText'];?>;
+    text-decoration: none;
+    background-color: <?php echo $GLOBALS['cfg']['InputBackground'];?>;
+}
+
+textarea{
+    overflow: visible;
+    border: 1px solid <?php echo $GLOBALS['cfg']['BrowseGrayColor'];?>;
+    color: <?php echo $GLOBALS['cfg']['ThColor'];?>;
+    background-color: <?php echo $GLOBALS['cfg']['MainBackground'];?>;
+}
+
+fieldset{
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px solid <?php echo $GLOBALS['cfg']['MainBackground'];?>;
+    padding: 20px;
+    background-color: <?php echo $GLOBALS['cfg']['MainBackground'];?>;
+}
+
+fieldset fieldset{
+    margin: 20px;
+    margin-bottom: 0;
+    background-color: <?php echo $GLOBALS['cfg']['MainBackground'];?>;
+    border: none;
+}
+
+legend{
+    padding: 0 5px;
+}
+
+/* buttons in some browsers (eg. Konqueror) are block elements, this breaks design */
+button{
+    display: inline;
+}
+
+table caption,
+table th,
+table td{
+    padding: 0.6em;
+    vertical-align: top;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th{
+    text-align: left;
+}
+
+
+img,
+button{
+    vertical-align: middle;
+}
+
+select{
+    border: 1px solid <?php echo $GLOBALS['cfg']['InputBorder'];?>;
+    color: <?php echo $GLOBALS['cfg']['InputText'];?>;
+    padding: 4px;
+    font-family: <?php echo $GLOBALS['cfg']['FontFamily'];?>;
+    margin: 5px;
+    background-color: <?php echo $GLOBALS['cfg']['InputBackground'];?>;
+    max-width: 17em;
+}
+
+select:focus{
+    border: 1px solid <?php echo $GLOBALS['cfg']['InputBorderHover'];?>;
+    background-color: <?php echo $GLOBALS['cfg']['InputBackgroundHover'];?>;
+}
+
 /*
     ---------------------------------------------------------------------------
     Use CSS based Icons instead of sprites
@@ -411,7 +549,9 @@ img.ic_b_move,
 img.ic_centralColumns_add, img.ic_centralColumns,
 img.ic_lightbulb_off,
 img.ic_s_lang,
-img.ic_s_theme{
+img.ic_s_theme,
+img.ic_b_bookmark,
+img.ic_b_chart{
     background: transparent !important;
     display: inline-block;
     padding-right: 3px;
@@ -548,6 +688,12 @@ img.ic_s_lang{
 img.ic_s_theme{
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAA80lEQVQYGXXBMUuUcQAH4N97Rx4SonAQ2GDQJ0gR/QQtQY06ubY62HAQ+EqT8L8pEJqcBWlzdHFqjmjwcJBDBD9AOIg8vkMvp6LPkwkvvLNsKk9R+ezGtX9ubarykI4jV1ZUKosuHOvmPkPnpvOfnpG9THiN72n4aC0NBW/Ssu2nvu1ErSQGXtm3m5a/1hIvVWpFZSbxwTgt10b6aaiVNMz6Q1pObfiqn6iVxJwd712m5ZuDxBddtaJjkChKWhYwn4ZaScOMW28z4YeR6UStJHp+2899uk6MrRras+TML908pGNLa6CTp5hy6Egvz/PJeh65A9oxs/2hXML1AAAAAElFTkSuQmCC') !important;
 }
+img.ic_b_bookmark{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMAExcdIyQsNT5VaYKIoLy+4PH1+f1nc0kTAAAAPUlEQVQYV83ItxGAMAAAMZFzMNj7r0pBYTgW4LsXS8qN8Pi0/Q7i9Iaz1j/hqNBlCCVoY1ph3gt3TRh8uwB5+A2XhZbNwAAAAABJRU5ErkJggg==') !important;
+}
+img.ic_b_chart{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAAB5JREFUCFtjYACDBiDiYWiGoBwQmo2EgLL//0MUAgDgCQqj6BlCsQAAAABJRU5ErkJggg==') !important;
+}
 
 /* Template
 img.ic_lightbulb_off{
@@ -569,15 +715,6 @@ h2 a img{
     display: inline;
 }
 
-.data,
-.data_full_width{
-    margin: 10px 0;
-}
-
-.data_full_width{
-    width: 100%;
-}
-
 #initials_table{
     background: <?php echo $GLOBALS['cfg']['ThBackground'];?>;
     border: 1px solid <?php echo $GLOBALS['cfg']['ThBorder'];?>;
@@ -594,18 +731,23 @@ h2 a img{
     padding: 4px 8px;
 }
 
-dfn:hover{
-    cursor: help;
+/*
+    ---------------------------------------------------------------------------
+    Classes
+    ---------------------------------------------------------------------------
+*/
+
+.data,
+.data_full_width{
+    margin: 10px 0;
+}
+
+.data_full_width{
+    width: 100%;
 }
 
 .data th{
-    border-bottom: 1px solid <?php echo $GLOBALS['cfg']['BorderColor'];?>;
-}
-
-th, th a{
-    font-family: "open sans bold";
-    color: <?php echo $GLOBALS['cfg']['MainColor'];?> !important;
-    font-weight: normal;
+    border-bottom: 1px solid <?php echo $GLOBALS['cfg']['TableBorder'];?>;
 }
 
 .data th a:hover{
@@ -617,150 +759,15 @@ th, th a{
     background-color: <?php echo $GLOBALS['cfg']['TableHeader'];?>;
 }
 
-a img{
-    border: 0;
-}
-
-hr{
-    color: <?php echo $GLOBALS['cfg']['BorderColor'];?>;
-    background-color: <?php echo $GLOBALS['cfg']['BorderColor'];?>;
-    border: 0;
-    height: 1px;
-}
-
-form{
-    padding: 0;
-    margin: 0;
-    display: inline;
-}
-
-input[type=text], input[type=password], input[type=number]{
-    border: 1px solid <?php echo $GLOBALS['cfg']['InputBorder'];?>;
-    color: <?php echo $GLOBALS['cfg']['InputText'];?>;
-    padding: 5px;
-    margin: 6px;
-    font-family: <?php echo $GLOBALS['cfg']['FontFamily'];?>;
-    background-color: <?php echo $GLOBALS['cfg']['InputBackground'];?>;
-}
-
-input[type=text]:focus, input[type=password]:focus, input[type=number]:focus{
-    border: 1px solid <?php echo $GLOBALS['cfg']['InputBorderHover'];?>;
-}
-
-input[type=submit], input[type=reset], input[type=button]{
-    margin-left: 14px;
-    border: 1px solid <?php echo $GLOBALS['cfg']['ButtonBorder'];?>;
-    padding: 4px;
-    color: <?php echo $GLOBALS['cfg']['ButtonText'];?>;
-    text-decoration: none;
-    background-color: <?php echo $GLOBALS['cfg']['ButtonBackground'];?>;
-    font-family: <?php echo $GLOBALS['cfg']['FontFamily'];?>;
-}
-
-input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover{
-    position: relative;
-    cursor:pointer;
-    background-color: <?php echo $GLOBALS['cfg']['ButtonBackgroundHover'];?>;
-    border: 1px solid <?php echo $GLOBALS['cfg']['ButtonBorderHover'];?>;
-
-}
-
-input[type=submit]:active, input[type=reset]:active, input[type=button]:active{
-    position: relative;
-    background-color: #333;
-    border: 1px solid #333;
-}
-
 .sqlbutton, #tablefieldinsertbuttoncontainer input[type=button]{
     margin-top: 1em;
     margin-left: 0 !important;
     margin-right: 14px !important;
 }
 
-button{
-    margin-left: 14px;
-    padding: 4px;
-    color: <?php echo $GLOBALS['cfg']['ButtonColor'];?>;
-    text-decoration: none;
-    background-color: <?php echo $GLOBALS['cfg']['ButtonBackground'];?>;
-}
-
-textarea{
-    overflow: visible;
-    border: 1px solid <?php echo $GLOBALS['cfg']['BrowseGrayColor'];?>;
-    color: <?php echo $GLOBALS['cfg']['ThColor'];?>;
-    background-color: <?php echo $GLOBALS['cfg']['MainBackground'];?>;
-}
-
-fieldset{
-    margin-top: 20px;
-    padding: 5px;
-    border: 1px solid <?php echo $GLOBALS['cfg']['BorderColor'];?>;
-    padding: 20px;
-    background-color: <?php echo $GLOBALS['cfg']['ThBackground'];?>;
-}
-
-fieldset fieldset{
-    margin: 20px;
-    margin-bottom: 0;
-    background-color: <?php echo $GLOBALS['cfg']['MainBackground'];?>;
-    border: none;
-}
-
-legend{
-  padding: 0 5px;
-}
-
 .some-margin{
     margin: 20px;
 }
-
-/* buttons in some browsers (eg. Konqueror) are block elements,
-   this breaks design */
-button{
-    display: inline;
-}
-
-table caption,
-table th,
-table td{
-    padding: 0.6em;
-    vertical-align: top;
-}
-
-table{
-    border-collapse: collapse;
-}
-
-th{
-    text-align: left;
-}
-
-
-img,
-button{
-    vertical-align: middle;
-}
-
-select{
-    border: 1px solid <?php echo $GLOBALS['cfg']['BrowseGrayColor'];?>;
-    color: <?php echo $GLOBALS['cfg']['ThColor'];?>;
-    padding: 4px;
-    font-family: <?php echo $GLOBALS['cfg']['FontFamily'];?>;
-    margin: 5px;
-    background-color: <?php echo $GLOBALS['cfg']['MainBackground'];?>;
-    max-width: 17em;
-}
-
-select:focus{
-    border: 1px solid <?php echo $GLOBALS['cfg']['NaviHoverBackground'];?>;
-    color: <?php echo $GLOBALS['cfg']['MainColor'];?>;
-}
-/*
-    ---------------------------------------------------------------------------
-    Classes
-    ---------------------------------------------------------------------------
-*/
 
 .clearfloat{
     clear: both;
@@ -839,34 +846,6 @@ div.tools span{
     margin: 6px 2px;
 }
 
-div.tools a{
-    color: <?php echo $GLOBALS['cfg']['BlueHeader'];?> !important;
-}
-
-.chrome .navigation input[type="checkbox"]:before{
-    color: #fff;
-}
-
-.chrome input[type="radio"]{
-    left: -9999px;
-    position: relative;
-}
-
-.chrome input[type="radio"]:before{
-    font-family: 'IcoMoon';
-    content: "";
-    color: <?php echo $GLOBALS['cfg']['ThColor'];?>;
-    cursor: default;
-    position: absolute;
-    padding: 4px;
-    top: 0;
-    left: 9995px;
-}
-
-.chrome input[type="radio"]:checked:before{
-    content: "";
-}
-
 tr.noclick td:first-child:before{
     content: "";
 }
@@ -904,7 +883,7 @@ fieldset div[class=formelement]{
 button.mult_submit{
     border: none;
     background-color: transparent;
-    color: <?php echo $GLOBALS['cfg']['BrowseMarkerColor'];?>;
+    color: <?php echo $GLOBALS['cfg']['InputText'];?>;
     margin: 0;
 }
 
@@ -982,14 +961,12 @@ td.condition{
     border: 1px solid;
 }
 
-<?php if ($GLOBALS['text_dir'] === 'ltr'){?>
-/* for first th which must have right border set (ltr only) */
+/*
+    ---------------------------------------------------------------------------
+    Cells with the value NULL
+    ---------------------------------------------------------------------------
+*/
 
-<?php }?>
-
-/**
- * cells with the value NULL
- */
 td.null{
     font-style: italic;
     text-align: <?php echo $right;?>;
@@ -1008,12 +985,10 @@ table [class=value]{
     white-space: normal;
 }
 
-
-<?php if (! empty($GLOBALS['cfg']['FontFamilyFixed'])){?>
 .value{
     font-family: <?php echo $GLOBALS['cfg']['FontFamilyFixed'];?>;
 }
-<?php }?>
+
 .attention{
     color: red;
     font-weight: bold;
@@ -1197,13 +1172,7 @@ div.tools a:active,
 .tblFooters a:link,
 .tblFooters a:active,
 .tblFooters a:visited{
-    color: #0000FF;
-}
-
-.tblHeaders a:hover,
-div.tools a:hover,
-.tblFooters a:hover{
-    color: #FF0000;
+    color: <?php echo $GLOBALS['cfg']['MainLinkColor'];?>;
 }
 
 /* forbidden, no privileges */
@@ -1998,9 +1967,7 @@ div#tablefieldscontainer{
 
 div#tablefieldscontainer select{
     width: 100%;
-    background: #fff;
     max-width: initial;
-    /* height: 12em; */
 }
 
 textarea#sqlquery{
