@@ -15,7 +15,7 @@
     top: 0;
     <?php echo $left; ?>: 0;
     height: 100%;
-    background: <?php echo $GLOBALS['cfg']['NaviColor']; ?>;
+    background: <?php echo $GLOBALS['cfg']['NaviBackground1']; ?>;
     color: <?php echo $GLOBALS['cfg']['MainColor']; ?>;
     z-index: 800;
 }
@@ -134,12 +134,12 @@
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
-    background-color: <?php echo $GLOBALS['cfg']['NaviHeader']; ?>;
+    background-color: <?php echo $GLOBALS['cfg']['NaviBackground2']; ?>;
 }
 
 div#left_tableList li:hover a:first-child:before
 {
-    color: <?php echo $GLOBALS['cfg']['ButtonText']; ?>;
+    color: <?php echo $GLOBALS['cfg']['InputText']; ?>;
 }
 
 img.ic_b_home, img.ic_s_loggoff, img.ic_b_docs, img.ic_b_sqlhelp, img.ic_s_reload
@@ -398,8 +398,8 @@ li.fast_filter.db_fast_filter {
     width: 20px;
     padding-top: 4px;
     padding-bottom: 12px;
-    background: <?php echo $GLOBALS['cfg']['NaviBackground']; ?>;
-    border-bottom: 1px solid <?php echo $GLOBALS['cfg']['NaviBackground']; ?>;
+    background: <?php echo $GLOBALS['cfg']['NaviBackground2']; ?>;
+    border-bottom: 1px solid <?php echo $GLOBALS['cfg']['NaviBackground2']; ?>;
     line-height: 22px;
     color: #fff;
     position: fixed;
@@ -423,9 +423,9 @@ li.fast_filter.db_fast_filter {
 }
 .pma_quick_warp .drop_button {
     padding: .2em .5em;
-    border: 1px solid <?php echo $GLOBALS['cfg']['InputBorder']; ?>;
-    background: <?php echo $GLOBALS['cfg']['InputBackground']; ?>;
-    color: <?php echo $GLOBALS['cfg']['InputText']; ?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['DropdownBorder']; ?>;
+    background: <?php echo $GLOBALS['cfg']['DropdownBackground']; ?>;
+    color: <?php echo $GLOBALS['cfg']['DropdownText']; ?>;
     cursor: pointer;
 }/*
 .pma_quick_warp .drop_list:hover .drop_button {

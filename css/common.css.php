@@ -708,11 +708,11 @@ img.ic_lightbulb_off{
 */
 
 h2 img{
-    display: none;
+    display: none !important;
 }
 
 h2 a img{
-    display: inline;
+    display: inline !important;
 }
 
 #initials_table{
@@ -844,10 +844,6 @@ div.tools{
 div.tools span{
     float: <?php echo $right;?>;
     margin: 6px 2px;
-}
-
-tr.noclick td:first-child:before{
-    content: "";
 }
 
 fieldset.tblFooters{
@@ -1052,14 +1048,6 @@ td .icon{
     padding: 0;
 }
 
-.success h1,
-.notice h1,
-div.error h1{
-    text-align: <?php echo $left;?>;
-    margin: 0 0 0.2em 0;
-    color: <?php echo $GLOBALS['cfg']['NaviColor'];?>;
-}
-
 div.success,
 div.notice,
 div.error,
@@ -1231,7 +1219,7 @@ ul#topmenu2 a{
     font-weight: normal;
     color: <?php echo $GLOBALS['cfg']['NaviText'];?>;
     text-transform: uppercase;
-    background-color: <?php echo $GLOBALS['cfg']['NaviColor'];?>;
+    background-color: <?php echo $GLOBALS['cfg']['NaviBackground1'];?>;
 }
 
 fieldset.caution{
@@ -1429,7 +1417,7 @@ div#tablestatistics table{
     margin-left: -1em;
     font-family: <?php echo $GLOBALS['cfg']['FontFamily'];?>;
     color: <?php echo $GLOBALS['cfg']['InputText'];?>;
-    background: <?php echo $GLOBALS['cfg']['NaviBackground'];?>;
+    background: <?php echo $GLOBALS['cfg']['NaviBackground2'];?>;
     font-height: 1.1em;
     height: 15px;
 }
@@ -2299,6 +2287,8 @@ input[type=date].invalid_value
     /** Need this parent to properly center the notification division */
     position: relative;
     width: 100%;
+    background-color: <?php echo $GLOBALS['cfg']['PopupBackground']?>;
+    background: <?php echo $GLOBALS['cfg']['PopupBackground']?>;
  }
 
 /* Popups */
