@@ -93,11 +93,11 @@ strong{
 @font-face{
     font-family: 'IcoMoon';
     src: local('☺');
-    src: url('./themes/dark-metro/fonts/IcoMoon.eot');
-    src: url('./themes/dark-metro/fonts/IcoMoon.eot?#iefix') format('embedded-opentype'),
-        url('./themes/dark-metro/fonts/IcoMoon.svg#IcoMoon') format('svg'),
-        url('./themes/dark-metro/fonts/IcoMoon.woff') format('woff'),
-        url('./themes/dark-metro/fonts/IcoMoon.ttf') format('truetype');
+    src: url('./themes/PMA-Dark-Metro-Theme/fonts/IcoMoon.eot');
+    src: url('./themes/PMA-Dark-Metro-Theme/fonts/IcoMoon.eot?#iefix') format('embedded-opentype'),
+        url('./themes/PMA-Dark-Metro-Theme/fonts/IcoMoon.svg#IcoMoon') format('svg'),
+        url('./themes/PMA-Dark-Metro-Theme/fonts/IcoMoon.woff') format('woff'),
+        url('./themes/PMA-Dark-Metro-Theme/fonts/IcoMoon.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -105,9 +105,9 @@ strong{
 @font-face{
     font-family: 'FontAwesome';
     src: local('☺');
-    src: url('./themes/dark-metro/fonts/fontawesome-webfont.eot');
-    src: url('./themes/dark-metro/fonts/fontawesome-webfont.woff') format('woff'),
-        url('./themes/dark-metro/fonts/fontawesome-webfont.ttf') format('truetype');
+    src: url('./themes/PMA-Dark-Metro-Theme/fonts/fontawesome-webfont.eot');
+    src: url('./themes/PMA-Dark-Metro-Theme/fonts/fontawesome-webfont.woff') format('woff'),
+        url('./themes/PMA-Dark-Metro-Theme/fonts/fontawesome-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -115,10 +115,10 @@ strong{
 @font-face{
     font-family: 'Open Sans';
     src: local('☺'), local('Open Sans'), local('OpenSans');
-    src: url('./themes/dark-metro/fonts/opensans-regular-webfont.eot');
-    src: url('./themes/dark-metro/fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-        url('./themes/dark-metro/fonts/opensans-regular-webfont.woff') format('woff'),
-        url('./themes/dark-metro/fonts/opensans-regular-webfont.ttf') format('truetype');
+    src: url('./themes/PMA-Dark-Metro-Theme/fonts/opensans-regular-webfont.eot');
+    src: url('./themes/PMA-Dark-Metro-Theme/fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./themes/PMA-Dark-Metro-Theme/fonts/opensans-regular-webfont.woff') format('woff'),
+        url('./themes/PMA-Dark-Metro-Theme/fonts/opensans-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -126,10 +126,10 @@ strong{
 @font-face{
     font-family: 'Open Sans Light';
     src: local('☺'), local('Open Sans Light'), local('OpenSans-Light');
-    src: url('./themes/dark-metro/fonts/opensans-light-webfont.eot');
-    src: url('./themes/dark-metro/fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
-        url('./themes/dark-metro/fonts/opensans-light-webfont.woff') format('woff'),
-        url('./themes/dark-metro/fonts/opensans-light-webfont.ttf') format('truetype');
+    src: url('./themes/PMA-Dark-Metro-Theme/fonts/opensans-light-webfont.eot');
+    src: url('./themes/PMA-Dark-Metro-Theme/fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./themes/PMA-Dark-Metro-Theme/fonts/opensans-light-webfont.woff') format('woff'),
+        url('./themes/PMA-Dark-Metro-Theme/fonts/opensans-light-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -137,10 +137,10 @@ strong{
 @font-face{
     font-family: 'Open Sans Bold';
     src: local('☺'), local('Open Sans Bold'), local('OpenSans-Bold');
-    src: url('./themes/dark-metro/fonts/opensans-bold-webfont.eot');
-    src: url('./themes/dark-metro/fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
-        url('./themes/dark-metro/fonts/opensans-bold-webfont.woff') format('woff'),
-        url('./themes/dark-metro/fonts/opensans-bold-webfont.ttf') format('truetype');
+    src: url('./themes/PMA-Dark-Metro-Theme/fonts/opensans-bold-webfont.eot');
+    src: url('./themes/PMA-Dark-Metro-Theme/fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./themes/PMA-Dark-Metro-Theme/fonts/opensans-bold-webfont.woff') format('woff'),
+        url('./themes/PMA-Dark-Metro-Theme/fonts/opensans-bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -148,10 +148,10 @@ strong{
 @font-face{
     font-family: 'Open Sans Extrabold';
     src: local('☺'), local('Open Sans Extrabold'), local('OpenSans-Extrabold');
-    src: url('./themes/dark-metro/fonts/opensans-extrabold-webfont.eot');
-    src: url('./themes/dark-metro/fonts/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
-        url('./themes/dark-metro/fonts/opensans-extrabold-webfont.woff') format('woff'),
-        url('./themes/dark-metro/fonts/opensans-extrabold-webfont.ttf') format('truetype');
+    src: url('./themes/PMA-Dark-Metro-Theme/fonts/opensans-extrabold-webfont.eot');
+    src: url('./themes/PMA-Dark-Metro-Theme/fonts/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./themes/PMA-Dark-Metro-Theme/fonts/opensans-extrabold-webfont.woff') format('woff'),
+        url('./themes/PMA-Dark-Metro-Theme/fonts/opensans-extrabold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
