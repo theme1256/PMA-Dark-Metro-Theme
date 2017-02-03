@@ -278,6 +278,7 @@ body#loginform fieldset.tblFooters{
     border: none;
     margin: 0;
     clear: none;
+    background-color: transparent !important;
 }
 
 body#loginform .error{
@@ -1107,7 +1108,7 @@ div.tools,
 .tblFooters,
 .operations_half_width fieldset{
     font-weight: normal;
-    color: <?php echo $GLOBALS['cfg']['BoxColor'];?> !important;
+    color: <?php echo $GLOBALS['cfg']['BoxText'];?> !important;
     background: <?php echo $GLOBALS['cfg']['BoxBackground'];?> !important;
 }
 
