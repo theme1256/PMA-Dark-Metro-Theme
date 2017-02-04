@@ -3,6 +3,8 @@ A dark metro-like theme for PHPMyAdmin.
 
 ![Screenshot](https://raw.githubusercontent.com/theme1256/PMA-Dark-Metro-Theme/master/screen.png)
 
+[A list of screenshots can be found here following this link.](https://github.com/theme1256/PMA-Dark-Metro-Theme/tree/master/screenshots)
+
 # Installation
 
 ## Linux (Debian/Ubuntu)
