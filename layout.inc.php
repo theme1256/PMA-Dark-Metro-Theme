@@ -11,6 +11,8 @@
 
     $GLOBALS['cfg']['MainBackground']           = '#151515';
 
+    $GLOBALS['cfg']['ConsoleBackground']        = '#000000';
+
     $GLOBALS['cfg']['FootBackground']           = '#151515';
     $GLOBALS['cfg']['BoxBackground']            = '#212121';
 

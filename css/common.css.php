@@ -3332,7 +3332,7 @@ table.show_create td{
     overflow-y: auto;
     margin-bottom: -65px;
     border-top: solid 1px #ccc;
-    background: #fff;
+    background: <?php echo $GLOBALS['cfg']['ConsoleBackground'];?>;
     padding-top: .4em;
 }
 #pma_console .content.console_dark_theme{

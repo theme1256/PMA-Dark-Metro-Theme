@@ -10,6 +10,8 @@
     height: <?php echo ceil($GLOBALS['cfg']['TextareaRows'] * 1.2); ?>em;
     border: 1px solid #ccc;
     direction: ltr;
+    background: black;
+    color: #00FF00;
 }
 #pma_console .CodeMirror {
     border: none;
@@ -73,4 +75,7 @@ span.cm-number {
 }
 .CodeMirror-hints {
     z-index: 200;
+}
+.CodeMirror div.CodeMirror-cursor {
+    border-left: 1px solid #00FF00;
 }
