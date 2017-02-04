@@ -64,7 +64,7 @@ body{
     font-family: <?php echo $GLOBALS['cfg']['FontFamily'];?>;
     padding: 0;
     margin-<?php echo $left;?>: 250px;
-    color: <?php echo $GLOBALS['cfg']['MainColor'];?>;
+    color: <?php echo $GLOBALS['cfg']['MainText'];?>;
     background: <?php echo $GLOBALS['cfg']['MainBackground'];?>;
     line-height: 1;
     font-size: 11px;
@@ -320,7 +320,7 @@ h2,
 h3,
 h4{
     font-family: <?php echo $GLOBALS['cfg']['FontFamilyLight'];?>;
-    color: <?php echo $GLOBALS['cfg']['MainHeaderColor'];?>;
+    color: <?php echo $GLOBALS['cfg']['MainHeaderText'];?>;
     font-weight: normal;
     line-height: 1;
 }
@@ -369,7 +369,7 @@ dfn:hover{
 
 th, th a{
     font-family: "open sans bold";
-    color: <?php echo $GLOBALS['cfg']['MainColor'];?> !important;
+    color: <?php echo $GLOBALS['cfg']['MainText'];?> !important;
     font-weight: normal;
 }
 
@@ -378,8 +378,7 @@ a img{
 }
 
 hr{
-    color: <?php echo $GLOBALS['cfg']['BorderColor'];?>;
-    background-color: <?php echo $GLOBALS['cfg']['BorderColor'];?>;
+    background-color: <?php echo $GLOBALS['cfg']['MainBorder'];?>;
     border: 0;
     height: 1px;
 }
@@ -436,8 +435,8 @@ button{
 
 textarea{
     overflow: visible;
-    border: 1px solid <?php echo $GLOBALS['cfg']['BrowseGrayColor'];?>;
-    color: <?php echo $GLOBALS['cfg']['ThColor'];?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['MainBorder'];?>;
+    color: <?php echo $GLOBALS['cfg']['MainText'];?>;
     background-color: <?php echo $GLOBALS['cfg']['MainBackground'];?>;
 }
 
@@ -717,8 +716,8 @@ h2 a img{
 }
 
 #initials_table{
-    background: <?php echo $GLOBALS['cfg']['ThBackground'];?>;
-    border: 1px solid <?php echo $GLOBALS['cfg']['ThBorder'];?>;
+    background: <?php echo $GLOBALS['cfg']['TableBackground'];?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['TableBorder'];?>;
     margin-bottom: 10px;
 }
 
@@ -727,8 +726,8 @@ h2 a img{
 }
 
 #initials_table a{
-    border: 1px solid <?php echo $GLOBALS['cfg']['ThBorder'];?>;
-    background: <?php echo $GLOBALS['cfg']['ThBackground'];?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['TableBorder'];?>;
+    background: <?php echo $GLOBALS['cfg']['TableBackground'];?>;
     padding: 4px 8px;
 }
 
@@ -833,7 +832,7 @@ tr.vbottom th, tr.vbottom td, th.vbottom, td.vbottom{
 }
 
 .result_query{
-    background: <?php echo $GLOBALS['cfg']['ThBackground'];?>;
+    background: <?php echo $GLOBALS['cfg']['BoxBackground'];?>;
     margin-bottom: 20px;
 }
 
@@ -907,11 +906,11 @@ td.marked:not(.nomarker),
 table tr.marked:not(.nomarker) td,
 table tr.marked:not(.nomarker) th,
 table tr.marked:not(.nomarker){
-    color: <?php echo $GLOBALS['cfg']['MainColor'];?>;
+    color: <?php echo $GLOBALS['cfg']['MainText'];?>;
 }
 
 td.marked:not(.nomarker){
-    background-color: <?php echo $GLOBALS['cfg']['BrowseMarkerBackground'];?>;
+    background-color: <?php echo $GLOBALS['cfg']['TableMarked'];?>;
 }
 
 table tr.marked:not(.nomarker){
@@ -945,13 +944,13 @@ table tr.hover:not(.nopointer) th{
 /* marks table rows/cells if the db field is in a where condition */
 
 .condition{
-    border-color: <?php echo $GLOBALS['cfg']['BrowseWarningColor'];?> !important;
+    border-color: <?php echo $GLOBALS['cfg']['WarningText'];?> !important;
 }
 
 th.condition, th.condition a{
-    border: 1px solid <?php echo $GLOBALS['cfg']['BrowseWarningColor'];?>;
-    background: <?php echo $GLOBALS['cfg']['BrowseWarningColor'];?>;
-    color: <?php echo $GLOBALS['cfg']['MainBackground'];?> !important;
+    border: 1px solid <?php echo $GLOBALS['cfg']['WarningBorder'];?>;
+    background: <?php echo $GLOBALS['cfg']['WarningBackground'];?>;
+    color: <?php echo $GLOBALS['cfg']['WarningText'];?> !important;
 }
 
 td.condition{
@@ -1099,8 +1098,8 @@ div.footnotes{
 
 .tblHeaders{
     font-family: "open sans bold";
-    color: <?php echo $GLOBALS['cfg']['ThColor'];?>;
-    background: <?php echo $GLOBALS['cfg']['ThBackground'];?>;
+    color: <?php echo $GLOBALS['cfg']['TableText'];?>;
+    background: <?php echo $GLOBALS['cfg']['TableBackground'];?>;
     font-weight: normal;
 }
 
@@ -1198,7 +1197,7 @@ ul#topmenu2 li{
 }
 
 .menucontainer{
-    background-color: <?php echo $GLOBALS['cfg']['ThBackground'];?>;
+    background-color: <?php echo $GLOBALS['cfg']['NaviBackground1'];?>;
     height: 48px;
 }
 
@@ -1642,7 +1641,7 @@ table#chartGrid td{
 }
 
 table#chartGrid div.monitorChart{
-    background: <?php echo $GLOBALS['cfg']['ThBackground'];?>;
+    background: <?php echo $GLOBALS['cfg']['TableBackground'];?>;
     overflow: hidden;
 }
 
@@ -1719,7 +1718,7 @@ div#queryAnalyzerDialog table.queryNums{
     line-height: 2em;
 }
 #serverVariables .var-header{
-    color: <?php echo $GLOBALS['cfg']['ThColor'];?>;
+    color: <?php echo $GLOBALS['cfg']['TableText'];?>;
     background: #f3f3f3;
     font-weight: bold;
 }
@@ -2006,7 +2005,7 @@ li#li_user_preferences{
 li#li_switch_dbstats{
     background-color: #f6f6f6;
     padding: 10px;
-    border: 1px solid <?php echo $GLOBALS['cfg']['BorderColor'];?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['MainBorder'];?>;
     display: block;
 }
 
@@ -2102,7 +2101,7 @@ label.desc sup{
     margin: 1em;
     overflow: auto;
     background-color: <?php echo $GLOBALS['cfg']['MainBackground'];?>;
-    border: 1px solid <?php echo $GLOBALS['cfg']['BorderColor'];?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['MainBorder'];?>;
     direction: ltr;
 }
 
@@ -2130,7 +2129,7 @@ label.desc sup{
 }
 
 .group h2{
-    color: <?php echo $GLOBALS['cfg']['MainHeaderColor'];?>;
+    color: <?php echo $GLOBALS['cfg']['MainHeaderText'];?>;
     font-size: 2.8em;
     font-weight: normal;
     font-family: <?php echo $GLOBALS['cfg']['FontFamilyLight'];?>;
@@ -2173,7 +2172,7 @@ div.upload_progress_bar_outer{
     width: 202px;
     position: relative;
     margin: 0 auto 1em;
-    color: <?php echo $GLOBALS['cfg']['MainColor'];?>;
+    color: <?php echo $GLOBALS['cfg']['MainText'];?>;
 }
 
 div.upload_progress_bar_inner{
@@ -2182,9 +2181,7 @@ div.upload_progress_bar_inner{
     height: 12px;
     margin: 1px;
     overflow: hidden;
-    <?php if ($GLOBALS['cfg']['BrowseMarkerEnable']){?>
-    color: <?php echo $GLOBALS['cfg']['BrowseMarkerColor'];?>;
-    <?php }?>
+    color: <?php echo $GLOBALS['cfg']['NaviText'];?>;
     position: relative;
 }
 
@@ -2239,7 +2236,7 @@ input[type=date].invalid_value
     background-position: 46%;
     margin: 0;
     background-color: <?php echo $GLOBALS['cfg']['NaviBackground1'];?>;
-    color: <?php echo $GLOBALS['cfg']['MainColor'];?>;
+    color: <?php echo $GLOBALS['cfg']['MainText'];?>;
     padding: 10px !important;
     border: none;
     height: 19px;
@@ -2521,9 +2518,9 @@ table#index_columns select{
 }
 
 #move_columns_dialog li{
-    background: <?php echo $GLOBALS['cfg']['ThBackground'];?>;
+    background: <?php echo $GLOBALS['cfg']['TableBackground'];?>;
     border: 1px solid #aaa;
-    color: <?php echo $GLOBALS['cfg']['ThColor'];?>;
+    color: <?php echo $GLOBALS['cfg']['TableText'];?>;
     font-weight: bold;
     margin: .4em;
     padding: .2em;
@@ -2572,8 +2569,8 @@ table#index_columns select{
     margin-top: 0;
     padding: 0;
     clear: both;
-    background: <?php echo $GLOBALS['cfg']['ThBackground'];?>;
-    background-color: <?php echo $GLOBALS['cfg']['ThBackground'];?>;
+    background: <?php echo $GLOBALS['cfg']['NoticeBackground'];?>;
+    background-color: <?php echo $GLOBALS['cfg']['NoticeBackground'];?>;
 }
 
 .config-form legend{
@@ -2658,7 +2655,7 @@ table#index_columns select{
 }
 
 fieldset .group-header th{
-    background: <?php echo $GLOBALS['cfg']['BgTwo'];?>;
+    background: <?php echo $GLOBALS['cfg']['TableHeader'];?>;
 }
 
 fieldset .group-header + tr th{
@@ -3292,7 +3289,7 @@ table.show_create td{
 }
 #pma_console .toolbar{
     position: relative;
-    background: <?php echo $GLOBALS['cfg']['ThBackground'];?>;
+    background: <?php echo $GLOBALS['cfg']['ToolbarBackground'];?>;
     border-top: solid 1px #ccc;
     cursor: n-resize;
 }

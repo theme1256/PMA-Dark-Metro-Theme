@@ -16,7 +16,7 @@
     <?php echo $left; ?>: 0;
     height: 100%;
     background: <?php echo $GLOBALS['cfg']['NaviBackground1']; ?>;
-    color: <?php echo $GLOBALS['cfg']['MainColor']; ?>;
+    color: <?php echo $GLOBALS['cfg']['MainText']; ?>;
     z-index: 800;
 }
 
@@ -41,7 +41,7 @@
 #pma_navigation a:active
 {
     text-decoration: none;
-    color: <?php echo $GLOBALS['cfg']['NaviDatabaseNameColor']; ?>;
+    color: <?php echo $GLOBALS['cfg']['NaviText']; ?>;
 }
 
 #pma_navigation select#select_server,
@@ -145,7 +145,7 @@ img.ic_b_home, img.ic_s_loggoff, img.ic_b_docs, img.ic_b_sqlhelp, img.ic_s_reloa
     display: inline-block;
     height: 16px;
     width: 16px;
-    color: <?php echo $GLOBALS['cfg']['MainColor']; ?>;
+    color: <?php echo $GLOBALS['cfg']['MainText']; ?>;
     margin-right: 10px;
     padding: 5px;
     font-size: 15px;

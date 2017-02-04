@@ -363,7 +363,7 @@ a.active.trigger:hover {
 }
 
 .toggle_container .block {
-    background-color: <?php echo $GLOBALS['cfg']['BrowseMarkerBackground'] ?>;
+    background-color: <?php echo $GLOBALS['cfg']['TableMarked'] ?>;
     border-top: 1px solid #999;
 }
 
