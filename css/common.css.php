@@ -1795,8 +1795,8 @@ div#profilingchart{
 
 #sectionlinks{
     padding: 16px;
-    background: #f3f3f3;
-    border: 1px solid #aaa;
+    background: <?php echo $GLOBALS['cfg']['NaviBackground1'];?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['NaviBackgroun1'];?>;
 }
 #sectionlinks a,
 .buttonlinks a,
@@ -1805,18 +1805,18 @@ a.button{
     font-weight: bold;
     line-height: 35px;
     margin-<?php echo $left;?>: 7px;
-    border: 1px solid #aaa;
+    border: 1px solid <?php echo $GLOBALS['cfg']['NaviBackground2'];?>;
     padding: 5px 10px;
-    color: #111;
+    color: <?php echo $GLOBALS['cfg']['NaviText'];?>;
     text-decoration: none;
-    background: #ddd;
+    background: <?php echo $GLOBALS['cfg']['NaviBackground2'];?>;
     white-space: nowrap;
 }
 
 #sectionlinks a:hover,
 .buttonlinks a:hover,
 a.button:hover{
-
+    background: <?php echo $GLOBALS['cfg']['NaviLogoBackground'];?>;
 }
 
 div#sqlquerycontainer{
