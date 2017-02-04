@@ -5,6 +5,8 @@ A dark metro-like theme for PHPMyAdmin.
 
 # Installation
 
+## Linux (Debian/Ubuntu)
+
     # Download it to your server using this command
 	wget https://github.com/theme1256/PMA-Dark-Metro-Theme/archive/master.zip
     
