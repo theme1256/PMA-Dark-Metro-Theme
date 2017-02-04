@@ -16,7 +16,20 @@ A dark metro-like theme for PHPMyAdmin.
     # Unzip the downloaded folder into the PMA themes folder
     sudo unzip PMA-Dark-Metro-Theme.zip -d /usr/share/phpmyadmin/themes
 
-Not just reload the PHPMyAdmin site and it should be in the list of available themes.
+Not just reload the PHPMyAdmin site (maybe a couple of times) and it should be in the list of available themes.
+
+# Changing the color-scheme
+
+It is possible to change the the accent color of the color-scheme.
+
+There are, so far, two available color-schemes:
+
+* White
+* Green
+
+To change the color-scheme, edit the `layout.inc.php` file, specifically the 10th line defining the `$GLOBALS['cfg']['Scheme']` variable. Set it to one of the available. If set wrongly, it will fallback to white.
+
+Remember that the first letter has to be upper-case.
 
 # Credits
 
