@@ -559,78 +559,32 @@ img.ic_b_chart{
 }
 
 /* Set icons */
-img.ic_b_help, img.ic_b_docs{ /* Info */
-    background-image: url('<?php echo $GLOBALS['cfg']['icons']['info'];?>') !important;
-}
-img.ic_s_cog, img.ic_b_tblops{ /* Cog */
-    background-image: url('<?php echo $GLOBALS['cfg']['icons']['cog'];?>') !important; 
-}
-img.ic_s_db, img.ic_b_newdb{ /* DB */
-    background-image: url('<?php echo $GLOBALS['cfg']['icons']['db'];?>') !important;
-}
-img.ic_b_group{ /* DB-group */
-    background-image: url('<?php echo $GLOBALS['cfg']['icons']['db-group'];?>') !important;
-}
-img.ic_s_reload{ /* Reload */
-    background-image: url('<?php echo $GLOBALS['cfg']['icons']['reload'];?>') !important;
-}
-img.ic_b_sqlhelp{ /* Doc */
-    background-image: url('<?php echo $GLOBALS['cfg']['icons']['doc'];?>') !important;
-}
-img.ic_s_loggoff{ /* Sign-out */
-    background-image: url('<?php echo $GLOBALS['cfg']['icons']['sign-out'];?>') !important;
-}
-img.ic_b_home{ /* Home */
-    background-image: url('<?php echo $GLOBALS['cfg']['icons']['home'];?>') !important;
-}
-img.ic_window-new, img.ic_b_table_add, img.ic_b_index_add, img.ic_b_column_add, img.ic_b_insrow{ /* Plus */
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJ1BMVEUAAAD///////////////////////////////////////////////+uPUo5AAAADHRSTlMAAxIUODtkg4WL0/l0+GxtAAAAPklEQVQIW2NgYGDIKGEAA6YzpyEM5jNnCDDmnAGDLQwQ+sxxGOMEwxoI4xiDsLHpmTPGxgpYtGNjMK45CSQBO9QsZmDy9kMAAAAASUVORK5CYII=') !important;
-}
-img.ic_s_collapseall{ /* Colapse */
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAV1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////+ORg7oAAAAHHRSTlMAAQMFBgoMEhQVFicrQUZLUVZsgIaPqLTm7fv9mPsOcgAAAFJJREFUGFeNzssaQCAUReFFKPc7ofd/ToNCGbVm+x+c75DM5kvXMBm/s0AHYFrCbYYo2CrlaiyMvFlYM+GSsUd/cITQsYRQInZvXj1A/vylZAo3ZKAWRkpRz70AAAAASUVORK5CYII=') !important;
-}
-img.ic_s_link{ /* Link */
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAwFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8Do+ZMAAAAP3RSTlMAAQIDBQgLDQ4TGBkjMDg9Pj9ESVBVVmlscHR3eHt8foKLlJeYmp6goqiqq62vsLnAztHV19ng4uTp7fX3+fsx6b3MAAAAkklEQVQYGQXBBUICUQAFwPnf7sLAWgMXCxUxUFfe/W/FDBb7w14BwMp3kqcKYOkn26XJSwU4yxbOcw3QpsJzKmA3d6VMH8YzAE3aOkgOKYCLfP0mr70uTQEOJu97x8l4lGEBsJM8usoAwLh7+y9usg/w+bGwSk0LcJRTbOYSwG361ru/ZQDlPpNZtwGAcjIdrTEHaPwRxj1jtSYAAAAASUVORK5CYII=') !important;
-}
-img.ic_s_unlink{ /* Unlink */
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAA8ElEQVQoz2XRq0pEYRTF8TU3GASDwQfQKV6CKAiKGNViEQwGi8ViGMGiWU7yMSxiESw+gSjTRfQNxCxi+hnOmWEuq3zsvf6wNutLkiQ6Nk2lkqUMS90t+LNabYok0TCfRM0j9s3oYaMPaLjWSOIYO0mipYftRHdgJ+78DMJaer51EtOVnTjFUSakq1BYiLpXHI7Zc8NDyyt2R4Cv8tzh7JsR4A1ro8jeCND2geUkzhUKixNHtn361e6PtSSx5sL2AJnFemW7UrOo6Zl+mC10SvtSsyq46aVs1gruS/JAa+iLSuQdT+pj3VVvw5kHJ6X9DyfUtSY8fMNIAAAAAElFTkSuQmCC') !important;
-}
-img.ic_b_props{ /* Table */
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMAAQIDBAUGBwgJCg8QGBkaHCFDnfNuI9tmAAAAW0lEQVQYV22POxaAIAwEx6jxh6LA3v+qNhYKTrFF3mbyAjXdeb04O7I+ZFSBgtmmwSyoNwtCDqMAf0KH+67VPWpxj/pxzDAJmJ9oB81KI63Plm+jkMrbUFLz/Q2XwwwPXlkD/AAAAABJRU5ErkJggg==') !important;
-}
-img.ic_pause{
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAD///////////////////////////////////////////+0CY3pAAAAC3RSTlMAAgUGCAx0o6bT+1M72GgAAAA3SURBVAhbY6jeDQYTGCD07s0MWwUFpQMFBTczbGZg4DZgYKAeYwmEsYkhG2JXAwOTMQgYMcABAAP3JBCxFrkDAAAAAElFTkSuQmCC') !important;
-}
-img.ic_b_index, img.ic_s_asci, img.ic_bd_browse, img.ic_b_browse{
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAHlBMVEUAAAD///////////////////////////////////8kfJuVAAAACXRSTlMAAgbR09XX7e8Hj3uzAAAAOklEQVQIW2NggAEhJTBQZKicCQbTGTwhjClwJQyREJGpDJkQxjSElCVEZDJDJ4QxA2EgnAGXwjQZBgBmyidz+iT5OQAAAABJRU5ErkJggg==') !important;
-}
-img.ic_s_passwd{
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAclBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9eWEHEAAAAJXRSTlMAAQIFCRESFR0gIy0wMUNVVlx1fIWLlKqrrbK1vL7Hyszk7/P9z4BxiAAAAGVJREFUGFe1yFsCgVAYAOHhuF/qdxdSZPa/RQ9RNmDe5gNgmFdNmQ34lipVz52crOej5cPt56c+EzDR1ELmDoCrixZyA4C9qxaigzUAs8IiIiLuHscAjX0XgJ+3/AfcAA79vzbwBmCxFDrhdWvkAAAAAElFTkSuQmCC') !important;
-}
-img.ic_b_sql, img.ic_b_triggers{
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAOVBMVEUAAAD///////////////////////////////////////////////////////////////////////8KOjVvAAAAEnRSTlMAAQMJExQjJjhvcHGaubq82uj2krslAAAAXklEQVQYV13MwQ6CUAxE0evAEx7q//+nxpCgAouZje2muSdN9RAA4w2PmuUyRcRw9820BBgj8xL4F/ljpAdokd4DNH+kXwP76r19DPvr534fKo1Ko9KoNCqNnu5vmhNjGS0lj0zSoQAAAABJRU5ErkJggg==') !important;
-}
-img.ic_s_rights, img.ic_b_usredit{
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAilBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////2N2iNAAAALXRSTlMAAQMEBgcJCxAREhMUFxkgISMlLkBSZGtxd3yMjo+Ym6C8x8jX5Onv8/X5+/1G/AG+AAAAcUlEQVQYGU3BBxKCQBQFwcGAAVTMARWzCLz7X09YWet389NJ5l2MZS4VK/4iOQneXs4Z7yLnhreVk+INPqpVMa3+aPqQnothiLOW0sk4ig/ShlqsRlWqMQN2Mo7AXcYLKGUFUMgKIJNxBXqnt1p5FvIFhnMZYDvhzY4AAAAASUVORK5CYII=') !important;
-}
-img.ic_s_status{
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAY1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+aRQ2gAAAAIHRSTlMAAREaJiwvMjtBREZJVldiZm9we4WRnqCyt7y+3uLx+1j6rVAAAABnSURBVBgZjcFbEoIwEEXBi0aM4Kjg4CsKZ/+rlKICX1Jlt37YPNOr1MLsBDSWBbmfgcazKGk7QK0/VCndNLLs2AF7C/Ks7YDaoxYXeBdacU/pqpmZlUC/s0mQux+AvvJJ1Kj4wENrvuU5CVAEeeMMAAAAAElFTkSuQmCC') !important;
-}
-img.ic_b_export, img.ic_b_tblexport{
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAkFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+WABnwAAAAL3RSTlMAAQIGCAkLDA0QJy4xNjc4OTpHUVVXWV9kc4+SlJWYoKWtr7K0usXHzM7X2e3v8+0310IAAAB0SURBVBgZjcFXEoJAFEXBO5gdzAkTKOYAZ/+78wFF+and+s/0lh37+oopLFQbUBkuJyrFwLw9w6xl3AMI5TF3ScEFE8pjTg1pBUS+paaPgHdPTyB1koIzJlWGSZzcgZI2FLZuR+mlTk4hozKWuvuc2nWk3z4hLBWk1u2XiAAAAABJRU5ErkJggg==') !important;
-}
-img.ic_b_import, img.ic_b_tblimport{
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAk1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////ROyVeAAAAMHRSTlMAAgMEBQYIDg8YISouLzAxNztARlBRWVtrfn+Mjo+UlZqruby+wMPFzM/X5vH1+/05JPdbAAAAdElEQVQYGY3B2RaBUACG0Z9UJEmGzBxDhPje/+l0zmJxx976T2rKZUcfc6yB3ro49yTvy1kBJjhQG8kqYNeQdwaMahs4NSX5F1hIGgN55CuIpkDhqcSKleHMdMOKleFctcYatiY4e4UV33pSe1vx8jgm+u0JEXYV0r1GVPMAAAAASUVORK5CYII=') !important;
-}
+img.ic_b_help, img.ic_b_docs{background-image: url('<?php echo $GLOBALS['cfg']['icons']['info'];?>') !important;}
+img.ic_s_cog, img.ic_b_tblops{background-image: url('<?php echo $GLOBALS['cfg']['icons']['cog'];?>') !important;}
+img.ic_s_db, img.ic_b_newdb{background-image: url('<?php echo $GLOBALS['cfg']['icons']['db'];?>') !important;}
+img.ic_b_group{background-image: url('<?php echo $GLOBALS['cfg']['icons']['db-group'];?>') !important;}
+img.ic_s_reload{background-image: url('<?php echo $GLOBALS['cfg']['icons']['reload'];?>') !important;}
+img.ic_b_sqlhelp{background-image: url('<?php echo $GLOBALS['cfg']['icons']['doc'];?>') !important;}
+img.ic_s_loggoff{background-image: url('<?php echo $GLOBALS['cfg']['icons']['sign-out'];?>') !important;}
+img.ic_b_home{background-image: url('<?php echo $GLOBALS['cfg']['icons']['home'];?>') !important;}
+img.ic_window-new, img.ic_b_table_add, img.ic_b_index_add, img.ic_b_column_add, img.ic_b_insrow{background-image: url('<?php echo $GLOBALS['cfg']['icons']['plus'];?>') !important;}
+img.ic_s_collapseall{background-image: url('<?php echo $GLOBALS['cfg']['icons']['collapse'];?>') !important;}
+img.ic_s_link{background-image: url('<?php echo $GLOBALS['cfg']['icons']['link'];?>') !important;}
+img.ic_s_unlink{background-image: url('<?php echo $GLOBALS['cfg']['icons']['unlink'];?>') !important;}
+img.ic_b_props{background-image: url('<?php echo $GLOBALS['cfg']['icons']['table'];?>') !important;}
+img.ic_pause{background-image: url('<?php echo $GLOBALS['cfg']['icons']['column'];?>') !important;}
+img.ic_b_index, img.ic_s_asci, img.ic_bd_browse, img.ic_b_browse{background-image: url('<?php echo $GLOBALS['cfg']['icons']['lines'];?>') !important; }
+img.ic_s_passwd{background-image: url('<?php echo $GLOBALS['cfg']['icons']['padlock'];?>') !important;}
+img.ic_b_sql, img.ic_b_triggers{background-image: url('<?php echo $GLOBALS['cfg']['icons']['forward'];?>') !important;}
+img.ic_s_rights, img.ic_b_usredit{background-image: url('<?php echo $GLOBALS['cfg']['icons']['user'];?>') !important;}
+img.ic_s_status{background-image: url('<?php echo $GLOBALS['cfg']['icons']['slider'];?>') !important;}
+img.ic_b_export, img.ic_b_tblexport{background-image: url('<?php echo $GLOBALS['cfg']['icons']['download'];?>') !important; }
+img.ic_b_import, img.ic_b_tblimport{background-image: url('<?php echo $GLOBALS['cfg']['icons']['upload'];?>') !important; }
 img.ic_s_replication{
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAKlBMVEUAAAD///////////////////////////////////////////////////+Gu8ovAAAADXRSTlMAAQITFHCGiby+1df9w7BZJgAAAEhJREFUCFtjYIABRiUlBgYlJQGG2rt3N2nfvXud4e7du1d8gQQWxtm7dy/b3r17hyHm7t1JGnfvHkVoz717d5HW3bvXSNMOAwCDDUktzzpCdgAAAABJRU5ErkJggg==') !important;
 }
-img.ic_b_more{
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAD///////////////////////////////////////////+0CY3pAAAAC3RSTlMAAw4dNVddZ3TX6OuhbfAAAAA4SURBVAjXY2DADTw6wKCQYfZuMNjMoAVhJDAwrQbR24CKtCACDGChbWB9WhABkNA2qFGaAQzEAQDaOR0AEHjNNAAAAABJRU5ErkJggg==') !important;
-}
-img.ic_s_vars{
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAllBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AJcWoAAAAMXRSTlMAAQIEBQYIChARExUWGiEqLS8yN0BBRUZJV1hbYWhrd3h5fIOPnaClqK+1urzc3uv5jjRDGQAAAH5JREFUGFddzkcOwkAQRNHvApNzMDmYHBzo+1+OhT0exF8+qVsFDyvK1xRZKEkKLTqWIABkzOI/INr8AJmZ5R4aN6TQStCewWXcRw7OWxarTlZ3MH1CPGJ+dzB5wbvN8lqdnHZ81E1rFQTbZsqw559C6+DG+WEVJOZLAAh8wBcGeg7BSkCdrQAAAABJRU5ErkJggg==') !important;
-}
+img.ic_b_more{background-image: url('<?php echo $GLOBALS['cfg']['icons']['more'];?>') !important;}
+img.ic_s_vars{background-image: url('<?php echo $GLOBALS['cfg']['icons']['code'];?>') !important;}
 img.ic_b_engine, img.ic_b_routines{
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAA3UlEQVQYGZ3BsSqEAQAH8H+xieFGpRSu8A7HPQCvoDBcGSgDUkzqpnsEmQwmeQK6lHTxCgaJDAZ9yfTT90lHsfj98k92TWvazF90lA7SZ8m7lVRsuDdizJ2NJMb1TDnHhSk9dWfeDBjy5jSJWz+dJ9ruPdtLSR2FeTVNBSYSxxa1HCWxpoe5VDTRtZo+n2qpqKmkz7JLNFIxj2vr+c4kXjXUzCkwmTi2oOUwJV0/XSXanrzYS8mYG9Mu0FV3a9aJwqBhhZN8sYJWKnY8GjLqwXZ+p6N0kL/YN6NpK/kAftvhn6iMQ/8AAAAASUVORK5CYII=') !important;
 }
