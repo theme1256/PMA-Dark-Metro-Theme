@@ -1764,7 +1764,7 @@ div#profilingchart{
 #sectionlinks{
     padding: 16px;
     background: <?php echo $GLOBALS['cfg']['NaviBackground1'];?>;
-    border: 1px solid <?php echo $GLOBALS['cfg']['NaviBackgroun1'];?>;
+    border: 1px solid <?php echo $GLOBALS['cfg']['NaviBackground1'];?>;
 }
 #sectionlinks a,
 .buttonlinks a,
