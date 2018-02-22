@@ -37,19 +37,22 @@ ul.resizable-menu ul {
 	position: absolute;
 	list-style-type: none;
 	display: none;
-	border: 1px #ddd solid;
+	border-right: 1px <?= $GLOBALS['cfg']['BorderColor'];?> solid;
+	border-bottom: 1px <?= $GLOBALS['cfg']['BorderColor'];?> solid;
+	border-left: 1px <?= $GLOBALS['cfg']['BorderColor'];?> solid;
 	z-index: 2;
-	<?= $right; ?>: 0;
+	right: 0;
 }
 
 ul.resizable-menu li:hover {
-	<?= $theme->getCssGradient('ffffff', 'e5e5e5'); ?>
+	color: <?= $GLOBALS['cfg']['NaviPointerColor'];?>;
+	background-color: <?= $GLOBALS['cfg']['NaviPointerBackground'];?>;
 }
 
 ul.resizable-menu li:hover ul,
 ul.resizable-menu .submenuhover ul {
 	display: block;
-	background: #fff;
+	background: <?= $GLOBALS['cfg']['NaviBackground'];?>;
 }
 
 ul.resizable-menu ul li {

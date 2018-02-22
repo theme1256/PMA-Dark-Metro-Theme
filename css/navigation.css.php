@@ -20,10 +20,10 @@
 	width: <?= $GLOBALS['cfg']['NaviWidth']; ?>px;
 	position: fixed;
 	top: 0;
-	<?= $left; ?>: 0;
+	left: 0;
 	height: 100vh;
 	background: <?= $GLOBALS['cfg']['NaviBackground']; ?>;
-	color: <?= $GLOBALS['cfg']['NaviColor']; ?>;
+	color: <?= $GLOBALS['cfg']['NaviText']; ?>;
 	z-index: 800;
 }
 
@@ -36,7 +36,7 @@
 	height: 100%;
 	position: absolute;
 	top: 0;
-	<?= $left; ?>: 0;
+	left: 0;
 	z-index: 0;
 }
 
@@ -61,12 +61,12 @@
 #pma_navigation div.pageselector {
 	text-align: center;
 	margin: 0;
-	margin-<?= $left; ?>: 0.75em;
-	border-<?= $left; ?>: 1px solid #666;
+	margin-left: 0.75em;
+	border-left: 1px solid #666;
 }
 
 #pma_navigation div#pmalogo {
-	<?php //better echo $GLOBALS['cfg']['logoBGC']; ?>
+	background: <?= $GLOBALS['cfg']['logoBGC']; ?>;
 }
 
 #pma_navigation #pmalogo,
@@ -100,7 +100,7 @@
 /* Navigation tree*/
 #pma_navigation_tree {
 	margin: 0;
-	margin-<?= $left; ?>: 5px;
+	margin-left: 5px;
 	overflow: hidden;
 	color: #444;
 	height: 74%;
@@ -115,7 +115,7 @@
 
 #pma_navigation_db_select {
 	margin-top: 0.5em;
-	margin-<?= $left; ?>: 0.75em;
+	margin-left: 0.75em;
 }
 #pma_navigation_db_select select {
 	background: url("./themes/pmahomme/img/select_bg.png") repeat scroll 0 0;
@@ -143,7 +143,7 @@
 	vertical-align: sub;
 }
 #pma_navigation_tree a {
-	color: <?= $GLOBALS['cfg']['NaviColor']; ?>;
+	color: <?= $GLOBALS['cfg']['NaviText']; ?>;
 }
 #pma_navigation_tree a:hover {
 	text-decoration: underline;
@@ -198,7 +198,7 @@
 	height: 1.5em;
 	min-width: 16px;
 	min-height: 16px;
-	float: <?= $left; ?>;
+	float: left;
 }
 #pma_navigation_tree div.block.double {
 	width: 2.5em;
@@ -211,52 +211,52 @@
 	min-height: 8px;
 	position: absolute;
 	bottom: 0.7em;
-	<?= $left; ?>: 0.75em;
+	left: 0.75em;
 	z-index: 0;
 }
 #pma_navigation_tree div.block i { /* Top and right segments for the tree element connections */
 	display: block;
-	border-<?= $left; ?>: 1px solid #666;
-	border-bottom: 1px solid #666;
+	border-left: 1px solid <?= $GLOBALS['cfg']['NaviText']?>;
+	border-bottom: 1px solid <?= $GLOBALS['cfg']['NaviText']?>;
 	position: relative;
 	z-index: 0;
 }
 #pma_navigation_tree div.block i.first { /* Removes top segment */
-	border-<?= $left; ?>: 0;
+	border-left: 0;
 }
 #pma_navigation_tree div.block b { /* Bottom segment for the tree element connections */
 	display: block;
 	height: 0.75em;
 	bottom: 0;
-	<?= $left; ?>: 0.75em;
-	border-<?= $left; ?>: 1px solid #666;
+	left: 0.75em;
+	border-left: 1px solid <?= $GLOBALS['cfg']['NaviText']?>;
 }
 #pma_navigation_tree div.block a,
 #pma_navigation_tree div.block u {
 	position: absolute;
-	<?= $left; ?>: 50%;
+	left: 50%;
 	top: 50%;
 	z-index: 10;
 }
 #pma_navigation_tree div.block a + a {
-	<?= $left; ?>: 100%;
+	left: 100%;
 }
 #pma_navigation_tree div.block.double a,
 #pma_navigation_tree div.block.double u {
-	<?= $left; ?>: 33%;
+	left: 33%;
 }
 #pma_navigation_tree div.block.double a + a {
-	<?= $left; ?>: 85%;
+	left: 85%;
 }
 #pma_navigation_tree div.block img {
 	position: relative;
 	top: -0.6em;
-	<?= $left; ?>: 0;
-	margin-<?= $left; ?>: -7px;
+	left: 0;
+	margin-left: -7px;
 }
 #pma_navigation_tree div.throbber img {
 	top: 2px;
-	<?= $left; ?>: 2px;
+	left: 2px;
 }
 #pma_navigation_tree li.last > ul {
 	background: none;
@@ -264,23 +264,24 @@
 #pma_navigation_tree li > a, #pma_navigation_tree li > i {
 	line-height: 1.5em;
 	height: 1.5em;
-	padding-<?= $left; ?>: 0.3em;
+	padding-left: 0.3em;
+	color: <?= $GLOBALS['cfg']['NaviText'];?>;
 }
 #pma_navigation_tree .list_container {
-	border-<?= $left; ?>: 1px solid #666;
-	margin-<?= $left; ?>: 0.75em;
-	padding-<?= $left; ?>: 0.75em;
+	border-left: 1px solid #666;
+	margin-left: 0.75em;
+	padding-left: 0.75em;
 }
 #pma_navigation_tree .last > .list_container {
-	border-<?= $left; ?>: 0 solid #666;
+	border-left: 0 solid #666;
 }
 
 /* Fast filter */
 li.fast_filter {
-	padding-<?= $left; ?>: 0.75em;
-	margin-<?= $left; ?>: 0.75em;
+	padding-left: 0.75em;
+	margin-left: 0.75em;
 	padding-<?= $right; ?>: 35px;
-	border-<?= $left; ?>: 1px solid #666;
+	border-left: 1px solid #666;
 	list-style: none;
 }
 li.fast_filter input {
@@ -288,7 +289,7 @@ li.fast_filter input {
 	font-size: 0.7em;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	padding-<?= $left; ?>: 4px;
+	padding-left: 4px;
 	padding-<?= $right; ?>: 1.7em;
 	width: 100%;
 }
@@ -337,13 +338,12 @@ li.fast_filter.db_fast_filter {
 
 /* Resize handler */
 #pma_navigation_resizer {
-	width: 3px;
+	width: 0px !important;
 	height: 100%;
-	background-color: #aaa;
 	cursor: col-resize;
 	position: fixed;
 	top: 0;
-	<?= $left; ?>: 240px;
+	left: <?= $GLOBALS['cfg']['NaviWidth'];?>px;
 	z-index: 801;
 }
 #pma_navigation_collapser {
@@ -355,7 +355,7 @@ li.fast_filter.db_fast_filter {
 	font-weight: bold;
 	position: fixed;
 	top: 0;
-	<?= $left; ?>: <?= $GLOBALS['cfg']['NaviWidth']; ?>px;
+	left: <?= $GLOBALS['cfg']['NaviWidth']; ?>px;
 	text-align: center;
 	cursor: pointer;
 	z-index: 800;
@@ -367,12 +367,12 @@ li.fast_filter.db_fast_filter {
 /* Quick warp links */
 .pma_quick_warp {
 	margin-top: 5px;
-	margin-<?= $left; ?>: 2px;
+	margin-left: 2px;
 	position: relative;
 }
 .pma_quick_warp .drop_list {
-	float: <?= $left; ?>;
-	margin-<?= $left; ?>: 3px;
+	float: left;
+	margin-left: 3px;
 	padding: 2px 0;
 }
 .pma_quick_warp .drop_button {
@@ -399,7 +399,7 @@ li.fast_filter.db_fast_filter {
 	border-bottom-<?= $right; ?>-radius: 0;
 	box-shadow: 0 0 5px #ccc;
 	top: 100%;
-	<?= $left; ?>: 3px;
+	left: 3px;
 	<?= $right; ?>: 0;
 	display: none;
 	z-index: 802;
@@ -426,4 +426,8 @@ li.fast_filter.db_fast_filter {
 	clear: left;
 	float: left;
 	padding: .1em .3em 0;
+}
+
+#floating_menubar {
+	border-left: 1px solid <?= $GLOBALS['cfg']['BorderColor'];?>;
 }
