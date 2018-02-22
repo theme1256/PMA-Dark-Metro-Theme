@@ -1,464 +1,429 @@
 <?php
-    // unplanned execution path
-    if (! defined('PMA_MINIMUM_COMMON') && ! defined('TESTSUITE')) {
-        exit();
-    }
+	/* vim: set expandtab sw=4 ts=4 sts=4: */
+	/**
+	 * Navigation styles for the pmahomme theme
+	 *
+	 * @package	PhpMyAdmin-theme
+	 * @subpackage PMAHomme
+	 */
+
+	// unplanned execution path
+	if (! defined('PHPMYADMIN') && ! defined('TESTSUITE')) {
+		exit();
+	}
 ?>
 
 /******************************************************************************/
 /* Navigation */
 
 #pma_navigation {
-    width: <?php echo $GLOBALS['cfg']['NaviWidth']; ?>px;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    <?php echo $left; ?>: 0;
-    height: 100%;
-    background: <?php echo $GLOBALS['cfg']['NaviBackground1']; ?>;
-    color: <?php echo $GLOBALS['cfg']['MainText']; ?>;
-    z-index: 800;
+	width: <?= $GLOBALS['cfg']['NaviWidth']; ?>px;
+	position: fixed;
+	top: 0;
+	<?= $left; ?>: 0;
+	height: 100vh;
+	background: <?= $GLOBALS['cfg']['NaviBackground']; ?>;
+	color: <?= $GLOBALS['cfg']['NaviColor']; ?>;
+	z-index: 800;
 }
 
-#pma_navigation select,
-#pma_navigation#recentTable
-{
-}
-
-#pma_navigation input[type=text]
-{
-    background-color: <?php echo $GLOBALS['cfg']['MainBackground']; ?>;
-    font-family: <?php echo $GLOBALS['cfg']['FontFamily']; ?>;
-}
-
-#pma_navigation a img
-{
-    border: 0;
-}
-
-#pma_navigation a:link,
-#pma_navigation a:visited,
-#pma_navigation a:active
-{
-    text-decoration: none;
-    color: <?php echo $GLOBALS['cfg']['NaviText']; ?>;
-}
-
-#pma_navigation select#select_server,
-#pma_navigation select#lightm_db
-{
-    width: 100%;
-}
-
-/* buttons in some browsers (eg. Konqueror) are block elements,
-   this breaks design */
-
-#pma_navigation button
-{
-    display: inline;
+#pma_navigation_header {
+	overflow: hidden;
 }
 
 #pma_navigation_content {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    <?php echo $left; ?>: 0;
-    z-index: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	<?= $left; ?>: 0;
+	z-index: 0;
 }
 
 #pma_navigation ul {
-    margin: 0;
+	margin: 0;
 }
 
 #pma_navigation form {
-    margin: 0;
-    padding: 0;
-    display: inline;
+	margin: 0;
+	padding: 0;
+	display: inline;
 }
 
+#pma_navigation select#select_server,
+#pma_navigation select#lightm_db {
+	width: 100%;
+}
 
 /******************************************************************************/
 /* specific elements */
 
 #pma_navigation div.pageselector {
-    text-align: center;
-    margin: 0;
-    margin-<?php echo $left; ?>: 0.75em;
-    border-<?php echo $left; ?>: 1px solid #666;
+	text-align: center;
+	margin: 0;
+	margin-<?= $left; ?>: 0.75em;
+	border-<?= $left; ?>: 1px solid #666;
 }
 
-#pma_navigation #pmalogo
-{
-    margin: 0;
-    padding: 12px;
-    background: <?php echo $GLOBALS['cfg']['NaviLogoBackground']; ?>;
-    color: <?php echo $GLOBALS['cfg']['NaviText']; ?>;
-    font-size: 14px;
-    cursor: default;
-    height: 15px;
-    line-height: 100%;
+#pma_navigation div#pmalogo {
+	<?php //better echo $GLOBALS['cfg']['logoBGC']; ?>
 }
 
-#pma_navigation #imgpmalogo
-{
-    display: none;
-}
-
-#pma_navigation #recentTableList
-{
-    text-align: center;
-    padding: 10px;
-}
-
-#pma_navigation #recentTableList select
-{
-    min-width: 100%;
-}
-
-#pma_navigation #databaseList
-{
-    text-align: center;
-    margin: 10px;
-}
-
-#pma_navigation #navipanellinks
-{
-    padding-top: 1em;
-    padding-bottom: 1em;
-    text-align: center;
-    background-color: <?php echo $GLOBALS['cfg']['NaviBackground2']; ?>;
-}
-
-div#left_tableList li:hover a:first-child:before
-{
-    color: <?php echo $GLOBALS['cfg']['InputText']; ?>;
-}
-
-img.ic_b_home, img.ic_s_loggoff, img.ic_b_docs, img.ic_b_sqlhelp, img.ic_s_reload
-{
-    /*-webkit-filter: invert(70%);
-    filter: invert(70%);*/
-}
-
-#navipanellinks a
-{
-    display: inline-block;
-    height: 16px;
-    width: 16px;
-    color: <?php echo $GLOBALS['cfg']['MainText']; ?>;
-    margin-right: 10px;
-    padding: 5px;
-    font-size: 15px;
-}
-
+#pma_navigation #pmalogo,
 #pma_navigation #serverChoice,
+#pma_navigation #navipanellinks,
+#pma_navigation #recentTableList,
+#pma_navigation #favoriteTableList,
 #pma_navigation #databaseList,
 #pma_navigation div.pageselector.dbselector {
-    text-align: center;
-    padding: 5px 10px 0;
-    border: 0;
+	text-align: center;
+	padding: 5px 10px 0;
+	border: 0;
+}
+
+#pma_navigation #recentTable,
+#pma_navigation #favoriteTable {
+	width: 200px;
+}
+
+#pma_navigation #favoriteTableList select,
+#pma_navigation #serverChoice select
+ {
+	width: 80%;
 }
 
 #pma_navigation_content > img.throbber {
-    display: none;
-    margin: .3em auto 0;
+	display: none;
+	margin: .3em auto 0;
 }
 
 /* Navigation tree*/
 #pma_navigation_tree {
-    margin: 0;
-    margin-<?php echo $left; ?>: 10px;
-    overflow: hidden;
-    height: 74%;
-    position: relative;
+	margin: 0;
+	margin-<?= $left; ?>: 5px;
+	overflow: hidden;
+	color: #444;
+	height: 74%;
+	position: relative;
 }
 #pma_navigation_select_database {
-    text-align: left;
-    padding: 0 0 0;
-    border: 0;
-    margin: 0;
+	text-align: left;
+	padding: 0 0 0;
+	border: 0;
+	margin: 0;
 }
 
 #pma_navigation_db_select {
-    margin-top: 0.5em;
-    margin-<?php echo $left; ?>: 0.75em;
+	margin-top: 0.5em;
+	margin-<?= $left; ?>: 0.75em;
 }
 #pma_navigation_db_select select {
-    border: 1px solid #bbb;
-    border-top: 1px solid #bbb;
-    color: #333;
-    padding: 4px 6px;
-    margin: 0 0 0;
-    width: 92%;
+	background: url("./themes/pmahomme/img/select_bg.png") repeat scroll 0 0;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	border: 1px solid #bbb;
+	border-top: 1px solid #bbb;
+	color: #333;
+	padding: 4px 6px;
+	margin: 0 0 0;
+	width: 92%;
+	font-size: 1.11em;
 }
+
 #pma_navigation_tree_content {
-    width: 100%;
-    overflow: hidden;
-    overflow-y: auto;
-    position: absolute;
-    height: 100%;
-}
-#pma_navigation_tree li .dbItemControls {
-    padding-left: 4px;
-}
-#pma_navigation_tree li .navItemControls {
-    display: none;
-    padding-left: 4px;
-}
-#pma_navigation_tree li.activePointer .navItemControls {
-    display: inline;
-    opacity: 0.5;
-}
-#pma_navigation_tree li.activePointer .navItemControls:hover {
-    display: inline;
-    opacity: 1.0;
+	width: 100%;
+	overflow: hidden;
+	overflow-y: auto;
+	position: absolute;
+	height: 100%;
 }
 #pma_navigation_tree_content a.hover_show_full {
-    position: relative;
-    z-index: 100;
+	position: relative;
+	z-index: 100;
+	vertical-align: sub;
 }
 #pma_navigation_tree a {
-    color: <?php echo $GLOBALS['cfg']['NaviText']; ?>;
+	color: <?= $GLOBALS['cfg']['NaviColor']; ?>;
 }
-#pma_navigation_tree a:hover,
-#pma_navigation_tree li.activePointer,
+#pma_navigation_tree a:hover {
+	text-decoration: underline;
+}
+#pma_navigation_tree li.activePointer {
+	color: <?= $GLOBALS['cfg']['NaviPointerColor']; ?>;
+	background-color: <?= $GLOBALS['cfg']['NaviPointerBackground']; ?>;
+}
 #pma_navigation_tree li.selected {
-    text-decoration: none;
-    color: <?php echo $GLOBALS['cfg']['NaviTextHover']; ?>;
+	color: <?= $GLOBALS['cfg']['NaviPointerColor']; ?>;
+	background-color: <?= $GLOBALS['cfg']['NaviPointerBackground']; ?>;
+}
+#pma_navigation_tree li .dbItemControls {
+	padding-left: 4px;
+}
+#pma_navigation_tree li .navItemControls {
+	display: none;
+	padding-left: 4px;
+}
+#pma_navigation_tree li.activePointer .navItemControls {
+	display: inline;
+	opacity: 0.5;
+}
+#pma_navigation_tree li.activePointer .navItemControls:hover {
+	display: inline;
+	opacity: 1.0;
 }
 #pma_navigation_tree ul {
-    clear: both;
-    padding: 0;
-    list-style-type: none;
-    margin: 0;
+	clear: both;
+	padding: 0;
+	list-style-type: none;
+	margin: 0;
 }
 #pma_navigation_tree ul ul {
-    position: relative;
+	position: relative;
 }
-#pma_navigation_tree li {
-    white-space: nowrap;
-    clear: both;
-    min-height: 17px;
+#pma_navigation_tree li,
+#pma_navigation_tree li.fast_filter {
+	white-space: nowrap;
+	clear: both;
+	min-height: 16px;
 }
 #pma_navigation_tree img {
-    margin: 0;
+	margin: 0;
 }
 #pma_navigation_tree i {
-    display: block;
+	display: block;
 }
 #pma_navigation_tree div.block {
-    position: relative;
-    width: 1.5em;
-    height: 2em;
-    min-width: 16px;
-    min-height: 16px;
-    float: <?php echo $left; ?>;
+	position: relative;
+	width: 1.5em;
+	height: 1.5em;
+	min-width: 16px;
+	min-height: 16px;
+	float: <?= $left; ?>;
 }
 #pma_navigation_tree div.block.double {
-    width: 2.5em;
+	width: 2.5em;
 }
 #pma_navigation_tree div.block i,
 #pma_navigation_tree div.block b {
-    width: 1.5em;
-    height: 2em;
-    min-width: 16px;
-    min-height: 8px;
-    position: absolute;
-    bottom: 0.7em;
-    <?php echo $left; ?>: 0.75em;
-    z-index: 0;
-    margin-top: -4px;
+	width: 1.5em;
+	height: 1.7em;
+	min-width: 16px;
+	min-height: 8px;
+	position: absolute;
+	bottom: 0.7em;
+	<?= $left; ?>: 0.75em;
+	z-index: 0;
 }
 #pma_navigation_tree div.block i { /* Top and right segments for the tree element connections */
-    display: block;
-    border-<?php echo $left; ?>: 1px solid #616161;
-    border-bottom: 1px solid #616161;
-    position: relative;
-    z-index: 0;
+	display: block;
+	border-<?= $left; ?>: 1px solid #666;
+	border-bottom: 1px solid #666;
+	position: relative;
+	z-index: 0;
 }
 #pma_navigation_tree div.block i.first { /* Removes top segment */
-    border-<?php echo $left; ?>: 0;
+	border-<?= $left; ?>: 0;
 }
 #pma_navigation_tree div.block b { /* Bottom segment for the tree element connections */
-    display: block;
-    height: 0.75em;
-    bottom: 0;
-    <?php echo $left; ?>: 0.75em;
-    border-<?php echo $left; ?>: 1px solid #616161;
+	display: block;
+	height: 0.75em;
+	bottom: 0;
+	<?= $left; ?>: 0.75em;
+	border-<?= $left; ?>: 1px solid #666;
 }
 #pma_navigation_tree div.block a,
 #pma_navigation_tree div.block u {
-    position: absolute;
-    <?php echo $left; ?>: 50%;
-    top: 50%;
-    z-index: 10;
+	position: absolute;
+	<?= $left; ?>: 50%;
+	top: 50%;
+	z-index: 10;
 }
 #pma_navigation_tree div.block a + a {
-    <?php echo $left; ?>: 100%;
+	<?= $left; ?>: 100%;
 }
 #pma_navigation_tree div.block.double a,
 #pma_navigation_tree div.block.double u {
-    <?php echo $left; ?>: 33%;
+	<?= $left; ?>: 33%;
 }
 #pma_navigation_tree div.block.double a + a {
-    <?php echo $left; ?>: 85%;
+	<?= $left; ?>: 85%;
 }
 #pma_navigation_tree div.block img {
-    position: relative;
-    top: -0.6em;
-    <?php echo $left; ?>: 0;
-    margin-<?php echo $left; ?>: -7px;
+	position: relative;
+	top: -0.6em;
+	<?= $left; ?>: 0;
+	margin-<?= $left; ?>: -7px;
 }
 #pma_navigation_tree div.throbber img {
-    top: 2px;
-    <?php echo $left; ?>: 2px;
+	top: 2px;
+	<?= $left; ?>: 2px;
 }
 #pma_navigation_tree li.last > ul {
-    background: none;
+	background: none;
 }
 #pma_navigation_tree li > a, #pma_navigation_tree li > i {
-    line-height: 1.5em;
-    height: 1.5em;
-    padding-<?php echo $left; ?>: 0.3em;
+	line-height: 1.5em;
+	height: 1.5em;
+	padding-<?= $left; ?>: 0.3em;
 }
 #pma_navigation_tree .list_container {
-    border-<?php echo $left; ?>: 1px solid #616161;
-    margin-<?php echo $left; ?>: 0.75em;
-    padding-<?php echo $left; ?>: 0.75em;
+	border-<?= $left; ?>: 1px solid #666;
+	margin-<?= $left; ?>: 0.75em;
+	padding-<?= $left; ?>: 0.75em;
+}
+#pma_navigation_tree .last > .list_container {
+	border-<?= $left; ?>: 0 solid #666;
 }
 
 /* Fast filter */
 li.fast_filter {
-    padding-<?php echo $left; ?>: 0.75em;
-    margin-<?php echo $left; ?>: 0.75em;
-    padding-<?php echo $right; ?>: 15px;
-    border-<?php echo $left; ?>: 1px solid #616161;
+	padding-<?= $left; ?>: 0.75em;
+	margin-<?= $left; ?>: 0.75em;
+	padding-<?= $right; ?>: 35px;
+	border-<?= $left; ?>: 1px solid #666;
+	list-style: none;
 }
 li.fast_filter input {
-    width: 100%;
-    background-color: <?php echo $GLOBALS['cfg']['InputBackground'];?>;
-    border: 1px solid <?php echo $GLOBALS['cfg']['InputBorder'];?>;
-    color: #666666;
-    font-family: "Open Sans","Segoe UI";
-    padding: 2px;
+	margin: 3px 0 0 0;
+	font-size: 0.7em;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-<?= $left; ?>: 4px;
+	padding-<?= $right; ?>: 1.7em;
+	width: 100%;
 }
-
 li.fast_filter span {
-    position: relative;
-    <?php echo $right; ?>: 1.5em;
-    padding: 0.2em;
-    cursor: pointer;
-    font-weight: bold;
-    color: #800;
+	position: relative;
+	<?= $right; ?>: 1.5em;
+	padding: 0.2em;
+	cursor: pointer;
+	font-weight: bold;
+	color: #800;
+	font-size: 0.7em;
+}
+/* IE10+ has its own reset X */
+html.ie li.fast_filter span {
+	display: none;
+}
+html.ie.ie9 li.fast_filter span,
+html.ie.ie8 li.fast_filter span {
+	display: auto;
+}
+html.ie li.fast_filter input {
+	padding-<?= $right; ?>: .2em;
+}
+html.ie.ie9 li.fast_filter input,
+html.ie.ie8 li.fast_filter input {
+	padding-<?= $right; ?>: 1.7em;
 }
 li.fast_filter.db_fast_filter {
-    border: 0;
-    margin-left: 0;
-    margin-right: 10px;
+	border: 0;
+	margin-left: 0;
+	margin-right: 10px;
 }
 
 #navigation_controls_outer {
-    min-height: 21px !important;
-}
-
-#pma_navigation_collapse {
-    padding-right: 2px;
+	min-height: 21px !important;
 }
 
 #navigation_controls_outer.activePointer {
-    background-color: transparent !important;
+	background-color: transparent !important;
 }
 
 #navigation_controls {
-    float: right;
-    padding-right: 23px;
+	float: right;
+	padding-right: 23px;
 }
 
 /* Resize handler */
 #pma_navigation_resizer {
-    width: 1px;
-    height: 100%;
-    background-color: #aaa;
-    cursor: col-resize;
-    position: fixed;
-    top: 0;
-    <?php echo $left; ?>: 250px;
-    z-index: 801;
+	width: 3px;
+	height: 100%;
+	background-color: #aaa;
+	cursor: col-resize;
+	position: fixed;
+	top: 0;
+	<?= $left; ?>: 240px;
+	z-index: 801;
 }
-
 #pma_navigation_collapser {
-    width: 20px;
-    padding-top: 4px;
-    padding-bottom: 12px;
-    background: <?php echo $GLOBALS['cfg']['NaviBackground2']; ?>;
-    border-bottom: 1px solid <?php echo $GLOBALS['cfg']['NaviBackground2']; ?>;
-    line-height: 22px;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    <?php echo $left; ?>: <?php echo $GLOBALS['cfg']['NaviWidth']; ?>px;
-    text-align: center;
-    cursor: pointer;
-    z-index: 801;
+	width: 20px;
+	height: 22px;
+	line-height: 22px;
+	background: #eee;
+	color: #555;
+	font-weight: bold;
+	position: fixed;
+	top: 0;
+	<?= $left; ?>: <?= $GLOBALS['cfg']['NaviWidth']; ?>px;
+	text-align: center;
+	cursor: pointer;
+	z-index: 800;
+	text-shadow: 0 1px 0 #fff;
+	filter: dropshadow(color=#fff, offx=0, offy=1);
+	border: 1px solid #888;
 }
 
 /* Quick warp links */
 .pma_quick_warp {
-    margin-top: 5px;
-    margin-<?php echo $left; ?>: 10px;
-    position: relative;
+	margin-top: 5px;
+	margin-<?= $left; ?>: 2px;
+	position: relative;
 }
 .pma_quick_warp .drop_list {
-    float: <?php echo $left; ?>;
-    margin-<?php echo $left; ?>: 3px;
-    padding: 2px 0;
+	float: <?= $left; ?>;
+	margin-<?= $left; ?>: 3px;
+	padding: 2px 0;
 }
 .pma_quick_warp .drop_button {
-    padding: .2em .5em;
-    border: 1px solid <?php echo $GLOBALS['cfg']['DropdownBorder']; ?>;
-    background: <?php echo $GLOBALS['cfg']['DropdownBackground']; ?>;
-    color: <?php echo $GLOBALS['cfg']['DropdownText']; ?>;
-    cursor: pointer;
-}/*
+	padding: 0 .3em;
+	border: 1px solid #ddd;
+	border-radius: .3em;
+	background: #f2f2f2;
+	cursor: pointer;
+}
 .pma_quick_warp .drop_list:hover .drop_button {
-    background: #fff;
-}*/
+	background: #fff;
+}
 .pma_quick_warp .drop_list ul {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    overflow-y: auto;
-    list-style: none;
-    background: <?php echo $GLOBALS['cfg']['DropdownBackground']; ?>;
-    color: <?php echo $GLOBALS['cfg']['DropdownText']; ?>;
-    border: 1px solid <?php echo $GLOBALS['cfg']['DropdownBorder']; ?>;
-    top: 100%;
-    <?php echo $left; ?>: 3px;
-    <?php echo $right; ?>: 0;
-    display: none;
-    z-index: 802;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	overflow-y: auto;
+	list-style: none;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: .3em;
+	border-top-<?= $right; ?>-radius: 0;
+	border-bottom-<?= $right; ?>-radius: 0;
+	box-shadow: 0 0 5px #ccc;
+	top: 100%;
+	<?= $left; ?>: 3px;
+	<?= $right; ?>: 0;
+	display: none;
+	z-index: 802;
 }
 .pma_quick_warp .drop_list:hover ul {
-    display: block;
+	display: block;
 }
 .pma_quick_warp .drop_list li {
-    white-space: nowrap;
-    padding: 0;
+	white-space: nowrap;
+	padding: 0;
+	border-radius: 0;
 }
 .pma_quick_warp .drop_list li img {
-    vertical-align: sub;
+	vertical-align: sub;
 }
-.pma_quick_warp .drop_list li:hover, .pma_quick_warp .drop_list li:hover a {
-    background: <?php echo $GLOBALS['cfg']['DropdownBackgroundHover']; ?>;
-    color: <?php echo $GLOBALS['cfg']['DropdownText']; ?> !important;
+.pma_quick_warp .drop_list li:hover {
+	background: #f2f2f2;
 }
 .pma_quick_warp .drop_list a {
-    display: block;
-    padding: .2em .3em;
+	display: block;
+	padding: .2em .3em;
 }
 .pma_quick_warp .drop_list a.favorite_table_anchor {
-    clear: left;
-    float: left;
-    padding: .1em .3em 0;
+	clear: left;
+	float: left;
+	padding: .1em .3em 0;
 }

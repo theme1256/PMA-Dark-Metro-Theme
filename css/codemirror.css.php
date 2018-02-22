@@ -1,81 +1,85 @@
 <?php
-    // unplanned execution path
-    if (! defined('PMA_MINIMUM_COMMON') && ! defined('TESTSUITE')) {
-        exit();
-    }
+	/* vim: set expandtab sw=4 ts=4 sts=4: */
+	/**
+	 * Styles for CodeMirror editor
+	 * for the pmahomme theme
+	 *
+	 * @package	PhpMyAdmin-theme
+	 * @subpackage PMAHomme
+	 */
+
+	// unplanned execution path
+	if (! defined('PHPMYADMIN') && ! defined('TESTSUITE')) {
+		exit();
+	}
 ?>
 
 .CodeMirror {
-    font-family: <?php echo $GLOBALS['cfg']['FontFamilyFixed']; ?> !important;
-    height: <?php echo ceil($GLOBALS['cfg']['TextareaRows'] * 1.2); ?>em;
-    border: 1px solid #ccc;
-    direction: ltr;
-    background: black;
-    color: #00FF00;
-}
-#pma_console .CodeMirror {
-    border: none;
-}
-.CodeMirror * {
-    font-family: <?php echo $GLOBALS['cfg']['FontFamilyFixed']; ?>;
+	height: <?= ceil($GLOBALS['cfg']['TextareaRows'] * 1.2); ?>em;
+	direction: ltr;
 }
 #inline_editor_outer .CodeMirror {
-    height: <?php echo ceil($GLOBALS['cfg']['TextareaRows'] * 0.4); ?>em;
-    margin-bottom: 10px;
+	height: <?= ceil($GLOBALS['cfg']['TextareaRows'] * 0.4); ?>em;
 }
 .insertRowTable .CodeMirror {
-    height: <?php echo ceil($GLOBALS['cfg']['TextareaRows'] * 0.6); ?>em;
-    width: <?php echo ceil($GLOBALS['cfg']['TextareaCols'] * 0.6); ?>em;
+	height: <?= ceil($GLOBALS['cfg']['TextareaRows'] * 0.6); ?>em;
+	width: <?= ceil($GLOBALS['cfg']['TextareaCols'] * 0.6); ?>em;
+	border: 1px solid #a9a9a9;
 }
 #pma_console .CodeMirror-gutters {
-    background-color: initial;
-    border: none;
+	background-color: initial;
+	border: none;
 }
 span.cm-keyword, span.cm-statement-verb {
-    color: #909;
+	color: #909;
 }
 span.cm-variable {
-    color: black;
+	color: black;
 }
 span.cm-comment {
-    color: #808000;
+	color: #808000;
 }
 span.cm-mysql-string {
-    color: #008000;
+	color: #008000;
 }
 span.cm-operator {
-    color: fuchsia;
+	color: fuchsia;
 }
 span.cm-mysql-word {
-    color: black;
+	color: black;
 }
 span.cm-builtin {
-    color: #f00;
+	color: #f00;
 }
 span.cm-variable-2 {
-    color: #f90;
+	color: #f90;
 }
 span.cm-variable-3 {
-    color: #00f;
+	color: #00f;
 }
 span.cm-separator {
-    color: fuchsia;
+	color: fuchsia;
 }
 span.cm-number {
-    color: teal;
+	color: teal;
 }
 .autocomplete-column-name {
-    display: inline-block;
+	display: inline-block;
 }
 .autocomplete-column-hint {
-    display: inline-block;
-    float: right;
-    color: #666;
-    margin-left: 1em;
+	display: inline-block;
+	float: right;
+	color: #666;
+	margin-left: 1em;
 }
 .CodeMirror-hints {
-    z-index: 200;
+	z-index: 200;
 }
-.CodeMirror div.CodeMirror-cursor {
-    border-left: 1px solid #00FF00;
+.CodeMirror-lint-tooltip {
+	z-index: 200;
+	font-family: inherit;
+}
+.CodeMirror-lint-tooltip code {
+  font-family: monospace;
+  font-weight: bold;
 }
